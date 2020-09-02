@@ -14,34 +14,110 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.w3c.dom.html.HTMLElement;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Metro {
-    public static void main(String[] args) {
-        String url = "https://msk.metro-cc.ru/";
-        ParseByHtmlUnit(url);
-    }
 
-    public static void ParseBySelenium(String url) {
-        //System.setProperty("webdriver.chrome.driver", "D:\\Program Files\\diplom\\LIBS\\chromedriver_win32\\chromedriver.exe");
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\mironov.matvey\\Documents\\GitHub\\diplom\\LIBS\\chromedriver_win32\\chromedriver.exe");
+    //public static WebDriver driver = new ChromeDriver();
+
+    public static void main(String[] args) {
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\mironov.matvey\\IdeaProjects\\metroParser\\libs\\chromedriver_win32\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         new WebDriverWait(driver, 5L);
+        driver.manage().window().maximize();
+        String url = "https://delivery.metro-cc.ru/metro";
+
+        collectProducts("https://delivery.metro-cc.ru/metro/skoro-v-shkolu", driver);
+        //ParseBySelenium(url, driver);
+    }
+
+    public  static void collectProducts(String url, WebDriver driver ){
+        driver.get(url);
+        JavascriptExecutor jse = (JavascriptExecutor)driver;
+
+        for (int i = 0;i<200;i++) {
+            jse.executeScript("window.scrollBy(0,300)");
+            try {
+                Thread.sleep(300);
+            }
+            catch (InterruptedException e){
+                System.out.println("InterruptedException has been catched!!!!!");
+            }
+        }
+
+        List<WebElement> productsList= driver.findElements(By.className("product"));
+        System.out.println("productsList.size = "+productsList.size());
+
+    }
+
+    public static void ParseBySelenium(String url, WebDriver driver) {
 
         try {
-            driver.get("https://twitter.com/search?q=%D1%81%D0%B1%D0%B5%D1%80%D0%B1%D0%B0%D0%BD%D0%BA&src=typed_query");
+            driver.get(url);
             Thread.sleep(6000); //ждем 5 сек , пока рагрузится страничка
-            JavascriptExecutor jse = (JavascriptExecutor)driver;
+            //JavascriptExecutor jse = (JavascriptExecutor)driver;
 
             String page1;
             List<String> rawTweets;
             ArrayList<String> sumTweets= new ArrayList<>();
             page1 = driver.getPageSource();
 
-            List<WebElement> elemList= driver.findElements(By.className("css-1dbjc4n")); //"css-1dbjc4n r-my5ep6 r-qklmqi r-1adg3ll"
-            System.out.println("getPageSource: "+driver.getPageSource());
+            List<WebElement> elemList= driver.findElements(By.className("show-all"));
+            //System.out.println("elemList.size: "+elemList.size());
+            //System.out.println("getPageSource: "+driver.getPageSource());
 
-            //class="css-901oao r-hkyrab r-1qd0xha r-a023e6 r-16dba41 r-ad9z0x r-bcqeeo r-bnwqim r-qvutc0"
+            for (int i =0;i<elemList.size();i++){
+                elemList.get(i).click();
+                Thread.sleep(1L);
+
+                List<WebElement> elemList2 = driver.findElements(By.className("show-all"));
+                if (elemList2.size() != 0) {
+                    for (int j = 0; j < elemList2.size();j++) {
+                        elemList2.get(j).click();
+                        Thread.sleep(1L);
+                        System.out.println("driver.getCurrentUrl: " + driver.getCurrentUrl());
+
+                        List<WebElement> elemList3 = driver.findElements(By.className("show-all"));
+                        if (elemList3.size() != 0) {
+                            for (int k = 0; k < elemList3.size();k++) {
+                                elemList3.get(k).click();
+                                Thread.sleep(1L);
+                                System.out.println("driver.getCurrentUrl: " + driver.getCurrentUrl());
+                                //итерация по продуктам
+
+                                int slashIndex = driver.getCurrentUrl().lastIndexOf('/');
+                                String backURL = driver.getCurrentUrl().substring(0,slashIndex);
+                                driver.get(backURL);
+                                //driver.findElement(By.className("breadcrumbs_ilDgv")).click();
+                                Thread.sleep(1L);
+                                elemList3 = driver.findElements(By.className("show-all"));
+                            }
+
+
+                        }
+                        if (elemList3.size() == 0) {
+                            //итерация по продуктам
+                        }
+
+                        driver.findElement(By.className("breadcrumbs_ilDgv")).click();
+                        Thread.sleep(1L);
+                        elemList2 = driver.findElements(By.className("show-all"));
+
+                    }
+
+                }
+                if (elemList2.size() == 0){
+                    System.out.println("driver.getCurrentUrl: " + driver.getCurrentUrl());
+                    //итерация по продуктам
+
+                }
+                driver.get(url);
+                Thread.sleep(1L);
+                elemList = driver.findElements(By.className("show-all"));
+            }
+
+
 /*
             for (int i = 0; i<5; i++){ //колво скролов вниз
                     rawTweets = Arrays.asList(page1.split(" «Нравится»\" "));
@@ -56,7 +132,7 @@ public class Metro {
                     Thread.sleep(6000); //ждем 5 сек , пока рагрузится страничка
                     page1 = driver.getPageSource();
                 }
-                editTweet(sumTweets);
+                //editTweet(sumTweets);
 
                 for (String s : sumTweets){
                     System.out.println("------------------START---------------");
@@ -69,13 +145,16 @@ public class Metro {
                 for (WebElement e : elemList){
                     System.out.println("elemList.getText()"+e.getText());
                 }
-                */
+*/
         }
         catch (Exception e){
             System.out.println("ОШИБКА в GetXMLbySelenium");
             e.printStackTrace();
         }
     }
+
+
+
 
     public static void ParseByHtmlUnit(String url) {
 
