@@ -1,5 +1,4 @@
 import com.gargoylesoftware.htmlunit.BrowserVersion;
-import com.gargoylesoftware.htmlunit.Page;
 import com.gargoylesoftware.htmlunit.WebClient;
 import com.gargoylesoftware.htmlunit.html.HtmlButton;
 import com.gargoylesoftware.htmlunit.html.HtmlDivision;
@@ -10,6 +9,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.devtools.page.Page;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.w3c.dom.html.HTMLElement;
 
@@ -19,6 +19,7 @@ import java.util.List;
 
 public class Metro {
 
+    public static List<ProductMetro> finalProducts = new ArrayList<ProductMetro>();
     //public static WebDriver driver = new ChromeDriver();
 
     public static void main(String[] args) {
@@ -46,8 +47,33 @@ public class Metro {
             }
         }
 
-        List<WebElement> productsList= driver.findElements(By.className("product"));
+        List<WebElement> productsElements= driver.findElements(By.className("product__link"));
+        List<String> productsList = new ArrayList<String>();
+        for (int i =0;i<productsElements.size();i++){
+            productsList.add(productsElements.get(i).getAttribute("href"));
+        }
         System.out.println("productsList.size = "+productsList.size());
+
+        for (int i =0; i<productsList.size();i++){
+            driver.get(productsList.get(i));
+
+            ProductMetro product = new ProductMetro();
+            product.name = driver.findElement(By.xpath("//*[@id=\"react-modal\"]/div/div/div/div[2]/div/div/div/div/" +
+                    "div[2]/div[2]/div[1]/h1")).getText();
+            int picsNum = driver.findElements(By.className("review_cell_2HmTo")).size();
+            for (int j=0;j<picsNum;j++) {
+                //product.pictures.add(driver.findElement(By.xpath("//*[@id=\"react-modal\"]/div/div/div/div[2]" +
+                //        "/div/div/div/div/div[2]/div[1]/div[1]/div/div[2]/div["+j+"]/img")).getAttribute("src"));
+                System.out.println(driver.findElement(By.xpath("//*[@id=\"react-modal\"]/div/div/div/div[2]" +
+                                "/div/div/div/div/div[2]/div[1]/div[1]/div/div[2]/div["+(j+1)+"]/img")).getSize()); //getAttribute("src"));
+            }
+            //System.out.println(product.name);
+
+            finalProducts.add(product);
+
+            //*[@id="react-modal"]/div/div/div/div[2]/div/div/div/div/div[2]/div[1]/div[1]/div/div[2]/div[1]/img
+            //*[@id="react-modal"]/div/div/div/div[2]/div/div/div/div/div[2]/div[1]/div[1]/div/div[2]/div[2]/img
+        }
 
     }
 
