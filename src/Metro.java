@@ -4,6 +4,7 @@ import com.gargoylesoftware.htmlunit.html.HtmlButton;
 import com.gargoylesoftware.htmlunit.html.HtmlDivision;
 import com.gargoylesoftware.htmlunit.html.HtmlElement;
 import com.gargoylesoftware.htmlunit.html.HtmlPage;
+import com.sun.xml.internal.ws.server.DefaultResourceInjector;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -23,7 +24,8 @@ public class Metro {
     //public static WebDriver driver = new ChromeDriver();
 
     public static void main(String[] args) {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\mironov.matvey\\IdeaProjects\\metroParser\\libs\\chromedriver_win32\\chromedriver.exe");
+        //System.setProperty("webdriver.chrome.driver", "C:\\Users\\mironov.matvey\\IdeaProjects\\metroParser\\libs\\chromedriver_win32\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "E:\\Program Files\\metroParser\\libs\\chromedriver_win32\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         new WebDriverWait(driver, 5L);
         driver.manage().window().maximize();
@@ -47,7 +49,7 @@ public class Metro {
             }
         }
 
-        List<WebElement> productsElements= driver.findElements(By.className("product__link"));
+        List<WebElement> productsElements= driver.findElements(By.className("product__link")); //временный
         List<String> productsList = new ArrayList<String>();
         for (int i =0;i<productsElements.size();i++){
             productsList.add(productsElements.get(i).getAttribute("href"));
@@ -58,8 +60,42 @@ public class Metro {
             driver.get(productsList.get(i));
 
             ProductMetro product = new ProductMetro();
-            product.name = driver.findElement(By.xpath("//*[@id=\"react-modal\"]/div/div/div/div[2]/div/div/div/div/" +
-                    "div[2]/div[2]/div[1]/h1")).getText();
+            //Название
+            if (driver.findElements(By.xpath("//*[@id=\"react-modal\"]/div/div/div/div[2]/div/div/div/div/" +
+                    "div[2]/div[2]/div[1]/h1")).size() != 0) {
+                product.name = driver.findElement(By.xpath("//*[@id=\"react-modal\"]/div/div/div/div[2]/div/div/div/div/" +
+                        "div[2]/div[2]/div[1]/h1")).getText();
+            }
+            //описание
+            if (driver.findElements(By.xpath("//*[@id=\"react-modal\"]/div/div/div/div[2]/div/div/" +
+                    "div/div/div[3]/div/div[1]/div/div/div[1]/div[2]/div")).size() != 0) {
+                product.description = driver.findElement(By.xpath("//*[@id=\"react-modal\"]/div/div/div/div[2]/div/div/" +
+                        "div/div/div[3]/div/div[1]/div/div/div[1]/div[2]/div")).getText();
+            }
+            //ссылка
+            product.link = productsList.get(i);
+            //состав
+            if (driver.findElements(By.xpath("//*[@id=\"react-modal\"]/div/div/div/div[2]/div/div/div/" +
+                    "div/div[3]/div/div[1]/div/div/div[2]/div/div/div[1]/div[2]")).size() != 0) {
+                product.consist = driver.findElement(By.xpath("//*[@id=\"react-modal\"]/div/div/div/div[2]/div/div/div/" +
+                        "div/div[3]/div/div[1]/div/div/div[2]/div/div/div[1]/div[2]")).getText();
+            }
+            //Общая информация (таблица)
+            if (driver.findElements(By.className("product-property")).size() != 0){
+                for (WebElement li : driver.findElements(By.className("product-property"))) {
+                    product.generalInformation.put(li.findElement(By.className("product-property__name")).getText(),
+                            li.findElement(By.className("product-property__value")).getText() );
+                }
+            }
+
+
+            //картинка главная
+            if (driver.findElements(By.xpath("//*[@id=\"react-modal\"]/div/div/div/div[2]/div/div/div/div/div[2]/div[1]" +
+                    "/div[1]/div/div/div/div/div/img")).size() != 0) {
+                product.pictures.add(driver.findElement(By.xpath("//*[@id=\"react-modal\"]/div/div/div/div[2]/div/div/" +
+                        "div/div/div[2]/div[1]/div[1]/div/div/div/div/div/img")).getAttribute("src"));
+            }
+
             int picsNum = driver.findElements(By.className("review_cell_2HmTo")).size();
             for (int j=0;j<picsNum;j++) {
                 //product.pictures.add(driver.findElement(By.xpath("//*[@id=\"react-modal\"]/div/div/div/div[2]" +
@@ -67,8 +103,9 @@ public class Metro {
                 System.out.println(driver.findElement(By.xpath("//*[@id=\"react-modal\"]/div/div/div/div[2]" +
                                 "/div/div/div/div/div[2]/div[1]/div[1]/div/div[2]/div["+(j+1)+"]/img")).getSize()); //getAttribute("src"));
             }
-            //System.out.println(product.name);
 
+            //System.out.println(product.name+"  :  "+product.description + "  :  "+product.link+"  :  "+product.consist+
+            //        "  :  "+product.pictures.get(0));
             finalProducts.add(product);
 
             //*[@id="react-modal"]/div/div/div/div[2]/div/div/div/div/div[2]/div[1]/div[1]/div/div[2]/div[1]/img

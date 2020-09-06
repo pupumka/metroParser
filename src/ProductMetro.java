@@ -5,9 +5,11 @@ import java.util.Map;
 
 public class ProductMetro {
     List<String> pictures = new ArrayList();
+    String link;
     String name;
     String price;
     String description;
+    String consist;
     Map<String, String> generalInformation = new HashMap<String, String>();
     Map<String, String> nutritionalValue = new HashMap<String, String>();
 
