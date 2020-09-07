@@ -42,18 +42,47 @@ public class Metro {
         System.out.println("______________finalProducts.size() : "+finalProducts.size());
     }
 
-    public static void multyStart(){
-
+    public static void multyStart(WebDriver driver){
+        int iteratePart = linklist.size()/10;
+        for (int i=1;i<11;i++){
+            int start = iteratePart*(i-1);
+            int end = iteratePart*i;
+            if (i==10){
+                end = linklist.size();
+            }
+            Multy childThread = new Multy(start, end,driver);
+        }
     }
 
     public  static void collectProductLinks(String url, WebDriver driver ){
         driver.get(url);
         JavascriptExecutor jse = (JavascriptExecutor)driver;
-        if (url.equals("https://delivery.metro-cc.ru/metro/recepty-producty")){
-            return;
-        }
 
-        for (int i = 0;i<600;i++) { //былоа 1300 при 200 скролах, для всех надо 1400. для 3600 надо:
+        try {
+            long lastHeight = (long) ((JavascriptExecutor) driver).executeScript("return document.body.scrollHeight");
+
+            while (true) {
+                //((JavascriptExecutor) driver).executeScript("window.scrollTo(0, document.body.scrollHeight);");
+                ((JavascriptExecutor) driver).executeScript("window.scrollTo(0, document.body.scrollHeight);");
+                Thread.sleep(1000);
+                jse.executeScript("window.scrollBy(0,-100)");
+                Thread.sleep(1000);
+
+                long newHeight = (long) ((JavascriptExecutor) driver).executeScript("return document.body.scrollHeight");
+                if (newHeight == lastHeight) {
+                    break;
+                }
+                lastHeight = newHeight;
+            }
+        } catch (InterruptedException e) {
+            System.out.println("Exception while scrolling has been catched!!!");
+            e.printStackTrace();
+        }
+        //if (url.equals("https://delivery.metro-cc.ru/metro/recepty-producty")){
+         //   return;
+        //}
+
+        /*for (int i = 0;i<600;i++) { //былоа 1300 при 200 скролах, для всех надо 1400. для 3600 надо:
             jse.executeScript("window.scrollBy(0,300)");
             try {
                 Thread.sleep(300);
@@ -61,8 +90,11 @@ public class Metro {
             catch (InterruptedException e){
                 System.out.println("InterruptedException has been catched!!!!!");
             }
-        }
+        }*/
+        //мотаем вниз (скрол)
 
+
+        //ищем элементы (потом ссылки)
         List<WebElement> productsElements= driver.findElements(By.className("product__link")); //временный
         //List<String> productsList = new ArrayList<String>();
         for (int i =0;i<productsElements.size();i++){
@@ -73,8 +105,8 @@ public class Metro {
 
     }
 
-    public static void iterateProducts(WebDriver driver) {
-        for (int i =0; i<linklist.size();i++){
+    public static void iterateProducts(int i, int j, WebDriver driver) { //i - от - j - до
+        for (i =0; i<j;i++){
             driver.get(linklist.get(i));
 
             ProductMetro product = new ProductMetro();
@@ -161,7 +193,7 @@ public class Metro {
             //System.out.println("elemList.size: "+elemList.size());
             //System.out.println("getPageSource: "+driver.getPageSource());
 
-            for (int i =0;i<elemList.size();i++){
+            for (int i =14;i<elemList.size();i++){
                 elemList.get(i).click();
                 //Thread.sleep(1L);
 
