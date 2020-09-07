@@ -21,6 +21,7 @@ import java.util.List;
 public class Metro {
 
     public static List<ProductMetro> finalProducts = new ArrayList<ProductMetro>();
+    public static List<String> linklist = new ArrayList<>();
     //public static WebDriver driver = new ChromeDriver();
 
     public static void main(String[] args) {
@@ -32,16 +33,27 @@ public class Metro {
         String url = "https://delivery.metro-cc.ru/metro";
 
         //collectProducts("https://delivery.metro-cc.ru/metro/skoro-v-shkolu", driver);
-        //ParseBySelenium(url, driver);
-        test(driver);
+        ParseBySelenium(url, driver);
+        for (String s : linklist){
+            System.out.println(s);
+        }
+
+        //iterateProducts(driver);
         System.out.println("______________finalProducts.size() : "+finalProducts.size());
     }
 
-    public  static void collectProducts(String url, WebDriver driver ){
+    public static void multyStart(){
+
+    }
+
+    public  static void collectProductLinks(String url, WebDriver driver ){
         driver.get(url);
         JavascriptExecutor jse = (JavascriptExecutor)driver;
+        if (url.equals("https://delivery.metro-cc.ru/metro/recepty-producty")){
+            return;
+        }
 
-        for (int i = 0;i<200;i++) {
+        for (int i = 0;i<600;i++) { //былоа 1300 при 200 скролах, для всех надо 1400. для 3600 надо:
             jse.executeScript("window.scrollBy(0,300)");
             try {
                 Thread.sleep(300);
@@ -52,14 +64,18 @@ public class Metro {
         }
 
         List<WebElement> productsElements= driver.findElements(By.className("product__link")); //временный
-        List<String> productsList = new ArrayList<String>();
+        //List<String> productsList = new ArrayList<String>();
         for (int i =0;i<productsElements.size();i++){
-            productsList.add(productsElements.get(i).getAttribute("href"));
+            linklist.add(productsElements.get(i).getAttribute("href"));
         }
-        System.out.println("productsList.size = "+productsList.size());
+        System.out.println("linkList.size = "+linklist.size());
 
-        for (int i =0; i<productsList.size();i++){
-            driver.get(productsList.get(i));
+
+    }
+
+    public static void iterateProducts(WebDriver driver) {
+        for (int i =0; i<linklist.size();i++){
+            driver.get(linklist.get(i));
 
             ProductMetro product = new ProductMetro();
             //Название
@@ -75,45 +91,58 @@ public class Metro {
                         "div/div/div[3]/div/div[1]/div/div/div[1]/div[2]/div")).getText();
             }
             //ссылка
-            product.link = productsList.get(i);
+            product.link = linklist.get(i);
             //состав
             if (driver.findElements(By.xpath("//*[@id=\"react-modal\"]/div/div/div/div[2]/div/div/div/" +
                     "div/div[3]/div/div[1]/div/div/div[2]/div/div/div[1]/div[2]")).size() != 0) {
                 product.consist = driver.findElement(By.xpath("//*[@id=\"react-modal\"]/div/div/div/div[2]/div/div/div/" +
                         "div/div[3]/div/div[1]/div/div/div[2]/div/div/div[1]/div[2]")).getText();
             }
+            //price
+            if (driver.findElements(By.className("components_2MaTn components_22kKA components_22kKA")).size() !=0){
+                product.price = driver.findElement(By.className("components_2MaTn components_22kKA components_22kKA")).getText();
+            }
+            //discount price
+            if (driver.findElements(By.className("components_2MaTn components_22kKA components_1VMv2")).size() !=0){
+                product.discountPrice = driver.findElement(By.className("components_2MaTn components_22kKA components_1VMv2")).getText();
+            }
+
+            //nondiscount price
+            if (driver.findElements(By.className("components_2MaTn components_22kKA components_3PqkC")).size() !=0){
+                product.nondiscountPrice = driver.findElement(By.className("components_2MaTn components_22kKA components_3PqkC")).getText();
+            }
+
+
+
             //Общая информация (таблица)
-            if (driver.findElements(By.className("product-property")).size() != 0){
-                for (WebElement li : driver.findElements(By.className("product-property"))) {
+            if (driver.findElements(By.className("popup_3JinQ")).size() != 0){
+                WebElement table1 = driver.findElement(By.className("popup_3JinQ"));
+                for (WebElement li : table1.findElements(By.className("product-property"))) {
                     product.generalInformation.put(li.findElement(By.className("product-property__name")).getText(),
                             li.findElement(By.className("product-property__value")).getText() );
                 }
             }
 
+            //пищевая ценность (таблица)
+            if (driver.findElements(By.className("nutrition")).size() != 0){
+                WebElement table2 = driver.findElement(By.className("nutrition"));
+                for (WebElement li : table2.findElements(By.className("product-property"))) {
+                    product.nutritionalValue.put(li.findElement(By.className("product-property__name")).getText(),
+                            li.findElement(By.className("product-property__value")).getText() );
+                }
+            }
 
             //картинка главная
             if (driver.findElements(By.xpath("//*[@id=\"react-modal\"]/div/div/div/div[2]/div/div/div/div/div[2]/div[1]" +
                     "/div[1]/div/div/div/div/div/img")).size() != 0) {
-                product.pictures.add(driver.findElement(By.xpath("//*[@id=\"react-modal\"]/div/div/div/div[2]/div/div/" +
-                        "div/div/div[2]/div[1]/div[1]/div/div/div/div/div/img")).getAttribute("src"));
-            }
-
-            int picsNum = driver.findElements(By.className("review_cell_2HmTo")).size();
-            for (int j=0;j<picsNum;j++) {
-                //product.pictures.add(driver.findElement(By.xpath("//*[@id=\"react-modal\"]/div/div/div/div[2]" +
-                //        "/div/div/div/div/div[2]/div[1]/div[1]/div/div[2]/div["+j+"]/img")).getAttribute("src"));
-                System.out.println(driver.findElement(By.xpath("//*[@id=\"react-modal\"]/div/div/div/div[2]" +
-                                "/div/div/div/div/div[2]/div[1]/div[1]/div/div[2]/div["+(j+1)+"]/img")).getSize()); //getAttribute("src"));
+                product.mainPicture = driver.findElement(By.xpath("//*[@id=\"react-modal\"]/div/div/div/div[2]/div/div/" +
+                        "div/div/div[2]/div[1]/div[1]/div/div/div/div/div/img")).getAttribute("src");
             }
 
             //System.out.println(product.name+"  :  "+product.description + "  :  "+product.link+"  :  "+product.consist+
             //        "  :  "+product.pictures.get(0));
             finalProducts.add(product);
-
-            //*[@id="react-modal"]/div/div/div/div[2]/div/div/div/div/div[2]/div[1]/div[1]/div/div[2]/div[1]/img
-            //*[@id="react-modal"]/div/div/div/div[2]/div/div/div/div/div[2]/div[1]/div[1]/div/div[2]/div[2]/img
         }
-
     }
 
     public static void ParseBySelenium(String url, WebDriver driver) {
@@ -123,10 +152,10 @@ public class Metro {
             Thread.sleep(6000); //ждем 5 сек , пока рагрузится страничка
             //JavascriptExecutor jse = (JavascriptExecutor)driver;
 
-            String page1;
-            List<String> rawTweets;
-            ArrayList<String> sumTweets= new ArrayList<>();
-            page1 = driver.getPageSource();
+            //String page1;
+            //List<String> rawTweets;
+            //ArrayList<String> sumTweets= new ArrayList<>();
+            //page1 = driver.getPageSource();
 
             List<WebElement> elemList= driver.findElements(By.className("show-all"));
             //System.out.println("elemList.size: "+elemList.size());
@@ -150,7 +179,7 @@ public class Metro {
                                 //Thread.sleep(1L);
                                 System.out.println("driver.getCurrentUrl: " + driver.getCurrentUrl());
                                 //итерация по продуктам
-                                collectProducts(driver.getCurrentUrl(), driver);
+                                collectProductLinks(driver.getCurrentUrl(), driver);
 
                                 int slashIndex = driver.getCurrentUrl().lastIndexOf('/');
                                 String backURL = driver.getCurrentUrl().substring(0,slashIndex);
@@ -164,10 +193,13 @@ public class Metro {
                         }
                         if (elemList3.size() == 0) {
                             //итерация по продуктам
-                            collectProducts(driver.getCurrentUrl(), driver);
+                            collectProductLinks(driver.getCurrentUrl(), driver);
                         }
 
-                        driver.findElement(By.className("breadcrumbs_ilDgv")).click();
+                        //driver.findElement(By.className("breadcrumbs_ilDgv")).click();
+                        int slashIndex = driver.getCurrentUrl().lastIndexOf('/');
+                        String backURL = driver.getCurrentUrl().substring(0,slashIndex);
+                        driver.get(backURL);
                         //Thread.sleep(1L);
                         elemList2 = driver.findElements(By.className("show-all"));
 
@@ -177,7 +209,7 @@ public class Metro {
                 if (elemList2.size() == 0){
                     System.out.println("driver.getCurrentUrl: " + driver.getCurrentUrl());
                     //итерация по продуктам
-                    collectProducts(driver.getCurrentUrl(), driver);
+                    collectProductLinks(driver.getCurrentUrl(), driver);
 
                 }
                 driver.get(url);
@@ -185,35 +217,6 @@ public class Metro {
                 elemList = driver.findElements(By.className("show-all"));
             }
 
-
-/*
-            for (int i = 0; i<5; i++){ //колво скролов вниз
-                    rawTweets = Arrays.asList(page1.split(" «Нравится»\" "));
-                    System.out.println("rawTweets.size:"+rawTweets.size());
-                    for (String s : rawTweets){
-                        if (!sumTweets.contains(s)){
-                            sumTweets.add(s);
-                        }
-                    }
-                    Thread.sleep(1000);
-                    jse.executeScript("window.scrollBy(0,6000)");
-                    Thread.sleep(6000); //ждем 5 сек , пока рагрузится страничка
-                    page1 = driver.getPageSource();
-                }
-                //editTweet(sumTweets);
-
-                for (String s : sumTweets){
-                    System.out.println("------------------START---------------");
-                    System.out.println(s);
-                    System.out.println("------------------END-----------------");
-                }
-                System.out.println("sumTweets.size"+sumTweets.size());
-
-                System.out.println("elemList.size: "+elemList.size());
-                for (WebElement e : elemList){
-                    System.out.println("elemList.getText()"+e.getText());
-                }
-*/
         }
         catch (Exception e){
             System.out.println("ОШИБКА в GetXMLbySelenium");
