@@ -31,8 +31,10 @@ public class Metro {
         driver.manage().window().maximize();
         String url = "https://delivery.metro-cc.ru/metro";
 
-        collectProducts("https://delivery.metro-cc.ru/metro/skoro-v-shkolu", driver);
+        //collectProducts("https://delivery.metro-cc.ru/metro/skoro-v-shkolu", driver);
         //ParseBySelenium(url, driver);
+        test(driver);
+        System.out.println("______________finalProducts.size() : "+finalProducts.size());
     }
 
     public  static void collectProducts(String url, WebDriver driver ){
@@ -132,28 +134,29 @@ public class Metro {
 
             for (int i =0;i<elemList.size();i++){
                 elemList.get(i).click();
-                Thread.sleep(1L);
+                //Thread.sleep(1L);
 
                 List<WebElement> elemList2 = driver.findElements(By.className("show-all"));
                 if (elemList2.size() != 0) {
                     for (int j = 0; j < elemList2.size();j++) {
                         elemList2.get(j).click();
-                        Thread.sleep(1L);
+                        //Thread.sleep(1L);
                         System.out.println("driver.getCurrentUrl: " + driver.getCurrentUrl());
 
                         List<WebElement> elemList3 = driver.findElements(By.className("show-all"));
                         if (elemList3.size() != 0) {
                             for (int k = 0; k < elemList3.size();k++) {
                                 elemList3.get(k).click();
-                                Thread.sleep(1L);
+                                //Thread.sleep(1L);
                                 System.out.println("driver.getCurrentUrl: " + driver.getCurrentUrl());
                                 //итерация по продуктам
+                                collectProducts(driver.getCurrentUrl(), driver);
 
                                 int slashIndex = driver.getCurrentUrl().lastIndexOf('/');
                                 String backURL = driver.getCurrentUrl().substring(0,slashIndex);
                                 driver.get(backURL);
                                 //driver.findElement(By.className("breadcrumbs_ilDgv")).click();
-                                Thread.sleep(1L);
+                                //Thread.sleep(1L);
                                 elemList3 = driver.findElements(By.className("show-all"));
                             }
 
@@ -161,10 +164,11 @@ public class Metro {
                         }
                         if (elemList3.size() == 0) {
                             //итерация по продуктам
+                            collectProducts(driver.getCurrentUrl(), driver);
                         }
 
                         driver.findElement(By.className("breadcrumbs_ilDgv")).click();
-                        Thread.sleep(1L);
+                        //Thread.sleep(1L);
                         elemList2 = driver.findElements(By.className("show-all"));
 
                     }
@@ -173,10 +177,11 @@ public class Metro {
                 if (elemList2.size() == 0){
                     System.out.println("driver.getCurrentUrl: " + driver.getCurrentUrl());
                     //итерация по продуктам
+                    collectProducts(driver.getCurrentUrl(), driver);
 
                 }
                 driver.get(url);
-                Thread.sleep(1L);
+                //Thread.sleep(1L);
                 elemList = driver.findElements(By.className("show-all"));
             }
 
@@ -253,25 +258,22 @@ public class Metro {
         }
     }
 
-    public static void test() {
+    public static void test(WebDriver driver) {
 
-        String url = "https://msk.metro-cc.ru/";
-        WebClient client = new WebClient();
+        driver.get("https://delivery.metro-cc.ru/metro/sobstviennyie-torghovyie-marki");
+        JavascriptExecutor jse = (JavascriptExecutor)driver;
 
-        //client.setCssEnabled(true);
-        //client.setJavaScriptEnabled(true);
-
+        //jse.executeScript("window.scrollBy(0,300)");
+        jse.executeScript("window.scrollTo(0, document.body.scrollHeight)");
         try {
-            HtmlPage page = client.getPage(url);
-            System.out.println(page.getPage());
-            //List<?> date = page.getByXPath("//div/@class='list-box-comment'");
-            //System.out.println(date.size());
-            //for(int i =0 ; i<date.size();i++){
-            //   System.out.println(date.get(i).asText());
-            //}
-        } catch (Exception e) {
-            e.printStackTrace();
+            Thread.sleep(10L);
         }
+        catch (InterruptedException e){
+            System.out.println("InterruptedException has been catched!!!!!");
+        }
+
+
+
     }
 
 
