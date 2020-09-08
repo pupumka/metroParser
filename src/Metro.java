@@ -31,32 +31,34 @@ public class Metro {
     //public static WebDriver driver = new ChromeDriver();
 
     public static void main(String[] args) {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\mironov.matvey\\Documents\\GitHub\\metroParser\\libs\\chromedriver_win32\\chromedriver.exe");
-        //System.setProperty("webdriver.chrome.driver", "E:\\Program Files\\metroParser\\libs\\chromedriver_win32\\chromedriver.exe");
+        //System.setProperty("webdriver.chrome.driver", "C:\\Users\\mironov.matvey\\Documents\\GitHub\\metroParser\\libs\\chromedriver_win32\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "E:\\Program Files\\metroParser\\libs\\chromedriver_win32\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         new WebDriverWait(driver, 5L);
         driver.manage().window().maximize();
         String url = "https://delivery.metro-cc.ru/metro";
 
-        //ParseBySelenium(url, driver);
-        for (String s : linklist){
-            System.out.println(s);
-        }
+        ParseBySelenium(url, driver);//собирает список linkList , где хранятся ссылки на все товары
+        iterateProducts(0,linklist.size(),driver); //собирает инфу о каждом товаре
 
-        readLinksFromFile("C:\\Users\\mironov.matvey\\Documents\\GitHub\\metroParser\\src\\Links.txt");
+        //readLinksFromFile("E:\\Program Files\\metroParser\\src\\Links.txt", driver);
+        //multyChromeStart();
+        //multyThreadStart();
 
         System.out.println("______________finalProducts.size() : "+finalProducts.size());
+        driver.close();
+        driver.quit();
     }
 
-    public static ArrayList<String> readLinksFromFile(String filePath){
+    public static void readLinksFromFile(String filePath, WebDriver driver){
         BufferedReader br;
-        ArrayList<String> list = new ArrayList<String>();
+        //ArrayList<String> list = new ArrayList<String>();
         try {
             br = new BufferedReader(new FileReader(new File(filePath)));
             String line = br.readLine();
             while (line != null) {
-                System.out.println(line);
-                list.add(line);
+                //System.out.println(line);
+                linklist.add(line);
                 // считываем остальные строки в цикле
                 line = br.readLine();
             }
@@ -69,11 +71,10 @@ public class Metro {
             System.out.println("Exception while reading strings from file at has been catched!!!");
             e.printStackTrace();
         }
-        return list;
+
     }
 
-    //сделать 10 списков для каждого потока. Иначе будут конфликты?
-    public static void multyStart(WebDriver driver){
+    public static void multyChromeStart(){
         int iteratePart = linklist.size()/10;
         for (int i=1;i<11;i++){
             int start = iteratePart*(i-1);
@@ -81,7 +82,31 @@ public class Metro {
             if (i==10){
                 end = linklist.size();
             }
-            Multy childThread = new Multy(start, end,driver);
+            WebDriver driver = new ChromeDriver();
+            new WebDriverWait(driver, 5L);
+            driver.manage().window().maximize();
+            iterateProducts(start,end,driver);
+            try {
+                Thread.sleep(4L);
+            }
+            catch (InterruptedException e){
+                e.printStackTrace();
+            }
+
+        }
+    }
+
+    //сделать 10 списков для каждого потока. Иначе будут конфликты?
+    public static void multyThreadStart(){
+        int iteratePart = linklist.size()/10;
+        for (int i=1;i<11;i++){
+            int start = iteratePart*(i-1);
+            int end = iteratePart*i;
+            if (i==10){
+                end = linklist.size();
+            }
+            Multy childThread = new Multy(start, end, new ChromeDriver());
+            childThread.start();
         }
     }
 
@@ -145,13 +170,13 @@ public class Metro {
             if (driver.findElements(By.xpath("//*[@id=\"react-modal\"]/div/div/div/div[2]/div/div/div/div/" +
                     "div[2]/div[2]/div[1]/h1")).size() != 0) {
                 product.name = driver.findElement(By.xpath("//*[@id=\"react-modal\"]/div/div/div/div[2]/div/div/div/div/" +
-                        "div[2]/div[2]/div[1]/h1")).getText();
+                        "div[2]/div[2]/div[1]/h1")).getText().replace("\n", "").replace("\r", "");
             }
             //описание
             if (driver.findElements(By.xpath("//*[@id=\"react-modal\"]/div/div/div/div[2]/div/div/" +
                     "div/div/div[3]/div/div[1]/div/div/div[1]/div[2]/div")).size() != 0) {
                 product.description = driver.findElement(By.xpath("//*[@id=\"react-modal\"]/div/div/div/div[2]/div/div/" +
-                        "div/div/div[3]/div/div[1]/div/div/div[1]/div[2]/div")).getText();
+                        "div/div/div[3]/div/div[1]/div/div/div[1]/div[2]/div")).getText().replace("\n", "").replace("\r", "");
             }
             //ссылка
             product.link = linklist.get(i);
@@ -159,20 +184,24 @@ public class Metro {
             if (driver.findElements(By.xpath("//*[@id=\"react-modal\"]/div/div/div/div[2]/div/div/div/" +
                     "div/div[3]/div/div[1]/div/div/div[2]/div/div/div[1]/div[2]")).size() != 0) {
                 product.consist = driver.findElement(By.xpath("//*[@id=\"react-modal\"]/div/div/div/div[2]/div/div/div/" +
-                        "div/div[3]/div/div[1]/div/div/div[2]/div/div/div[1]/div[2]")).getText();
+                        "div/div[3]/div/div[1]/div/div/div[2]/div/div/div[1]/div[2]")).getText().replace("\n", "").replace("\r", "");
             }
             //price
-            if (driver.findElements(By.className("components_2MaTn components_22kKA components_22kKA")).size() !=0){
-                product.price = driver.findElement(By.className("components_2MaTn components_22kKA components_22kKA")).getText();
+            //if (driver.findElements(By.className("components_2MaTn components_22kKA components_22kKA")).size() !=0){
+              //  product.price = driver.findElement(By.className("components_2MaTn components_22kKA components_22kKA")).getText();
+            //}
+            if (driver.findElements(By.xpath("//*[@id=\"react-modal\"]/div/div/div/div[2]/div/div/div/div/div[2]/div[2]/div[2]/div[1]/div")).size() !=0){
+              product.price = driver.findElement(By.xpath("//*[@id=\"react-modal\"]/div/div/div/div[2]/div/div/div/div/div[2]/div[2]/div[2]/div[1]/div")).getText().replace("\n", "").replace("\r", "");
             }
+
             //discount price
-            if (driver.findElements(By.className("components_2MaTn components_22kKA components_1VMv2")).size() !=0){
-                product.discountPrice = driver.findElement(By.className("components_2MaTn components_22kKA components_1VMv2")).getText();
+            if (driver.findElements(By.xpath("//*[@id=\"react-modal\"]/div/div/div/div[2]/div/div/div/div/div[2]/div[2]/div[2]/div[1]/div/div[1]/div[1]")).size() !=0){
+                product.discountPrice = driver.findElement(By.xpath("//*[@id=\"react-modal\"]/div/div/div/div[2]/div/div/div/div/div[2]/div[2]/div[2]/div[1]/div/div[1]/div[1]")).getText().replace("\n", "").replace("\r", "");
             }
 
             //nondiscount price
-            if (driver.findElements(By.className("components_2MaTn components_22kKA components_3PqkC")).size() !=0){
-                product.nondiscountPrice = driver.findElement(By.className("components_2MaTn components_22kKA components_3PqkC")).getText();
+            if (driver.findElements(By.xpath("//*[@id=\"react-modal\"]/div/div/div/div[2]/div/div/div/div/div[2]/div[2]/div[2]/div[1]/div/div[1]/div[2]")).size() !=0){
+                product.nondiscountPrice = driver.findElement(By.xpath("//*[@id=\"react-modal\"]/div/div/div/div[2]/div/div/div/div/div[2]/div[2]/div[2]/div[1]/div/div[1]/div[2]")).getText().replace("\n", "").replace("\r", "");
             }
 
 
@@ -181,8 +210,8 @@ public class Metro {
             if (driver.findElements(By.className("popup_3JinQ")).size() != 0){
                 WebElement table1 = driver.findElement(By.className("popup_3JinQ"));
                 for (WebElement li : table1.findElements(By.className("product-property"))) {
-                    product.generalInformation.put(li.findElement(By.className("product-property__name")).getText(),
-                            li.findElement(By.className("product-property__value")).getText() );
+                    product.generalInformation.put(li.findElement(By.className("product-property__name")).getText().replace("\n", "").replace("\r", ""),
+                            li.findElement(By.className("product-property__value")).getText().replace("\n", "").replace("\r", "") );
                 }
             }
 
@@ -190,8 +219,8 @@ public class Metro {
             if (driver.findElements(By.className("nutrition")).size() != 0){
                 WebElement table2 = driver.findElement(By.className("nutrition"));
                 for (WebElement li : table2.findElements(By.className("product-property"))) {
-                    product.nutritionalValue.put(li.findElement(By.className("product-property__name")).getText(),
-                            li.findElement(By.className("product-property__value")).getText() );
+                    product.nutritionalValue.put(li.findElement(By.className("product-property__name")).getText().replace("\n", "").replace("\r", ""),
+                            li.findElement(By.className("product-property__value")).getText().replace("\n", "").replace("\r", "") );
                 }
             }
 
@@ -199,11 +228,12 @@ public class Metro {
             if (driver.findElements(By.xpath("//*[@id=\"react-modal\"]/div/div/div/div[2]/div/div/div/div/div[2]/div[1]" +
                     "/div[1]/div/div/div/div/div/img")).size() != 0) {
                 product.mainPicture = driver.findElement(By.xpath("//*[@id=\"react-modal\"]/div/div/div/div[2]/div/div/" +
-                        "div/div/div[2]/div[1]/div[1]/div/div/div/div/div/img")).getAttribute("src");
+                        "div/div/div[2]/div[1]/div[1]/div/div/div/div/div/img")).getAttribute("src").replace("\n", "").replace("\r", "");
             }
-
-            //System.out.println(product.name+"  :  "+product.description + "  :  "+product.link+"  :  "+product.consist+
-            //        "  :  "+product.pictures.get(0));
+            //text = text.replace("\n", "").replace("\r", "");
+            System.out.println(product.name+"~"+product.description + "~"+product.link+"~"+product.consist+
+                    "~"+product.mainPicture+"~"+product.price+"~"+product.discountPrice+"~"+product.nondiscountPrice+
+                    "~"+product.generalInformation.toString()+"~"+product.nutritionalValue.toString());
             finalProducts.add(product);
         }
     }
