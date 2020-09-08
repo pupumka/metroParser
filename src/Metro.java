@@ -19,6 +19,10 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Metro {
+    //пройти еще раз по ссылкам:
+    //https://delivery.metro-cc.ru/metro/zozh
+    //https://delivery.metro-cc.ru/metro/recepty-producty
+    //https://delivery.metro-cc.ru/metro/tovary-dlia-ofisa
 
     public static List<ProductMetro> finalProducts = new ArrayList<ProductMetro>();
     public static List<String> linklist = new ArrayList<>();
@@ -42,6 +46,7 @@ public class Metro {
         System.out.println("______________finalProducts.size() : "+finalProducts.size());
     }
 
+    //сделать 10 списков для каждого потока. Иначе будут конфликты?
     public static void multyStart(WebDriver driver){
         int iteratePart = linklist.size()/10;
         for (int i=1;i<11;i++){
