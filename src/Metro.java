@@ -14,6 +14,7 @@ import org.openqa.selenium.devtools.page.Page;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.w3c.dom.html.HTMLElement;
 
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -23,27 +24,52 @@ public class Metro {
     //https://delivery.metro-cc.ru/metro/zozh
     //https://delivery.metro-cc.ru/metro/recepty-producty
     //https://delivery.metro-cc.ru/metro/tovary-dlia-ofisa
+    //Нужно иметь google chrome версии 85 на компе!!!!!
 
     public static List<ProductMetro> finalProducts = new ArrayList<ProductMetro>();
     public static List<String> linklist = new ArrayList<>();
     //public static WebDriver driver = new ChromeDriver();
 
     public static void main(String[] args) {
-        //System.setProperty("webdriver.chrome.driver", "C:\\Users\\mironov.matvey\\IdeaProjects\\metroParser\\libs\\chromedriver_win32\\chromedriver.exe");
-        System.setProperty("webdriver.chrome.driver", "E:\\Program Files\\metroParser\\libs\\chromedriver_win32\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\mironov.matvey\\Documents\\GitHub\\metroParser\\libs\\chromedriver_win32\\chromedriver.exe");
+        //System.setProperty("webdriver.chrome.driver", "E:\\Program Files\\metroParser\\libs\\chromedriver_win32\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         new WebDriverWait(driver, 5L);
         driver.manage().window().maximize();
         String url = "https://delivery.metro-cc.ru/metro";
 
-        //collectProducts("https://delivery.metro-cc.ru/metro/skoro-v-shkolu", driver);
-        ParseBySelenium(url, driver);
+        //ParseBySelenium(url, driver);
         for (String s : linklist){
             System.out.println(s);
         }
 
-        //iterateProducts(driver);
+        readLinksFromFile("C:\\Users\\mironov.matvey\\Documents\\GitHub\\metroParser\\src\\Links.txt");
+
         System.out.println("______________finalProducts.size() : "+finalProducts.size());
+    }
+
+    public static ArrayList<String> readLinksFromFile(String filePath){
+        BufferedReader br;
+        ArrayList<String> list = new ArrayList<String>();
+        try {
+            br = new BufferedReader(new FileReader(new File(filePath)));
+            String line = br.readLine();
+            while (line != null) {
+                System.out.println(line);
+                list.add(line);
+                // считываем остальные строки в цикле
+                line = br.readLine();
+            }
+        }
+        catch (FileNotFoundException e){
+            System.out.println("Exception while reading file at has been catched!!!");
+            e.printStackTrace();
+        }
+        catch (IOException e){
+            System.out.println("Exception while reading strings from file at has been catched!!!");
+            e.printStackTrace();
+        }
+        return list;
     }
 
     //сделать 10 списков для каждого потока. Иначе будут конфликты?
