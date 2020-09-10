@@ -20,7 +20,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Metro {
-    //пройти еще раз по ссылкам:
+    //пройти еще раз по ссылкам: (Добавить проходы по 4 уровню)
     //https://delivery.metro-cc.ru/metro/zozh
     //https://delivery.metro-cc.ru/metro/recepty-producty
     //https://delivery.metro-cc.ru/metro/tovary-dlia-ofisa
@@ -38,10 +38,11 @@ public class Metro {
         driver.manage().window().maximize();
         String url = "https://delivery.metro-cc.ru/metro";
 
-        ParseBySelenium(url, driver);//собирает список linkList , где хранятся ссылки на все товары
-        iterateProducts(0,linklist.size(),driver); //собирает инфу о каждом товаре
+        //ParseBySelenium(url, driver);//собирает список linkList , где хранятся ссылки на все товары
+        //iterateProducts(0,linklist.size(),driver); //собирает инфу о каждом товаре
 
-        //readLinksFromFile("E:\\Program Files\\metroParser\\src\\Links.txt", driver);
+        readLinksFromFile("E:\\Program Files\\metroParser\\src\\Links.txt", driver);
+        iterateProducts(0,linklist.size(),driver);
         //multyChromeStart();
         //multyThreadStart();
 
@@ -224,16 +225,34 @@ public class Metro {
                 }
             }
 
+            //иерархия
+            if (driver.findElements(By.className("breadcrumbs_ilDgv")).size() != 0){
+                List<WebElement> categoryList = driver.findElements(By.className("breadcrumbs_ilDgv"));
+                for (int k = 0;k<categoryList.size()/2;k++){
+                    product.hierarchy.add(categoryList.get(k).getText());
+                }
+            }
+
+
             //картинка главная
             if (driver.findElements(By.xpath("//*[@id=\"react-modal\"]/div/div/div/div[2]/div/div/div/div/div[2]/div[1]" +
                     "/div[1]/div/div/div/div/div/img")).size() != 0) {
                 product.mainPicture = driver.findElement(By.xpath("//*[@id=\"react-modal\"]/div/div/div/div[2]/div/div/" +
                         "div/div/div[2]/div[1]/div[1]/div/div/div/div/div/img")).getAttribute("src").replace("\n", "").replace("\r", "");
             }
+
+            //Все картинки
+            if (driver.findElements(By.className("preview_cell_2HmTo")).size() !=0){
+                List<WebElement> previewList = driver.findElements(By.className("preview_cell_2HmTo"));
+                for (WebElement e : previewList){
+                    product.previews.add(e.getAttribute("src"));
+                }
+            }
+
             //text = text.replace("\n", "").replace("\r", "");
             System.out.println(product.name+"~"+product.description + "~"+product.link+"~"+product.consist+
                     "~"+product.mainPicture+"~"+product.price+"~"+product.discountPrice+"~"+product.nondiscountPrice+
-                    "~"+product.generalInformation.toString()+"~"+product.nutritionalValue.toString());
+                    "~"+product.generalInformation.toString()+"~"+product.nutritionalValue.toString()+"~"+product.hierarchy.toString()+"~"+product.previews.toString());
             finalProducts.add(product);
         }
     }
