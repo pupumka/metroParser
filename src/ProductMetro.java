@@ -17,4 +17,6 @@ public class ProductMetro {
     Map<String, String> nutritionalValue = new HashMap<String, String>();
     ArrayList<String> previews = new ArrayList<String>();
 
+
+
 }

@@ -29,6 +29,7 @@ public class Metro {
     //https://delivery.metro-cc.ru/metro/recepty-producty
     //https://delivery.metro-cc.ru/metro/tovary-dlia-ofisa
     //Нужно иметь google chrome версии 85 на компе!!!!!
+    //отваилась картинка тут: https://delivery.metro-cc.ru/metro/kraska-l-oreal-paris-preference-recital-dlya-volos-rozovaya-platina-9-23
 
     public static String path = "C:\\Users\\mironov.matvey\\Documents\\GitHub\\";
     public static List<ProductMetro> finalProducts = new ArrayList<ProductMetro>();
@@ -209,7 +210,7 @@ public class Metro {
 
             //nondiscount price
             if (driver.findElements(By.xpath("//*[@id=\"react-modal\"]/div/div/div/div[2]/div/div/div/div/div[2]/div[2]/div[2]/div[1]/div/div[1]/div[2]")).size() !=0){
-                product.nondiscountPrice = driver.findElement(By.xpath("//*[@id=\"react-modal\"]/div/div/div/div[2]/div/div/div/div/div[2]/div[2]/div[2]/div[1]/div/div[1]/div[2]")).getText().replace("\n", "").replace("\r", "");
+                product.price = driver.findElement(By.xpath("//*[@id=\"react-modal\"]/div/div/div/div[2]/div/div/div/div/div[2]/div[2]/div[2]/div[1]/div/div[1]/div[2]")).getText().replace("\n", "").replace("\r", "");
             }
 
 
@@ -252,7 +253,6 @@ public class Metro {
 
                     String littleURL = product.mainPicture.substring(slashIndex1 + 1, dotIndex);
                     String pictureFormat = product.mainPicture.substring(dotIndex, dotIndex+4);
-                    System.out.println("pictureFormat: "+pictureFormat);
 
                     try {
                         URL imageURL = new URL(product.mainPicture);
@@ -295,10 +295,24 @@ public class Metro {
 
             //text = text.replace("\n", "").replace("\r", "");
             System.out.println(product.name+"~"+product.description + "~"+product.link+"~"+product.consist+
-                    "~"+product.mainPicture+"~"+product.price+"~"+product.discountPrice+"~"+product.nondiscountPrice+
-                    "~"+product.generalInformation.toString()+"~"+product.nutritionalValue.toString()+"~"+product.hierarchy.toString()+"~"+product.previews.toString());
+                    "~"+product.mainPicture+"~"+product.price+"~"+product.discountPrice+
+                    "~"+product.generalInformation.toString()+"~"+product.nutritionalValue.toString()+
+                    "~"+printArray(product.hierarchy)+"~"+product.previews.toString());
             finalProducts.add(product);
         }
+    }
+
+    public static String printArray(ArrayList<String> list){
+        String str = "";
+        str = str.concat("[");
+        for (int i = 0; i<list.size();i++){
+            str  = str.concat(list.get(i));
+            if (i!=list.size()-1) {
+                str  = str.concat(";");
+            }
+        }
+        str = str.concat("]");
+        return str;
     }
 
     public static void ParseBySelenium(String url, WebDriver driver) {
