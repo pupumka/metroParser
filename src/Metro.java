@@ -30,7 +30,7 @@ public class Metro {
     //https://delivery.metro-cc.ru/metro/tovary-dlia-ofisa
     //Нужно иметь google chrome версии 85 на компе!!!!!
 
-    public static String path = "E:\\Program Files\\";
+    public static String path = "C:\\Users\\mironov.matvey\\Documents\\GitHub\\";
     public static List<ProductMetro> finalProducts = new ArrayList<ProductMetro>();
     public static List<String> linklist = new ArrayList<>();
     //public static WebDriver driver = new ChromeDriver();
@@ -47,7 +47,7 @@ public class Metro {
         //ParseBySelenium(url, driver);//собирает список linkList , где хранятся ссылки на все товары
         //iterateProducts(0,linklist.size(),driver); //собирает инфу о каждом товаре
 
-        readLinksFromFile("E:\\Program Files\\metroParser\\src\\Links.txt", driver);
+        readLinksFromFile(path+"metroParser\\src\\Links.txt", driver);
         iterateProducts(0,linklist.size(),driver);
         //multyChromeStart();
         //multyThreadStart();
@@ -248,7 +248,13 @@ public class Metro {
 
                 int slashIndex1 = product.mainPicture.lastIndexOf('/');
                 int jpgIndex = product.mainPicture.lastIndexOf(".jpg");
-                String littleURL = product.mainPicture.substring(slashIndex1+1,jpgIndex);
+                String littleURL;
+                if (slashIndex1!=-1 || jpgIndex !=-1 || jpgIndex>slashIndex1) {
+                    littleURL = product.mainPicture.substring(slashIndex1 + 1, jpgIndex);
+                }
+                else {
+                    littleURL = null;
+                }
                 try {
                     URL imageURL = new URL(product.mainPicture);
                     BufferedImage image = ImageIO.read(imageURL);
