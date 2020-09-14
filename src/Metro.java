@@ -245,26 +245,23 @@ public class Metro {
                     "/div[1]/div/div/div/div/div/img")).size() != 0) {
                 product.mainPicture = driver.findElement(By.xpath("//*[@id=\"react-modal\"]/div/div/div/div[2]/div/div/" +
                         "div/div/div[2]/div[1]/div[1]/div/div/div/div/div/img")).getAttribute("src").replace("\n", "").replace("\r", "");
+                if (!product.mainPicture.contains("/noimage/")) {
+                    int slashIndex1 = product.mainPicture.lastIndexOf('/');
+                    int dotIndex = product.mainPicture.lastIndexOf(".");
 
-                int slashIndex1 = product.mainPicture.lastIndexOf('/');
-                int jpgIndex = product.mainPicture.lastIndexOf(".jpg");
-                String littleURL;
-                if (slashIndex1!=-1 || jpgIndex !=-1 || jpgIndex>slashIndex1) {
-                    littleURL = product.mainPicture.substring(slashIndex1 + 1, jpgIndex);
-                }
-                else {
-                    littleURL = null;
-                }
-                try {
-                    URL imageURL = new URL(product.mainPicture);
-                    BufferedImage image = ImageIO.read(imageURL);
-                    ImageIO.write(image, "jpg",new File(path+"metroParser\\src\\images\\"+littleURL+".jpg"));
-                }
-                catch (MalformedURLException ex1){
-                    ex1.printStackTrace();
-                }
-                catch (IOException ex2){
-                    ex2.printStackTrace();
+                    String littleURL = product.mainPicture.substring(slashIndex1 + 1, dotIndex);
+                    String pictureFormat = product.mainPicture.substring(dotIndex, dotIndex+4);
+                    System.out.println("pictureFormat: "+pictureFormat);
+
+                    try {
+                        URL imageURL = new URL(product.mainPicture);
+                        BufferedImage image = ImageIO.read(imageURL);
+                        ImageIO.write(image, pictureFormat.substring(1), new File(path + "metroParser\\src\\images\\" + littleURL + pictureFormat));
+                    } catch (MalformedURLException ex1) {
+                        ex1.printStackTrace();
+                    } catch (IOException ex2) {
+                        ex2.printStackTrace();
+                    }
                 }
             }
 
@@ -276,12 +273,14 @@ public class Metro {
 
                     product.previews.add(srcAsString);
                     int slashIndex1 = srcAsString.lastIndexOf('/');
-                    int jpgIndex = srcAsString.lastIndexOf(".jpg");
-                    String littleURL = srcAsString.substring(slashIndex1+1,jpgIndex);
+                    int dotIndex = product.mainPicture.lastIndexOf(".");
+
+                    String littleURL = srcAsString.substring(slashIndex1+1,dotIndex);
+                    String pictureFormat = product.mainPicture.substring(dotIndex, dotIndex+4);
                     try {
                         URL imageURL = new URL(srcAsString.replace("/mini/","/preview/"));
                         BufferedImage image = ImageIO.read(imageURL);
-                        ImageIO.write(image, "jpg",new File(path+"metroParser\\src\\images\\"+littleURL+".jpg"));
+                        ImageIO.write(image, pictureFormat.substring(1),new File(path+"metroParser\\src\\images\\"+littleURL+pictureFormat));
                     }
                     catch (MalformedURLException ex1){
                         ex1.printStackTrace();
