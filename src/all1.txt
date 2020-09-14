@@ -1,3 +1,2271 @@
+"C:\Program Files\Java\jdk1.8.0_191\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2019.1.3\lib\idea_rt.jar=64354:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2019.1.3\bin" -Dfile.encoding=UTF-8 -classpath "C:\Program Files\Java\jdk1.8.0_191\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\rt.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\out\production\metroParser;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\htmlunit-2.43.0\lib\commons-codec-1.11.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\htmlunit-2.43.0\lib\commons-io-2.7.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\htmlunit-2.43.0\lib\commons-lang3-3.11.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\htmlunit-2.43.0\lib\commons-logging-1.2.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\htmlunit-2.43.0\lib\commons-net-3.7.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\htmlunit-2.43.0\lib\commons-text-1.9.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\htmlunit-2.43.0\lib\dec-0.1.2.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\htmlunit-2.43.0\lib\htmlunit-2.43.0.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\htmlunit-2.43.0\lib\htmlunit-core-js-2.43.0.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\htmlunit-2.43.0\lib\htmlunit-cssparser-1.5.0.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\htmlunit-2.43.0\lib\httpclient-4.5.12.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\htmlunit-2.43.0\lib\httpcore-4.4.13.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\htmlunit-2.43.0\lib\httpmime-4.5.12.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\htmlunit-2.43.0\lib\jetty-client-9.4.31.v20200723.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\htmlunit-2.43.0\lib\jetty-http-9.4.31.v20200723.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\htmlunit-2.43.0\lib\jetty-io-9.4.31.v20200723.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\htmlunit-2.43.0\lib\jetty-util-9.4.31.v20200723.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\htmlunit-2.43.0\lib\jetty-xml-9.4.31.v20200723.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\htmlunit-2.43.0\lib\neko-htmlunit-2.43.0.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\htmlunit-2.43.0\lib\salvation-2.7.2.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\htmlunit-2.43.0\lib\serializer-2.7.2.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\htmlunit-2.43.0\lib\websocket-api-9.4.31.v20200723.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\htmlunit-2.43.0\lib\websocket-client-9.4.31.v20200723.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\htmlunit-2.43.0\lib\websocket-common-9.4.31.v20200723.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\htmlunit-2.43.0\lib\xalan-2.7.2.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\htmlunit-2.43.0\lib\xercesImpl-2.12.0.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\htmlunit-2.43.0\lib\xml-apis-1.4.01.jar;C:\Users\mironov.matvey\.m2\repository\com\shapesecurity\salvation\2.7.2\salvation-2.7.2.jar;C:\Users\mironov.matvey\.m2\repository\commons-io\commons-io\2.7\commons-io-2.7.jar;C:\Users\mironov.matvey\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\mironov.matvey\.m2\repository\commons-net\commons-net\3.7\commons-net-3.7.jar;C:\Users\mironov.matvey\.m2\repository\net\sourceforge\htmlunit\htmlunit-core-js\2.43.0\htmlunit-core-js-2.43.0.jar;C:\Users\mironov.matvey\.m2\repository\net\sourceforge\htmlunit\htmlunit-cssparser\1.5.0\htmlunit-cssparser-1.5.0.jar;C:\Users\mironov.matvey\.m2\repository\net\sourceforge\htmlunit\neko-htmlunit\2.43.0\neko-htmlunit-2.43.0.jar;C:\Users\mironov.matvey\.m2\repository\xerces\xercesImpl\2.12.0\xercesImpl-2.12.0.jar;C:\Users\mironov.matvey\.m2\repository\xml-apis\xml-apis\1.4.01\xml-apis-1.4.01.jar;C:\Users\mironov.matvey\.m2\repository\org\apache\commons\commons-lang3\3.3.2\commons-lang3-3.3.2.jar;C:\Users\mironov.matvey\.m2\repository\org\apache\httpcomponents\httpmime\4.2.4\httpmime-4.2.4.jar;C:\Users\mironov.matvey\.m2\repository\org\apache\httpcomponents\httpcore\4.2.4\httpcore-4.2.4.jar;C:\Users\mironov.matvey\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\mironov.matvey\.m2\repository\org\eclipse\jetty\websocket\websocket-api\9.1.2.v20140210\websocket-api-9.1.2.v20140210.jar;C:\Users\mironov.matvey\.m2\repository\xalan\xalan\2.7.2\xalan-2.7.2.jar;C:\Users\mironov.matvey\.m2\repository\xalan\serializer\2.7.2\serializer-2.7.2.jar;C:\Users\mironov.matvey\.m2\repository\xml-apis\xml-apis\1.3.04\xml-apis-1.3.04.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\selenium-java-4.0.0-alpha-6\selenium-api-4.0.0-alpha-6-sources.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\selenium-java-4.0.0-alpha-6\selenium-api-4.0.0-alpha-6.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\selenium-java-4.0.0-alpha-6\selenium-chrome-driver-4.0.0-alpha-6-sources.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\selenium-java-4.0.0-alpha-6\selenium-chrome-driver-4.0.0-alpha-6.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\selenium-java-4.0.0-alpha-6\selenium-chromium-driver-4.0.0-alpha-6-sources.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\selenium-java-4.0.0-alpha-6\selenium-chromium-driver-4.0.0-alpha-6.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\selenium-java-4.0.0-alpha-6\selenium-devtools-4.0.0-alpha-6-sources.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\selenium-java-4.0.0-alpha-6\selenium-devtools-4.0.0-alpha-6.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\selenium-java-4.0.0-alpha-6\selenium-edge-driver-4.0.0-alpha-6-sources.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\selenium-java-4.0.0-alpha-6\selenium-edge-driver-4.0.0-alpha-6.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\selenium-java-4.0.0-alpha-6\selenium-edgehtml-driver-4.0.0-alpha-6-sources.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\selenium-java-4.0.0-alpha-6\selenium-edgehtml-driver-4.0.0-alpha-6.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\selenium-java-4.0.0-alpha-6\selenium-firefox-driver-4.0.0-alpha-6-sources.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\selenium-java-4.0.0-alpha-6\selenium-firefox-driver-4.0.0-alpha-6.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\selenium-java-4.0.0-alpha-6\selenium-firefox-xpi-driver-4.0.0-alpha-6-sources.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\selenium-java-4.0.0-alpha-6\selenium-firefox-xpi-driver-4.0.0-alpha-6.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\selenium-java-4.0.0-alpha-6\selenium-http-4.0.0-alpha-6-sources.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\selenium-java-4.0.0-alpha-6\selenium-http-4.0.0-alpha-6.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\selenium-java-4.0.0-alpha-6\selenium-ie-driver-4.0.0-alpha-6-sources.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\selenium-java-4.0.0-alpha-6\selenium-ie-driver-4.0.0-alpha-6.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\selenium-java-4.0.0-alpha-6\selenium-java-4.0.0-alpha-6-sources.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\selenium-java-4.0.0-alpha-6\selenium-java-4.0.0-alpha-6.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\selenium-java-4.0.0-alpha-6\selenium-json-4.0.0-alpha-6-sources.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\selenium-java-4.0.0-alpha-6\selenium-json-4.0.0-alpha-6.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\selenium-java-4.0.0-alpha-6\selenium-opera-driver-4.0.0-alpha-6-sources.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\selenium-java-4.0.0-alpha-6\selenium-opera-driver-4.0.0-alpha-6.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\selenium-java-4.0.0-alpha-6\selenium-remote-driver-4.0.0-alpha-6-sources.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\selenium-java-4.0.0-alpha-6\selenium-remote-driver-4.0.0-alpha-6.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\selenium-java-4.0.0-alpha-6\selenium-safari-driver-4.0.0-alpha-6-sources.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\selenium-java-4.0.0-alpha-6\selenium-safari-driver-4.0.0-alpha-6.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\selenium-java-4.0.0-alpha-6\selenium-support-4.0.0-alpha-6-sources.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\selenium-java-4.0.0-alpha-6\selenium-support-4.0.0-alpha-6.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\selenium-java-4.0.0-alpha-6\lib\annotations-13.0.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\selenium-java-4.0.0-alpha-6\lib\async-http-client-2.12.1.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\selenium-java-4.0.0-alpha-6\lib\async-http-client-netty-utils-2.12.1.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\selenium-java-4.0.0-alpha-6\lib\auto-common-0.10.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\selenium-java-4.0.0-alpha-6\lib\auto-service-annotations-1.0-rc6.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\selenium-java-4.0.0-alpha-6\lib\auto-service-1.0-rc6.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\selenium-java-4.0.0-alpha-6\lib\byte-buddy-1.10.9.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\selenium-java-4.0.0-alpha-6\lib\checker-qual-2.11.1.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\selenium-java-4.0.0-alpha-6\lib\commons-exec-1.3.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\selenium-java-4.0.0-alpha-6\lib\error_prone_annotations-2.3.4.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\selenium-java-4.0.0-alpha-6\lib\failureaccess-1.0.1.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\selenium-java-4.0.0-alpha-6\lib\grpc-context-1.28.0.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\selenium-java-4.0.0-alpha-6\lib\guava-29.0-jre.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\selenium-java-4.0.0-alpha-6\lib\j2objc-annotations-1.3.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\selenium-java-4.0.0-alpha-6\lib\javax.activation-1.2.0.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\selenium-java-4.0.0-alpha-6\lib\jsr305-3.0.2.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\selenium-java-4.0.0-alpha-6\lib\kotlin-stdlib-1.3.70.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\selenium-java-4.0.0-alpha-6\lib\netty-buffer-4.1.49.Final.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\selenium-java-4.0.0-alpha-6\lib\netty-codec-4.1.49.Final.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\selenium-java-4.0.0-alpha-6\lib\netty-codec-http-4.1.49.Final.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\selenium-java-4.0.0-alpha-6\lib\netty-codec-http2-4.1.49.Final.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\selenium-java-4.0.0-alpha-6\lib\netty-codec-socks-4.1.49.Final.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\selenium-java-4.0.0-alpha-6\lib\netty-common-4.1.49.Final.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\selenium-java-4.0.0-alpha-6\lib\netty-handler-4.1.49.Final.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\selenium-java-4.0.0-alpha-6\lib\netty-handler-proxy-4.1.49.Final.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\selenium-java-4.0.0-alpha-6\lib\netty-reactive-streams-2.0.4.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\selenium-java-4.0.0-alpha-6\lib\netty-resolver-4.1.49.Final.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\selenium-java-4.0.0-alpha-6\lib\netty-transport-4.1.49.Final.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\selenium-java-4.0.0-alpha-6\lib\netty-transport-native-epoll-4.1.49.Final.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\selenium-java-4.0.0-alpha-6\lib\netty-transport-native-kqueue-4.1.49.Final.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\selenium-java-4.0.0-alpha-6\lib\netty-transport-native-unix-common-4.1.49.Final.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\selenium-java-4.0.0-alpha-6\lib\okhttp-4.5.0.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\selenium-java-4.0.0-alpha-6\lib\okio-2.6.0.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\selenium-java-4.0.0-alpha-6\lib\opentelemetry-api-0.4.0.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\selenium-java-4.0.0-alpha-6\lib\opentelemetry-context-prop-0.4.0.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\selenium-java-4.0.0-alpha-6\lib\opentelemetry-sdk-0.4.0.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\selenium-java-4.0.0-alpha-6\lib\reactive-streams-1.0.3.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\selenium-java-4.0.0-alpha-6\lib\reactor-core-3.3.5.RELEASE.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\selenium-java-4.0.0-alpha-6\lib\reactor-netty-0.9.6.RELEASE.jar;C:\Users\mironov.matvey\Documents\GitHub\metroParser\libs\selenium-java-4.0.0-alpha-6\lib\slf4j-api-1.7.30.jar" Metro
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Starting ChromeDriver 85.0.4183.87 (cd6713ebf92fa1cacc0f1a598df280093af0c5d7-refs/branch-heads/4183@{#1689}) on port 16307
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+сен 14, 2020 1:59:43 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/sobstviennyie-torghovyie-marki
+linkList.size = 360
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/tovary-metro-chef
+linkList.size = 595
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/skoro-v-shkolu
+linkList.size = 667
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/loreal
+linkList.size = 834
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/siezonnyi-frukty-i-ovoshchi/frukty
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/siezonnyi-frukty-i-ovoshchi/frukty/iabloki
+linkList.size = 839
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/siezonnyi-frukty-i-ovoshchi/frukty/grushi
+linkList.size = 841
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/siezonnyi-frukty-i-ovoshchi/ovoshchi
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/siezonnyi-frukty-i-ovoshchi/ovoshchi/kukukruza
+linkList.size = 844
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/siezonnyi-frukty-i-ovoshchi/ovoshchi/baklazhany
+linkList.size = 846
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/siezonnyi-frukty-i-ovoshchi/ovoshchi/pomidory
+linkList.size = 847
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/siezonnyi-frukty-i-ovoshchi/ovoshchi/oghurtsy
+linkList.size = 849
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/siezonnyi-frukty-i-ovoshchi/ovoshchi/pieriets
+linkList.size = 850
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/siezonnyi-frukty-i-ovoshchi/ovoshchi/kapusta
+linkList.size = 851
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/siezonnyi-frukty-i-ovoshchi/ovoshchi/kartofiel
+linkList.size = 854
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/siezonnyi-frukty-i-ovoshchi/ovoshchi/morkov
+linkList.size = 859
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/siezonnyi-frukty-i-ovoshchi/ovoshchi/luk-chiesnok
+linkList.size = 870
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/siezonnyi-frukty-i-ovoshchi/zielien-salaty
+linkList.size = 877
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/siezonnyi-frukty-i-ovoshchi/iaghody
+linkList.size = 879
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ovoshchi-i-frukty/ovoshchi
+linkList.size = 930
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ovoshchi-i-frukty/zielien-salaty-smiesi
+linkList.size = 969
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ovoshchi-i-frukty/frukty
+linkList.size = 996
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ovoshchi-i-frukty/iaghody
+linkList.size = 1009
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ovoshchi-i-frukty/griby
+linkList.size = 1025
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ovoshchi-i-frukty/zamorozhiennyie-ovoshchi-i-frukty
+linkList.size = 1121
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ovoshchi-i-frukty/polufabrikaty
+linkList.size = 1128
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/voda-soki-napitki/bolshaia-upakovka
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/voda-soki-napitki/bolshaia-upakovka/gazirovannyie-napitki
+linkList.size = 1198
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/voda-soki-napitki/bolshaia-upakovka/voda-pitievaia-i-minieralnaia
+linkList.size = 1214
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/voda-soki-napitki/bolshaia-upakovka/soki-niektary-i-morsy
+linkList.size = 1220
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/voda-soki-napitki/bolshaia-upakovka/chai-kholodnyi
+linkList.size = 1232
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/voda-soki-napitki/gazirovannyie-napitki
+linkList.size = 1419
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/voda-soki-napitki/voda-pitievaia-i-minieralnaia
+linkList.size = 1626
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/voda-soki-napitki/soki-niektary-morsy
+linkList.size = 1842
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/voda-soki-napitki/chai-kholodnyi
+linkList.size = 1892
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/voda-soki-napitki/enierghietichieskiie-napitki
+linkList.size = 1941
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/voda-soki-napitki/kvas
+linkList.size = 1959
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/voda-soki-napitki/biezalkogholnoie-pivo
+linkList.size = 1991
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/voda-soki-napitki/biezalkogholnoie-vino
+linkList.size = 1993
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/voda-soki-napitki/siropy-dlia-koktieiliei
+linkList.size = 2009
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/molochnyie-produkty/rastitielnyie-molochnyie-produkty
+linkList.size = 2045
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/molochnyie-produkty/moloko
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/molochnyie-produkty/moloko/korovie
+linkList.size = 2111
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/molochnyie-produkty/moloko/kozie
+linkList.size = 2113
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/molochnyie-produkty/moloko/kokosovoie
+linkList.size = 2117
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/molochnyie-produkty/moloko/griechnievoie
+linkList.size = 2118
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/molochnyie-produkty/slivki
+linkList.size = 2176
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/molochnyie-produkty/tvorogh-i-tvorozhnaia-massa
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/molochnyie-produkty/tvorogh-i-tvorozhnaia-massa/ziernienyi-tvorogh
+linkList.size = 2192
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/molochnyie-produkty/tvorogh-i-tvorozhnaia-massa/tvorozhnaia-massa
+linkList.size = 2198
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/molochnyie-produkty/tvorogh-i-tvorozhnaia-massa/rassypchatyi-tvorogh
+linkList.size = 2228
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/molochnyie-produkty/tvorogh-i-tvorozhnaia-massa/miaghkii-tvorogh
+linkList.size = 2259
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/molochnyie-produkty/tvorogh-i-tvorozhnaia-massa/produkt-tvorozhnyi
+linkList.size = 2260
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/molochnyie-produkty/smietana
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/molochnyie-produkty/smietana/niezhirnaia
+linkList.size = 2290
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/molochnyie-produkty/smietana/klassichieskaia
+linkList.size = 2321
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/molochnyie-produkty/smietana/zhirnaia
+linkList.size = 2326
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/molochnyie-produkty/kislomolochnyie-produkty
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/molochnyie-produkty/kislomolochnyie-produkty/kiefir
+linkList.size = 2343
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/molochnyie-produkty/kislomolochnyie-produkty/riazhienka
+linkList.size = 2348
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/molochnyie-produkty/kislomolochnyie-produkty/airan
+linkList.size = 2350
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/molochnyie-produkty/kislomolochnyie-produkty/bioprodukt
+linkList.size = 2351
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/molochnyie-produkty/kislomolochnyie-produkty/varieniets
+linkList.size = 2352
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/molochnyie-produkty/kislomolochnyie-produkty/zakvaska
+linkList.size = 2358
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/molochnyie-produkty/kislomolochnyie-produkty/matsoni
+linkList.size = 2360
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/molochnyie-produkty/kislomolochnyie-produkty/prostokvasha
+linkList.size = 2362
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/molochnyie-produkty/kislomolochnyie-produkty/sniezhok
+linkList.size = 2363
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/molochnyie-produkty/kislomolochnyie-produkty/tan
+linkList.size = 2365
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/molochnyie-produkty/slivochnoie-maslo-i-margharin
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/molochnyie-produkty/slivochnoie-maslo-i-margharin/margharin
+linkList.size = 2371
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/molochnyie-produkty/slivochnoie-maslo-i-margharin/slivochnoie-maslo
+linkList.size = 2425
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/molochnyie-produkty/slivochnoie-maslo-i-margharin/toplienoie-maslo
+linkList.size = 2428
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/molochnyie-produkty/slivochnoie-maslo-i-margharin/spried
+linkList.size = 2434
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/molochnyie-produkty/tvorozhki-i-diesierty
+linkList.size = 2545
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/bakalieia/krupy
+linkList.size = 2669
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/bakalieia/gorokh-fasol-chiechievitsa
+linkList.size = 2696
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/bakalieia/makarony-pasta-viermishiel
+linkList.size = 2929
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/bakalieia/sakhar-i-zamienitieli
+linkList.size = 2969
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/bakalieia/sol
+linkList.size = 2999
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/bakalieia/muka
+linkList.size = 3066
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/bakalieia/rastitielnyie-masla
+linkList.size = 3167
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/bakalieia/sukhiie-zavtraki-i-miusli
+linkList.size = 3365
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/bakalieia/dlia-vypiechki-i-diesiertov
+linkList.size = 3490
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/bakalieia/diabietichieskoie-pitaniie
+linkList.size = 3556
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/bakalieia/marinady-i-uksus
+linkList.size = 3601
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/sladosti
+linkList.size = 3689
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/syry/tvierdyie-i-polutvierdyie-syry
+linkList.size = 3930
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/syry/miaghkiie-syry
+linkList.size = 3987
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/syry/rassolnyie-syry
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/syry/rassolnyie-syry/chiechil
+linkList.size = 4005
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/syry/rassolnyie-syry/fieta
+linkList.size = 4016
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/syry/rassolnyie-syry/sulughuni
+linkList.size = 4028
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/syry/rassolnyie-syry/burrata
+linkList.size = 4029
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/syry/rassolnyie-syry/motsariella
+linkList.size = 4056
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/syry/rassolnyie-syry/adyghieiskii
+linkList.size = 4061
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/syry/rassolnyie-syry/khalumi
+linkList.size = 4066
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/syry/rassolnyie-syry/brynza
+linkList.size = 4078
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/syry/rassolnyie-syry/skamortsa
+linkList.size = 4079
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/syry/rassolnyie-syry/zakavkazskii
+linkList.size = 4084
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/syry/rassolnyie-syry/drughoi
+linkList.size = 4085
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/syry/tvorozhnyie-syry
+linkList.size = 4132
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/syry/plavlienyie-syry
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/syry/plavlienyie-syry/slivochnyie-syry
+linkList.size = 4169
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/syry/plavlienyie-syry/diesiertnyie-syry
+linkList.size = 4171
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/syry/plavlienyie-syry/syry-s-dobavkami
+linkList.size = 4186
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/syry/plavlienyie-syry/portsionnyie-syry
+linkList.size = 4249
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/syry/plavlienyie-syry/kolbasnyie-syry
+linkList.size = 4250
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/syry/syrnyie-tarielki
+linkList.size = 4258
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/kolbasy-sosiski-dielikatiesy/kolbasy
+linkList.size = 4538
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/kolbasy-sosiski-dielikatiesy/miasnyie-dielikatiesy
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/kolbasy-sosiski-dielikatiesy/miasnyie-dielikatiesy/miasnaia-nariezka
+linkList.size = 4577
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/kolbasy-sosiski-dielikatiesy/miasnyie-dielikatiesy/kopchienoie-miaso
+linkList.size = 4628
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/kolbasy-sosiski-dielikatiesy/miasnyie-dielikatiesy/vialienoie-miaso
+linkList.size = 4645
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/kolbasy-sosiski-dielikatiesy/miasnyie-dielikatiesy/zapiechiennoie-miaso
+linkList.size = 4660
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/kolbasy-sosiski-dielikatiesy/miasnyie-dielikatiesy/vietchina
+linkList.size = 4689
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/kolbasy-sosiski-dielikatiesy/miasnyie-dielikatiesy/miasnoi-khlieb-i-ruliety
+linkList.size = 4690
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/kolbasy-sosiski-dielikatiesy/miasnyie-dielikatiesy/biekon-salo-shpik
+linkList.size = 4695
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/kolbasy-sosiski-dielikatiesy/miasnyie-dielikatiesy/miasnyie-snieki
+linkList.size = 4701
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/kolbasy-sosiski-dielikatiesy/sosiski-i-sardielki
+linkList.size = 4795
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/kolbasy-sosiski-dielikatiesy/pashtiety-i-zielts
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/kolbasy-sosiski-dielikatiesy/pashtiety-i-zielts/pashtiet
+linkList.size = 4859
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/kolbasy-sosiski-dielikatiesy/pashtiety-i-zielts/zielts
+linkList.size = 4860
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/kolbasy-sosiski-dielikatiesy/pashtiety-i-zielts/kholodiets-zalivnoie-i-studien
+linkList.size = 4864
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/iaitsa/kurinyie
+linkList.size = 4880
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/iaitsa/pieriepielinyie
+linkList.size = 4883
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/iaitsa/tsiesarinyie
+linkList.size = 4884
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/khlieb-i-vypiechka
+linkList.size = 4932
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/sukhofrukty-oriekhi-siemiechki
+linkList.size = 4964
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/ovoshchnaia-korzina
+linkList.size = 4966
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/fruktovaia-korzina
+linkList.size = 4969
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/biez-ghliutiena
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/biez-ghliutiena/pasta
+linkList.size = 4973
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/biez-ghliutiena/muka-smiesi
+linkList.size = 4992
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/biez-ghliutiena/sladosti
+linkList.size = 5003
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/biez-ghliutiena/miusli-khlopia-otrubi
+linkList.size = 5006
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/biez-ghliutiena/krupy-bobovyie
+linkList.size = 5009
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/biez-sakhara-i-sakharozamienitieli
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/biez-sakhara-i-sakharozamienitieli/sakharozamienitieli
+linkList.size = 5018
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/biez-sakhara-i-sakharozamienitieli/sladosti-biez-sakhara
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/biez-sakhara-i-sakharozamienitieli/sladosti-biez-sakhara/marmielad
+linkList.size = 5027
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/biez-sakhara-i-sakharozamienitieli/sladosti-biez-sakhara/ziefir
+linkList.size = 5030
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/biez-sakhara-i-sakharozamienitieli/sladosti-biez-sakhara/pastila
+linkList.size = 5031
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/biez-sakhara-i-sakharozamienitieli/sladosti-biez-sakhara/shokolad
+linkList.size = 5035
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/biez-sakhara-i-sakharozamienitieli/sladosti-biez-sakhara/batonchiki
+linkList.size = 5065
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/biez-sakhara-i-sakharozamienitieli/sladosti-biez-sakhara/batonchiki-protieinovyie
+linkList.size = 5076
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/biez-sakhara-i-sakharozamienitieli/sladosti-biez-sakhara/morozhienoie
+linkList.size = 5079
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/biez-sakhara-i-sakharozamienitieli/sladosti-biez-sakhara/piechienie
+linkList.size = 5084
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/biez-sakhara-i-sakharozamienitieli/sladosti-biez-sakhara/konfiety
+linkList.size = 5094
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/biez-sakhara-i-sakharozamienitieli/sladosti-biez-sakhara/suflie
+linkList.size = 5096
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/biez-sakhara-i-sakharozamienitieli/sladosti-biez-sakhara/chipsy
+linkList.size = 5098
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/biez-sakhara-i-sakharozamienitieli/sladosti-biez-sakhara/vafli
+linkList.size = 5099
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/biez-sakhara-i-sakharozamienitieli/sladosti-biez-sakhara/koktieili
+linkList.size = 5102
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/vieghietarianskiie-produkty
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/vieghietarianskiie-produkty/nizkokaloriinyie-salaty
+linkList.size = 5112
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/vieghietarianskiie-produkty/oriekhi
+linkList.size = 5114
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/vieghietarianskiie-produkty/soievoie-miaso
+linkList.size = 5118
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/vieghietarianskiie-produkty/ovoshchi-zamorozhiennyie
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/vieghietarianskiie-produkty/ovoshchi-zamorozhiennyie/mono-ovoshchi
+linkList.size = 5126
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/vieghietarianskiie-produkty/ovoshchi-zamorozhiennyie/griby
+linkList.size = 5129
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/vieghietarianskiie-produkty/ovoshchi-zamorozhiennyie/smiesi
+linkList.size = 5136
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/vieghietarianskiie-produkty/ovoshchi-sviezhiie
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/vieghietarianskiie-produkty/ovoshchi-sviezhiie/sviezhiie-ovoshchi
+linkList.size = 5149
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/vieghietarianskiie-produkty/ovoshchi-sviezhiie/salaty-zielien
+linkList.size = 5157
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/vieghietarianskiie-produkty/ovoshchi-sviezhiie/prorostki
+linkList.size = 5158
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/vieghietarianskiie-produkty/ovoshchi-sviezhiie/solienia
+linkList.size = 5173
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/vieghietarianskiie-produkty/ovoshchi-sviezhiie/siemiena
+linkList.size = 5177
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/vieghietarianskiie-produkty/frukty-sviezhiie
+linkList.size = 5189
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/zdorovaia-diieta
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/zdorovaia-diieta/masla
+linkList.size = 5194
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/zdorovaia-diieta/krupy-bobovyie
+linkList.size = 5215
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/zdorovaia-diieta/granola
+linkList.size = 5219
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/zdorovaia-diieta/miusli-khlopia-otrubi
+linkList.size = 5225
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/zdorovaia-diieta/pasta
+linkList.size = 5229
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/zdorovaia-diieta/nabory-dlia-pokhudieniia
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/zdorovaia-diieta/nabory-dlia-pokhudieniia/soki
+linkList.size = 5233
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/zdorovaia-diieta/nabory-dlia-pokhudieniia/kokosovaia-voda
+linkList.size = 5238
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/zdorovaia-diieta/nabory-dlia-pokhudieniia/minieralnaia-voda
+linkList.size = 5249
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/zdorovaia-diieta/nabory-dlia-pokhudieniia/kofie
+linkList.size = 5252
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/zdorovaia-diieta/nabory-dlia-pokhudieniia/chai
+linkList.size = 5254
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/zdorovaia-diieta/napitki
+linkList.size = 5258
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/zdorovaia-diieta/supy
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/zdorovaia-diieta/supy/morieprodukty
+linkList.size = 5277
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/zdorovaia-diieta/supy/ryba
+linkList.size = 5292
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/zdorovaia-diieta/miaso-ptitsa
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/zdorovaia-diieta/morieprodukty-ryba/morieprodukty
+linkList.size = 5315
+linkList.size = 5315
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/nizkokaloriinyie-produkty
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/nizkokaloriinyie-produkty/molochnyie-produkty
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/nizkokaloriinyie-produkty/molochnyie-produkty/syr
+linkList.size = 5323
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/nizkokaloriinyie-produkty/molochnyie-produkty/tvorogh
+linkList.size = 5338
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/nizkokaloriinyie-produkty/molochnyie-produkty/kislomolochnyie-produkty
+linkList.size = 5344
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/nizkokaloriinyie-produkty/molochnyie-produkty/napitki-na-rastitielnoi-osnovie
+linkList.size = 5367
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/nizkokaloriinyie-produkty/molochnyie-produkty/moloko
+linkList.size = 5382
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/nizkokaloriinyie-produkty/molochnyie-produkty/ioghurty
+linkList.size = 5402
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/ekologhichnaia-bytovaia-khimiia
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/ekologhichnaia-bytovaia-khimiia/bytovaia-khimiia
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/ekologhichnaia-bytovaia-khimiia/bytovaia-khimiia/dlia-stirki
+linkList.size = 5409
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/ekologhichnaia-bytovaia-khimiia/bytovaia-khimiia/dlia-uborki
+linkList.size = 5420
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/ekologhichnaia-bytovaia-khimiia/bytovaia-khimiia/dlia-mytia-posudy
+linkList.size = 5427
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/naturalnaia-kosmietika
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/naturalnaia-kosmietika/ukhod-za-volosami
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/naturalnaia-kosmietika/ukhod-za-volosami/shampuni
+linkList.size = 5456
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/naturalnaia-kosmietika/ukhod-za-volosami/balzamy-konditsioniery
+linkList.size = 5468
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/naturalnaia-kosmietika/ukhod-za-volosami/maski-dlia-volos
+linkList.size = 5471
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/naturalnaia-kosmietika/ukhod-za-litsom
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/naturalnaia-kosmietika/ukhod-za-litsom/bazovoie-ochishchieniie
+linkList.size = 5479
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/naturalnaia-kosmietika/ukhod-za-litsom/osnovnoi-ukhod
+linkList.size = 5487
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/naturalnaia-kosmietika/ukhod-za-litsom/skraby
+linkList.size = 5489
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/naturalnaia-kosmietika/ukhod-za-litsom/nochnoi-ukhod
+linkList.size = 5492
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/naturalnaia-kosmietika/ukhod-za-polostiu-rta
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/naturalnaia-kosmietika/ukhod-za-polostiu-rta/zubnyie-shchietki
+linkList.size = 5497
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/naturalnaia-kosmietika/ukhod-za-polostiu-rta/zubnyie-pasty
+linkList.size = 5504
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/naturalnaia-kosmietika/ukhod-za-polostiu-rta/opolaskivatieli-dlia-rta
+linkList.size = 5507
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/naturalnaia-kosmietika/ukhod-za-tielom
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/naturalnaia-kosmietika/ukhod-za-tielom/zhidkoie-mylo
+linkList.size = 5512
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/naturalnaia-kosmietika/ukhod-za-tielom/kriemy-dlia-tiela
+linkList.size = 5522
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/naturalnaia-kosmietika/ukhod-za-tielom/gieli-dlia-dusha
+linkList.size = 5527
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/naturalnaia-kosmietika/ukhod-za-tielom/sol-dlia-vanny
+linkList.size = 5532
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/naturalnaia-kosmietika/ukhod-za-tielom/mylo-dlia-ruk
+linkList.size = 5538
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/bytovaia-tiekhnika
+linkList.size = 5544
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/zozh/biorazlaghaiemyie-tovary
+linkList.size = 5545
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/ryba-okhlazhdiennaia
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/ryba-okhlazhdiennaia/panghasius
+linkList.size = 5546
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/ryba-okhlazhdiennaia/dorada
+linkList.size = 5549
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/ryba-okhlazhdiennaia/zubatka
+linkList.size = 5550
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/ryba-okhlazhdiennaia/kambala
+linkList.size = 5552
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/ryba-okhlazhdiennaia/kieta
+linkList.size = 5553
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/ryba-okhlazhdiennaia/mintai
+linkList.size = 5554
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/ryba-okhlazhdiennaia/trieska
+linkList.size = 5555
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/ryba-okhlazhdiennaia/okun
+linkList.size = 5556
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/ryba-okhlazhdiennaia/paltus
+linkList.size = 5557
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/ryba-okhlazhdiennaia/piksha
+linkList.size = 5558
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/ryba-okhlazhdiennaia/tuniets
+linkList.size = 5559
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/ryba-okhlazhdiennaia/sibas
+linkList.size = 5562
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/ryba-okhlazhdiennaia/skumbriia
+linkList.size = 5563
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/ryba-okhlazhdiennaia/foriel
+linkList.size = 5564
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/ryba-okhlazhdiennaia/sudak
+linkList.size = 5567
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/ryba-okhlazhdiennaia/losos
+linkList.size = 5570
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/ryba-okhlazhdiennaia/drughaia
+linkList.size = 5574
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/ryba-okhlazhdiennaia/karp
+linkList.size = 5575
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/ryba-okhlazhdiennaia/siemgha
+linkList.size = 5576
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/ryba-zamorozhiennaia
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/ryba-zamorozhiennaia/liedianaia-ryba
+linkList.size = 5577
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/ryba-zamorozhiennaia/gorbusha
+linkList.size = 5580
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/ryba-zamorozhiennaia/dorada
+linkList.size = 5581
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/ryba-zamorozhiennaia/zubatka
+linkList.size = 5583
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/ryba-zamorozhiennaia/kambala
+linkList.size = 5584
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/ryba-zamorozhiennaia/kieta
+linkList.size = 5585
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/ryba-zamorozhiennaia/koriushka
+linkList.size = 5586
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/ryba-zamorozhiennaia/mintai
+linkList.size = 5591
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/ryba-zamorozhiennaia/trieska
+linkList.size = 5602
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/ryba-zamorozhiennaia/navagha
+linkList.size = 5603
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/ryba-zamorozhiennaia/okun
+linkList.size = 5606
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/ryba-zamorozhiennaia/khiek
+linkList.size = 5608
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/ryba-zamorozhiennaia/paltus
+linkList.size = 5613
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/ryba-zamorozhiennaia/piksha
+linkList.size = 5615
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/ryba-zamorozhiennaia/tuniets
+linkList.size = 5617
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/ryba-zamorozhiennaia/sield
+linkList.size = 5618
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/ryba-zamorozhiennaia/skumbriia
+linkList.size = 5621
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/ryba-zamorozhiennaia/sudak
+linkList.size = 5625
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/ryba-zamorozhiennaia/akula
+linkList.size = 5626
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/ryba-zamorozhiennaia/drughaia
+linkList.size = 5627
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/ryba-zamorozhiennaia/losos-atlantichieskii
+linkList.size = 5629
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/ryba-zamorozhiennaia/som
+linkList.size = 5631
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/ryba-zamorozhiennaia/tiulka
+linkList.size = 5632
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/ryba-zamorozhiennaia/foriel-raduzhnaia
+linkList.size = 5634
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/ryba-zamorozhiennaia/iaz
+linkList.size = 5636
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/ryba-zamorozhiennaia/muksun
+linkList.size = 5637
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/ryba-zamorozhiennaia/sazan
+linkList.size = 5638
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/ryba-zamorozhiennaia/riapushka
+linkList.size = 5638
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/ikra
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/ikra/lososievaia-ikra
+linkList.size = 5647
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/ikra/osietrovaia-ikra
+linkList.size = 5654
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/ikra/chastikovaia-ikra
+linkList.size = 5656
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/ikra/tobiko
+linkList.size = 5657
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/ikra/imitirovannaia-ikra
+linkList.size = 5662
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/ikra/zakuska
+linkList.size = 5667
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/ikra/kriem-ikra
+linkList.size = 5669
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/solienaia-i-slabosolienaia-ryba
+linkList.size = 5767
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/kopchienaia-ryba
+linkList.size = 5770
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/vialienaia-i-sushienaia-ryba
+linkList.size = 5773
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/zakuski-iz-ryby
+linkList.size = 5781
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/krabovyie-palochki-i-miaso
+linkList.size = 5803
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/polufabrikaty-iz-ryby
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/polufabrikaty-iz-ryby/rybnyie-kotliety
+linkList.size = 5806
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/polufabrikaty-iz-ryby/rybnyie-palochki
+linkList.size = 5810
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/polufabrikaty-iz-ryby/rybnyie-burghiery
+linkList.size = 5811
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/polufabrikaty-iz-ryby/rybnyie-portsii
+linkList.size = 5814
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/polufabrikaty-iz-ryby/rybnoie-filie
+linkList.size = 5817
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/polufabrikaty-iz-ryby/rybnyie-fighurki
+linkList.size = 5818
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/morieprodukty
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/morieprodukty/koktieil-iz-morieproduktov
+linkList.size = 5833
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/morieprodukty/kalmary
+linkList.size = 5858
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/morieprodukty/kraby
+linkList.size = 5877
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/morieprodukty/kril
+linkList.size = 5878
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/morieprodukty/krievietki
+linkList.size = 5929
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/morieprodukty/midii
+linkList.size = 5943
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/morieprodukty/morskiie-vodorosli
+linkList.size = 5955
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/morieprodukty/langhusty
+linkList.size = 5956
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/morieprodukty/lobstiery
+linkList.size = 5957
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/morieprodukty/osminoghi
+linkList.size = 5961
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/morieprodukty/ulitki
+linkList.size = 5962
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/morieprodukty/ustritsy
+linkList.size = 5963
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/ryba-i-morieprodukty/morieprodukty/rakushki
+linkList.size = 5964
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/gotovyie-bliuda-i-polufabrikaty/ieda-bystrogho-prighotovlieniia
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/gotovyie-bliuda-i-polufabrikaty/ieda-bystrogho-prighotovlieniia/kartofielnoie-piurie
+linkList.size = 5972
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/gotovyie-bliuda-i-polufabrikaty/ieda-bystrogho-prighotovlieniia/lapsha-i-viermishiel
+linkList.size = 6002
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/gotovyie-bliuda-i-polufabrikaty/ieda-bystrogho-prighotovlieniia/supy-i-bulony
+linkList.size = 6060
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/gotovyie-bliuda-i-polufabrikaty/ieda-bystrogho-prighotovlieniia/sukhiie-napitki
+linkList.size = 6074
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/gotovyie-bliuda-i-polufabrikaty/ieda-bystrogho-prighotovlieniia/vtoryie-bliuda
+linkList.size = 6098
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/gotovyie-bliuda-i-polufabrikaty/ieda-bystrogho-prighotovlieniia/kontsientrirovannyie-napitki
+linkList.size = 6099
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/gotovyie-bliuda-i-polufabrikaty/ieda-bystrogho-prighotovlieniia/sukhiie-diesierty
+linkList.size = 6105
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/gotovyie-bliuda-i-polufabrikaty/gotovyie-bliuda
+linkList.size = 6142
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/gotovyie-bliuda-i-polufabrikaty/salaty
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/gotovyie-bliuda-i-polufabrikaty/salaty/salaty
+linkList.size = 6174
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/gotovyie-bliuda-i-polufabrikaty/salaty/zakuski
+linkList.size = 6189
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/gotovyie-bliuda-i-polufabrikaty/supy-i-vtoryie-bliuda
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/gotovyie-bliuda-i-polufabrikaty/supy-i-vtoryie-bliuda/supy
+linkList.size = 6195
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/gotovyie-bliuda-i-polufabrikaty/supy-i-vtoryie-bliuda/vtoryie-bliuda
+linkList.size = 6218
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/gotovyie-bliuda-i-polufabrikaty/pielmieni-i-varieniki
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/gotovyie-bliuda-i-polufabrikaty/pielmieni-i-varieniki/pielmieni
+linkList.size = 6250
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/gotovyie-bliuda-i-polufabrikaty/pielmieni-i-varieniki/varieniki
+linkList.size = 6261
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/gotovyie-bliuda-i-polufabrikaty/pielmieni-i-varieniki/khinkali
+linkList.size = 6262
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/gotovyie-bliuda-i-polufabrikaty/pielmieni-i-varieniki/ravioli
+linkList.size = 6265
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/gotovyie-bliuda-i-polufabrikaty/pielmieni-i-varieniki/damplinghi
+linkList.size = 6268
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/gotovyie-bliuda-i-polufabrikaty/pielmieni-i-varieniki/giedza
+linkList.size = 6269
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/gotovyie-bliuda-i-polufabrikaty/pielmieni-i-varieniki/tortiellini
+linkList.size = 6271
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/gotovyie-bliuda-i-polufabrikaty/kotliety
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/gotovyie-bliuda-i-polufabrikaty/kotliety/kotliety
+linkList.size = 6275
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/gotovyie-bliuda-i-polufabrikaty/kotliety/naghghietsy
+linkList.size = 6281
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/gotovyie-bliuda-i-polufabrikaty/kotliety/palochki
+linkList.size = 6282
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/gotovyie-bliuda-i-polufabrikaty/kotliety/frikadielki
+linkList.size = 6283
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/gotovyie-bliuda-i-polufabrikaty/pitstsa
+linkList.size = 6285
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/gotovyie-bliuda-i-polufabrikaty/bliny
+linkList.size = 6295
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/gotovyie-bliuda-i-polufabrikaty/zamorozhiennyie-polufabrikaty
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/gotovyie-bliuda-i-polufabrikaty/zamorozhiennyie-polufabrikaty/kotliety
+linkList.size = 6303
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/gotovyie-bliuda-i-polufabrikaty/zamorozhiennyie-polufabrikaty/miasnyie-bliuda
+linkList.size = 6311
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/gotovyie-bliuda-i-polufabrikaty/zamorozhiennyie-polufabrikaty/pielmieni-i-varieniki
+linkList.size = 6312
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/gotovyie-bliuda-i-polufabrikaty/zamorozhiennyie-polufabrikaty/pitstsa
+linkList.size = 6324
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/gotovyie-bliuda-i-polufabrikaty/zamorozhiennyie-polufabrikaty/naghghietsy
+linkList.size = 6327
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/gotovyie-bliuda-i-polufabrikaty/zamorozhiennyie-polufabrikaty/vypiechka
+linkList.size = 6364
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/gotovyie-bliuda-i-polufabrikaty/zamorozhiennyie-polufabrikaty/syrniki
+linkList.size = 6365
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/gotovyie-bliuda-i-polufabrikaty/zamorozhiennyie-polufabrikaty/tiesto
+linkList.size = 6385
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/gotovyie-bliuda-i-polufabrikaty/vsie-dlia-sushi
+linkList.size = 6391
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/miaso-i-ptitsa
+linkList.size = 6439
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/mielochi-vozlie-kassy/zhievatielnyie-riezinki
+linkList.size = 6486
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/mielochi-vozlie-kassy/drazhie-liedientsy-marmielad
+linkList.size = 6510
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/mielochi-vozlie-kassy/shokolad-batonchiki
+linkList.size = 6559
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/mielochi-vozlie-kassy/gazirovannyie-napitki
+linkList.size = 6583
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/mielochi-vozlie-kassy/kofie-3v1
+linkList.size = 6591
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/mielochi-vozlie-kassy/batarieiki-akkumuliatory
+linkList.size = 6644
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/mielochi-vozlie-kassy/britviennyie-stanki
+linkList.size = 6715
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/mielochi-vozlie-kassy/prieziervativy-lubrikanty-tiesty
+linkList.size = 6738
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/mielochi-vozlie-kassy/gighiienichieskaia-pomada-salfietki
+linkList.size = 6748
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/chipsy-i-snieki/chipsy
+linkList.size = 6847
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/chipsy-i-snieki/sukhariki
+linkList.size = 6872
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/chipsy-i-snieki/grienki
+linkList.size = 6879
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/chipsy-i-snieki/popkorn
+linkList.size = 6893
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/chipsy-i-snieki/kriekiery
+linkList.size = 6909
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/chipsy-i-snieki/palochki
+linkList.size = 6917
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/chipsy-i-snieki/krutony
+linkList.size = 6919
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/chipsy-i-snieki/snieki
+linkList.size = 6937
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/chipsy-i-snieki/dzhierki
+linkList.size = 6942
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/chipsy-i-snieki/vozdushnyi-ris
+linkList.size = 6943
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/chipsy-i-snieki/kukuruznyie-shariki
+linkList.size = 6946
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/chipsy-i-snieki/syr
+linkList.size = 6947
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/konsiervy-i-solienia/miasnyie-konsiervy
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/konsiervy-i-solienia/miasnyie-konsiervy/konsiervy-iz-ghoviadina
+linkList.size = 6982
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/konsiervy-i-solienia/miasnyie-konsiervy/konsiervy-iz-svininy
+linkList.size = 7004
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/konsiervy-i-solienia/miasnyie-konsiervy/kurinyie-konsiervy
+linkList.size = 7006
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/konsiervy-i-solienia/miasnyie-konsiervy/konsiervy-iz-tsyplienka
+linkList.size = 7007
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/konsiervy-i-solienia/miasnyie-konsiervy/konsiervy-iz-indieiki
+linkList.size = 7009
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/konsiervy-i-solienia/miasnyie-konsiervy/utinyie-konsiervy
+linkList.size = 7010
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/konsiervy-i-solienia/rybnyie-konsiervy
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/konsiervy-i-solienia/rybnyie-konsiervy/anchousy
+linkList.size = 7012
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/konsiervy-i-solienia/rybnyie-konsiervy/bychki
+linkList.size = 7014
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/konsiervy-i-solienia/rybnyie-konsiervy/gorbusha
+linkList.size = 7019
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/konsiervy-i-solienia/rybnyie-konsiervy/kizhuch
+linkList.size = 7020
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/konsiervy-i-solienia/rybnyie-konsiervy/kilka
+linkList.size = 7028
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/konsiervy-i-solienia/rybnyie-konsiervy/losos
+linkList.size = 7031
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/konsiervy-i-solienia/rybnyie-konsiervy/nierka
+linkList.size = 7032
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/konsiervy-i-solienia/rybnyie-konsiervy/osietr
+linkList.size = 7036
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/konsiervy-i-solienia/rybnyie-konsiervy/pashtiet
+linkList.size = 7038
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/konsiervy-i-solienia/rybnyie-konsiervy/piechien
+linkList.size = 7043
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/konsiervy-i-solienia/rybnyie-konsiervy/saira
+linkList.size = 7052
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/konsiervy-i-solienia/rybnyie-konsiervy/sardiny
+linkList.size = 7057
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/konsiervy-i-solienia/rybnyie-konsiervy/sield
+linkList.size = 7064
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/konsiervy-i-solienia/rybnyie-konsiervy/skumbriia
+linkList.size = 7069
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/konsiervy-i-solienia/rybnyie-konsiervy/tuniets
+linkList.size = 7093
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/konsiervy-i-solienia/rybnyie-konsiervy/shproty
+linkList.size = 7098
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/konsiervy-i-solienia/rybnyie-konsiervy/salaka
+linkList.size = 7100
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/konsiervy-i-solienia/rybnyie-konsiervy/assorti
+linkList.size = 7102
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/konsiervy-i-solienia/rybnyie-konsiervy/sardiniella
+linkList.size = 7103
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/konsiervy-i-solienia/rybnyie-konsiervy/trieska
+linkList.size = 7105
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/konsiervy-i-solienia/rybnyie-konsiervy/sigh
+linkList.size = 7106
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/konsiervy-i-solienia/rybnyie-konsiervy/foriel
+linkList.size = 7107
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/konsiervy-i-solienia/rybnyie-konsiervy/miaso-krilia
+linkList.size = 7108
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/konsiervy-i-solienia/rybnyie-konsiervy/konsiervy-iz-morieproduktov
+linkList.size = 7109
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/konsiervy-i-solienia/rybnyie-konsiervy/drughiie-konsiervy
+linkList.size = 7111
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/konsiervy-i-solienia/konsiervirovannyie-ovoshchi
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/konsiervy-i-solienia/konsiervirovannyie-ovoshchi/ovoshchi
+linkList.size = 7312
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/konsiervy-i-solienia/konsiervirovannyie-ovoshchi/salat
+linkList.size = 7313
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/konsiervy-i-solienia/konsiervirovannyie-ovoshchi/ikra
+linkList.size = 7330
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/konsiervy-i-solienia/konsiervirovannyie-ovoshchi/zakuska
+linkList.size = 7351
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/konsiervy-i-solienia/konsiervirovannyie-ovoshchi/liecho
+linkList.size = 7359
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/konsiervy-i-solienia/konsiervirovannyie-ovoshchi/assorti
+linkList.size = 7367
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/konsiervy-i-solienia/konsiervirovannyie-ovoshchi/lobio
+linkList.size = 7368
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/konsiervy-i-solienia/konsiervirovannyie-ovoshchi/zielien
+linkList.size = 7369
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/konsiervy-i-solienia/konsiervirovannyie-ovoshchi/imam-baialdy
+linkList.size = 7370
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/konsiervy-i-solienia/konsiervirovannyie-ovoshchi/adzhika
+linkList.size = 7371
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/konsiervy-i-solienia/konsiervirovannyie-ovoshchi/pasta
+linkList.size = 7374
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/konsiervy-i-solienia/olivki-masliny-kapiersy
+linkList.size = 7502
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/konsiervy-i-solienia/gribnyie-solienia
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/konsiervy-i-solienia/gribnyie-solienia/solienyie-i-marinovannyie-ghriby
+linkList.size = 7540
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/konsiervy-i-solienia/konsiervirovannyie-frukty-i-iaghody
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/konsiervy-i-solienia/konsiervirovannyie-frukty-i-iaghody/koktieil
+linkList.size = 7541
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/konsiervy-i-solienia/konsiervirovannyie-frukty-i-iaghody/kompot
+linkList.size = 7546
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/konsiervy-i-solienia/konsiervirovannyie-frukty-i-iaghody/piurie
+linkList.size = 7553
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/konsiervy-i-solienia/konsiervirovannyie-frukty-i-iaghody/frukty
+linkList.size = 7583
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/konsiervy-i-solienia/konsiervirovannyie-frukty-i-iaghody/iaghody
+linkList.size = 7598
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/konsiervy-i-solienia/konsiervirovannyie-frukty-i-iaghody/diesiert
+linkList.size = 7600
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/chai-i-kofie/chai
+linkList.size = 7696
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/chai-i-kofie/kofie
+linkList.size = 7984
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/chai-i-kofie/kakao
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/chai-i-kofie/kakao/kakao
+linkList.size = 7988
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/chai-i-kofie/kakao/kakao-napitok
+linkList.size = 7999
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/chai-i-kofie/kakao/goriachii-shokolad
+linkList.size = 8004
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/chai-i-kofie/tsikorii
+linkList.size = 8011
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/sousy-spietsii-pripravy/gorchitsa-i-khrien
+linkList.size = 8059
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/sousy-spietsii-pripravy/maioniez
+linkList.size = 8124
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/sousy-spietsii-pripravy/tomatnaia-pasta-i-piurie
+linkList.size = 8157
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/sousy-spietsii-pripravy/pripravy
+linkList.size = 8343
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/sousy-spietsii-pripravy/sousy
+linkList.size = 8633
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/sousy-spietsii-pripravy/kietchup
+linkList.size = 8718
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/sousy-spietsii-pripravy/spietsii-i-prianosti
+linkList.size = 8782
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/spietsmieniu
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/spietsmieniu/salat-s-krievietkami-i-viesiennimi-ovoshchami
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/spietsmieniu/salat-s-krievietkami-i-viesiennimi-ovoshchami/krievietki
+linkList.size = 8800
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/spietsmieniu/salat-s-krievietkami-i-viesiennimi-ovoshchami/shpinat
+linkList.size = 8801
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/spietsmieniu/salat-s-krievietkami-i-viesiennimi-ovoshchami/olivkovoie-maslo
+linkList.size = 8854
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/spietsmieniu/salat-s-krievietkami-i-viesiennimi-ovoshchami/sous-sweet-chilli
+linkList.size = 8862
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/spietsmieniu/zharienyi-losos-s-zielienymi-ovoshchami
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/spietsmieniu/zharienyi-losos-s-zielienymi-ovoshchami/filie-lososia-na-kozhie
+linkList.size = 8865
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/spietsmieniu/zharienyi-losos-s-zielienymi-ovoshchami/sparzha
+linkList.size = 8866
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/spietsmieniu/zharienyi-losos-s-zielienymi-ovoshchami/brokkoli
+linkList.size = 8871
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/spietsmieniu/zharienyi-losos-s-zielienymi-ovoshchami/slivochnoie-maslo
+linkList.size = 8919
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/spietsmieniu/zharienyi-losos-s-zielienymi-ovoshchami/soievyi-sous
+linkList.size = 8945
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/spietsmieniu/zharienyi-losos-s-zielienymi-ovoshchami/apielsiny
+linkList.size = 8947
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/spietsmieniu/zharienyi-losos-s-zielienymi-ovoshchami/grieipfruty
+linkList.size = 8949
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/spietsmieniu/zharienyi-losos-s-zielienymi-ovoshchami/limony
+linkList.size = 8950
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/spietsmieniu/zharienyi-losos-s-zielienymi-ovoshchami/trostnikovyi-sakhar
+linkList.size = 8961
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/spietsmieniu/kriem-briulie
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/spietsmieniu/kriem-briulie/slivki-zhirnyie
+linkList.size = 8973
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/spietsmieniu/kriem-briulie/moloko
+linkList.size = 8995
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/spietsmieniu/kriem-briulie/iaitsa
+linkList.size = 9008
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/spietsmieniu/kriem-briulie/sakhar
+linkList.size = 9022
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/spietsmieniu/kriem-briulie/trostnikovyi-sakhar
+linkList.size = 9032
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/spietsmieniu/kriem-briulie/slivochnyi-plombir
+linkList.size = 9064
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/spietsmieniu/kriem-briulie/vanil
+linkList.size = 9075
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/spietsmieniu/kriem-briulie/apielsiny
+linkList.size = 9077
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/piervyie-bliuda
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/piervyie-bliuda/rybnyi-sup-iz-konsiervov
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/piervyie-bliuda/rybnyi-sup-iz-konsiervov/saira-v-maslie
+linkList.size = 9085
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/piervyie-bliuda/rybnyi-sup-iz-konsiervov/ris
+linkList.size = 9120
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/piervyie-bliuda/rybnyi-sup-iz-konsiervov/spietsii
+linkList.size = 9129
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/piervyie-bliuda/borshch-s-ghoviadinoi
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/piervyie-bliuda/borshch-s-ghoviadinoi/goviadina
+linkList.size = 9200
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/piervyie-bliuda/borshch-s-ghoviadinoi/kapusta
+linkList.size = 9201
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/piervyie-bliuda/borshch-s-ghoviadinoi/sviekla
+linkList.size = 9205
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/piervyie-bliuda/borshch-s-ghoviadinoi/tomatnaia-pasta
+linkList.size = 9231
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/piervyie-bliuda/borshch-s-ghoviadinoi/maslo-rastitielnoie
+linkList.size = 9248
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/piervyie-bliuda/borshch-s-ghoviadinoi/chiernosliv
+linkList.size = 9251
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/piervyie-bliuda/borshch-s-ghoviadinoi/spietsii
+linkList.size = 9261
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/piervyie-bliuda/borshch-s-ghoviadinoi/smietana
+linkList.size = 9289
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/piervyie-bliuda/gorokhovyi-sup-s-ghoviadinoi
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/piervyie-bliuda/gorokhovyi-sup-s-ghoviadinoi/goviadina-s-kostochkoi
+linkList.size = 9294
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/piervyie-bliuda/gorokhovyi-sup-s-ghoviadinoi/gorokh-sushienyi
+linkList.size = 9299
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/piervyie-bliuda/gorokhovyi-sup-s-ghoviadinoi/spietsii
+linkList.size = 9309
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/piervyie-bliuda/gorokhovyi-sup-s-ghoviadinoi/zielien
+linkList.size = 9310
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/piervyie-bliuda/shchi-iz-sviezhiei-kapusty
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/piervyie-bliuda/shchi-iz-sviezhiei-kapusty/miaso
+linkList.size = 9322
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/piervyie-bliuda/shchi-iz-sviezhiei-kapusty/kapusta
+linkList.size = 9323
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/piervyie-bliuda/shchi-iz-sviezhiei-kapusty/morkov
+linkList.size = 9324
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/piervyie-bliuda/shchi-iz-sviezhiei-kapusty/luk-riepchatyi
+linkList.size = 9326
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/piervyie-bliuda/shchi-iz-sviezhiei-kapusty/tomatnaia-pasta
+linkList.size = 9334
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/piervyie-bliuda/shchi-iz-sviezhiei-kapusty/maslo-rastitielnoie
+linkList.size = 9341
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/piervyie-bliuda/shchi-iz-sviezhiei-kapusty/zielien
+linkList.size = 9343
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/piervyie-bliuda/shchi-iz-sviezhiei-kapusty/smietana
+linkList.size = 9347
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/piervyie-bliuda/shchi-iz-sviezhiei-kapusty/chiesnok
+linkList.size = 9348
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/piervyie-bliuda/shchi-iz-sviezhiei-kapusty/spietsii
+linkList.size = 9354
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/piervyie-bliuda/tykviennyi-sup-piurie
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/piervyie-bliuda/tykviennyi-sup-piurie/tykva
+linkList.size = 9356
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/piervyie-bliuda/tykviennyi-sup-piurie/luk-riepchatyi
+linkList.size = 9358
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/piervyie-bliuda/tykviennyi-sup-piurie/moloko
+linkList.size = 9379
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/piervyie-bliuda/tykviennyi-sup-piurie/maslo-slivochnoie
+linkList.size = 9385
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/piervyie-bliuda/tykviennyi-sup-piurie/spietsii
+linkList.size = 9397
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/piervyie-bliuda/tykviennyi-sup-piurie/smietana
+linkList.size = 9402
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/piervyie-bliuda/tykviennyi-sup-piurie/slivki
+linkList.size = 9407
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/piervyie-bliuda/tykviennyi-sup-piurie/sukhariki-iz-bielogho-khlieba
+linkList.size = 9410
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/piervyie-bliuda/tykviennyi-sup-piurie/siemiechki-tykviennyie
+linkList.size = 9411
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/piervyie-bliuda/syrnyi-sup-po-frantsuzski-s-kuritsiei
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/piervyie-bliuda/syrnyi-sup-po-frantsuzski-s-kuritsiei/kurinaia-ghrudka
+linkList.size = 9422
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/piervyie-bliuda/syrnyi-sup-po-frantsuzski-s-kuritsiei/plavlienyi-syr
+linkList.size = 9458
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/piervyie-bliuda/syrnyi-sup-po-frantsuzski-s-kuritsiei/lavrovyi-list
+linkList.size = 9463
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/piervyie-bliuda/syrnyi-sup-po-frantsuzski-s-kuritsiei/spietsii
+linkList.size = 9486
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/rizotto-s-salatom-chuka-i-morskim-ghriebieshkom
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/rizotto-s-salatom-chuka-i-morskim-ghriebieshkom/ris
+linkList.size = 9495
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/rizotto-s-salatom-chuka-i-morskim-ghriebieshkom/olivkovoie-maslo
+linkList.size = 9514
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/rizotto-s-salatom-chuka-i-morskim-ghriebieshkom/chuka
+linkList.size = 9516
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/rizotto-s-salatom-chuka-i-morskim-ghriebieshkom/syr-parmiezan
+linkList.size = 9527
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/rizotto-s-salatom-chuka-i-morskim-ghriebieshkom/spietsii
+linkList.size = 9529
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/papardiellie-v-slivochnom-sousie-s-listiami-shpinata-malosolienym-lososiem-i-ikroi
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/papardiellie-v-slivochnom-sousie-s-listiami-shpinata-malosolienym-lososiem-i-ikroi/filie-lososia
+linkList.size = 9531
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/papardiellie-v-slivochnom-sousie-s-listiami-shpinata-malosolienym-lososiem-i-ikroi/ikra-krasnaia
+linkList.size = 9535
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/papardiellie-v-slivochnom-sousie-s-listiami-shpinata-malosolienym-lososiem-i-ikroi/bulon-kurinyi
+linkList.size = 9537
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/papardiellie-v-slivochnom-sousie-s-listiami-shpinata-malosolienym-lososiem-i-ikroi/slivki
+linkList.size = 9548
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/papardiellie-v-slivochnom-sousie-s-listiami-shpinata-malosolienym-lososiem-i-ikroi/syr
+linkList.size = 9550
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/piennie-boloniezie
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/piennie-boloniezie/goviadina-vyriezka
+linkList.size = 9556
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/piennie-boloniezie/tomaty-v-sobstviennom-soku
+linkList.size = 9560
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/piennie-boloniezie/sghushchiennoie-moloko
+linkList.size = 9566
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/piennie-boloniezie/piennie
+linkList.size = 9567
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/piennie-boloniezie/syr-parmiezan
+linkList.size = 9578
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/piennie-boloniezie/slivochnoie-maslo
+linkList.size = 9586
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/piennie-boloniezie/olivkovoie-maslo
+linkList.size = 9590
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/piennie-boloniezie/sakhar
+linkList.size = 9594
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/piennie-boloniezie/spietsii
+linkList.size = 9598
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/kuskus-s-piechionymi-ovoshchami-i-krievietkami
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/kuskus-s-piechionymi-ovoshchami-i-krievietkami/kuskus
+linkList.size = 9602
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/kuskus-s-piechionymi-ovoshchami-i-krievietkami/limon
+linkList.size = 9603
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/kuskus-s-piechionymi-ovoshchami-i-krievietkami/olivkovoie-maslo
+linkList.size = 9608
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/kuskus-s-piechionymi-ovoshchami-i-krievietkami/krievietki
+linkList.size = 9639
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/kuskus-s-piechionymi-ovoshchami-i-krievietkami/spietsii
+linkList.size = 9640
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/burghiery-klassichieskii-i-orighinalnyi
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/burghiery-klassichieskii-i-orighinalnyi/kotliety-dlia-burghierov
+linkList.size = 9644
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/burghiery-klassichieskii-i-orighinalnyi/dizhonskaia-ghorchitsa
+linkList.size = 9647
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/burghiery-klassichieskii-i-orighinalnyi/kietchup
+linkList.size = 9658
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/burghiery-klassichieskii-i-orighinalnyi/syr-chieddier-v-lomtikakh
+linkList.size = 9661
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/burghiery-klassichieskii-i-orighinalnyi/pieriets-khalapieno
+linkList.size = 9665
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/zapiekanka-s-risom-ovoshchami-i-vietchinoi
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/zapiekanka-s-risom-ovoshchami-i-vietchinoi/ris
+linkList.size = 9700
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/zapiekanka-s-risom-ovoshchami-i-vietchinoi/brynza
+linkList.size = 9712
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/zapiekanka-s-risom-ovoshchami-i-vietchinoi/vietchina-konsiervirovannaia
+linkList.size = 9730
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/zapiekanka-s-risom-ovoshchami-i-vietchinoi/iaitsa
+linkList.size = 9742
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/zapiekanka-s-risom-ovoshchami-i-vietchinoi/moloko
+linkList.size = 9799
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/zapiekanka-s-risom-ovoshchami-i-vietchinoi/smietana
+linkList.size = 9860
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/zapiekanka-s-risom-ovoshchami-i-vietchinoi/syr
+linkList.size = 9865
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/farshirovannyie-kartofielnyie-lodochki
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/farshirovannyie-kartofielnyie-lodochki/kurinoie-filie
+linkList.size = 9876
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/farshirovannyie-kartofielnyie-lodochki/smietana
+linkList.size = 9937
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/farshirovannyie-kartofielnyie-lodochki/syr
+linkList.size = 9942
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/farshirovannyie-kartofielnyie-lodochki/rastitielnoie-maslo
+linkList.size = 9961
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/farshirovannyie-kartofielnyie-lodochki/spietsii
+linkList.size = 9970
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/tushienoie-rybnoie-filie-s-morkoviu-v-tomatnom-sousie
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/tushienoie-rybnoie-filie-s-morkoviu-v-tomatnom-sousie/filie-trieski
+linkList.size = 9982
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/tushienoie-rybnoie-filie-s-morkoviu-v-tomatnom-sousie/sous-tomatnyi
+linkList.size = 9993
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/tushienoie-rybnoie-filie-s-morkoviu-v-tomatnom-sousie/sakhar
+linkList.size = 9999
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/tushienoie-rybnoie-filie-s-morkoviu-v-tomatnom-sousie/muka
+linkList.size = 10015
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/tushienoie-rybnoie-filie-s-morkoviu-v-tomatnom-sousie/rastitielnoie-maslo
+linkList.size = 10034
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/tushienoie-rybnoie-filie-s-morkoviu-v-tomatnom-sousie/spietsii
+linkList.size = 10043
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/piertsy-farshirovannyie-ghriechkoi-s-syrom
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/piertsy-farshirovannyie-ghriechkoi-s-syrom/griechnievaia-krupa
+linkList.size = 10049
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/piertsy-farshirovannyie-ghriechkoi-s-syrom/smietana
+linkList.size = 10110
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/piertsy-farshirovannyie-ghriechkoi-s-syrom/gorchitsa
+linkList.size = 10133
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/piertsy-farshirovannyie-ghriechkoi-s-syrom/syr-rassolnyi
+linkList.size = 10135
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/piertsy-farshirovannyie-ghriechkoi-s-syrom/slivochnoie-maslo
+linkList.size = 10183
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/piertsy-farshirovannyie-ghriechkoi-s-syrom/spietsii
+linkList.size = 10197
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/farshirovannyi-pieriets
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/farshirovannyi-pieriets/farsh
+linkList.size = 10208
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/farshirovannyi-pieriets/ris
+linkList.size = 10263
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/farshirovannyi-pieriets/tomatnaia-pasta
+linkList.size = 10289
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/farshirovannyi-pieriets/maslo-rastitielnoie
+linkList.size = 10306
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/farshirovannyi-pieriets/spietsii
+linkList.size = 10312
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/farshirovannyi-pieriets/smietana
+linkList.size = 10340
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/lienivyie-gholubtsy
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/lienivyie-gholubtsy/farsh
+linkList.size = 10351
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/lienivyie-gholubtsy/ris
+linkList.size = 10406
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/lienivyie-gholubtsy/kapusta
+linkList.size = 10407
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/lienivyie-gholubtsy/iaitsa
+linkList.size = 10419
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/lienivyie-gholubtsy/sous-tomatnyi
+linkList.size = 10451
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/lienivyie-gholubtsy/spietsii
+linkList.size = 10462
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/lienivyie-gholubtsy/smietana
+linkList.size = 10490
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/taliatiellie-so-shpinatom-v-slivochnom-sousie
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/taliatiellie-so-shpinatom-v-slivochnom-sousie/taliatiellie
+linkList.size = 10495
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/taliatiellie-so-shpinatom-v-slivochnom-sousie/slivochnoie-maslo
+linkList.size = 10542
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/taliatiellie-so-shpinatom-v-slivochnom-sousie/shpinat-molodoi
+linkList.size = 10544
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/taliatiellie-so-shpinatom-v-slivochnom-sousie/slivki
+linkList.size = 10586
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/taliatiellie-so-shpinatom-v-slivochnom-sousie/syr-parmiezan
+linkList.size = 10607
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/taliatiellie-so-shpinatom-v-slivochnom-sousie/spietsii
+linkList.size = 10622
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/losos-s-ovoshchami-i-bazilikom
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/losos-s-ovoshchami-i-bazilikom/losos-siemgha-ghorbusha
+linkList.size = 10633
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/losos-s-ovoshchami-i-bazilikom/luk-riepchatyi
+linkList.size = 10634
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/losos-s-ovoshchami-i-bazilikom/pomidory-chierri
+linkList.size = 10636
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/losos-s-ovoshchami-i-bazilikom/maslo-olivkovoie
+linkList.size = 10690
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/losos-s-ovoshchami-i-bazilikom/zielien
+linkList.size = 10693
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/losos-s-ovoshchami-i-bazilikom/spietsii
+linkList.size = 10709
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/losos-s-ovoshchami-i-bazilikom/limony
+linkList.size = 10710
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/losos-s-ovoshchami-i-bazilikom/gorchitsa-ziernistaia
+linkList.size = 10718
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/losos-s-ovoshchami-i-bazilikom/mied
+linkList.size = 10736
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/plov-s-kuritsiei
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/plov-s-kuritsiei/ris
+linkList.size = 10791
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/plov-s-kuritsiei/kurinyie-okorochka
+linkList.size = 10811
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/plov-s-kuritsiei/luk-riepchatyi
+linkList.size = 10812
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/plov-s-kuritsiei/rastitielnoie-maslo
+linkList.size = 10829
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/plov-s-kuritsiei/spietsii
+linkList.size = 10846
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/plov-s-kuritsiei/zielien
+linkList.size = 10850
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/zapiekanka-iz-tsvietnoi-kapusty-s-kurinym-filie-pod-syrom
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/zapiekanka-iz-tsvietnoi-kapusty-s-kurinym-filie-pod-syrom/kapusta-tsvietnaia
+linkList.size = 10854
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/zapiekanka-iz-tsvietnoi-kapusty-s-kurinym-filie-pod-syrom/kurinoie-filie
+linkList.size = 10870
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/zapiekanka-iz-tsvietnoi-kapusty-s-kurinym-filie-pod-syrom/syr
+linkList.size = 10967
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/zapiekanka-iz-tsvietnoi-kapusty-s-kurinym-filie-pod-syrom/iaitsa
+linkList.size = 10979
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/zapiekanka-iz-tsvietnoi-kapusty-s-kurinym-filie-pod-syrom/slivki
+linkList.size = 11022
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/zapiekanka-iz-tsvietnoi-kapusty-s-kurinym-filie-pod-syrom/chiesnok
+linkList.size = 11023
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/zapiekanka-iz-tsvietnoi-kapusty-s-kurinym-filie-pod-syrom/spietsii
+linkList.size = 11039
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/lazania-s-miasnym-farshiem-i-sousom-bieshamiel
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/lazania-s-miasnym-farshiem-i-sousom-bieshamiel/listy-dlia-lazani
+linkList.size = 11040
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/lazania-s-miasnym-farshiem-i-sousom-bieshamiel/farsh
+linkList.size = 11051
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/lazania-s-miasnym-farshiem-i-sousom-bieshamiel/luk-riepchatyi
+linkList.size = 11054
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/lazania-s-miasnym-farshiem-i-sousom-bieshamiel/morkov
+linkList.size = 11055
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/lazania-s-miasnym-farshiem-i-sousom-bieshamiel/tomatnyi-sous
+linkList.size = 11087
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/lazania-s-miasnym-farshiem-i-sousom-bieshamiel/maslo-slivochnoie
+linkList.size = 11134
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/lazania-s-miasnym-farshiem-i-sousom-bieshamiel/muka
+linkList.size = 11153
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/lazania-s-miasnym-farshiem-i-sousom-bieshamiel/moloko
+linkList.size = 11213
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/lazania-s-miasnym-farshiem-i-sousom-bieshamiel/syr
+linkList.size = 11310
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/lazania-s-miasnym-farshiem-i-sousom-bieshamiel/spietsii
+linkList.size = 11329
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/lazania-s-kabachkami
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/lazania-s-kabachkami/luk-riepchatyi
+linkList.size = 11332
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/lazania-s-kabachkami/pomidory
+linkList.size = 11333
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/lazania-s-kabachkami/syr
+linkList.size = 11446
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/lazania-s-kabachkami/chiesnok
+linkList.size = 11449
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/lazania-s-kabachkami/zielien
+linkList.size = 11452
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/lazania-s-kabachkami/sakhar
+linkList.size = 11456
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/lazania-s-kabachkami/spietsii
+linkList.size = 11474
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/filie-trieski-s-oghuriechnym-sousom-tartar
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/filie-trieski-s-oghuriechnym-sousom-tartar/trieska-filie
+linkList.size = 11486
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/filie-trieski-s-oghuriechnym-sousom-tartar/smietana
+linkList.size = 11525
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/filie-trieski-s-oghuriechnym-sousom-tartar/zielien
+linkList.size = 11526
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/filie-trieski-s-oghuriechnym-sousom-tartar/chiesnok
+linkList.size = 11527
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/filie-trieski-s-oghuriechnym-sousom-tartar/maslo-rastitielnoie
+linkList.size = 11544
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/filie-trieski-s-oghuriechnym-sousom-tartar/spietsii
+linkList.size = 11558
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/tsyplienok-tabaka
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/tsyplienok-tabaka/tsyplienok
+linkList.size = 11561
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/tsyplienok-tabaka/maslo-slivochnoie
+linkList.size = 11608
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/tsyplienok-tabaka/maslo-rastitielnoie
+linkList.size = 11624
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/tsyplienok-tabaka/chiesnok
+linkList.size = 11625
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/tsyplienok-tabaka/spietsii
+linkList.size = 11642
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/tsyplienok-tabaka/soputstvuiushchiie-tovary
+linkList.size = 11686
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/utka-s-mandarinami
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/utka-s-mandarinami/sieldieriei
+linkList.size = 11687
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/utka-s-mandarinami/chiesnok
+linkList.size = 11688
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/utka-s-mandarinami/apielsiny
+linkList.size = 11690
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/utka-s-mandarinami/mied
+linkList.size = 11709
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/utka-s-mandarinami/uksus-iablochnyi
+linkList.size = 11713
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/utka-s-mandarinami/maslo-kunzhutnoie
+linkList.size = 11716
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/utka-s-mandarinami/maioniez
+linkList.size = 11780
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/utka-s-mandarinami/gorchitsa-sous
+linkList.size = 11802
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/utka-s-mandarinami/spietsii
+linkList.size = 11813
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/utka-s-mandarinami/soputstvuiushchiie-tovary
+linkList.size = 11853
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/stieik-iz-siemghi
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/stieik-iz-siemghi/siemgha-stieiki-foriel-losos
+linkList.size = 11856
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/stieik-iz-siemghi/maslo-olivkovoie
+linkList.size = 11910
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/stieik-iz-siemghi/limony
+linkList.size = 11911
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/stieik-iz-siemghi/spietsii
+linkList.size = 11932
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/stieik-iz-siemghi/soputstvuiushchiie-tovary
+linkList.size = 11963
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/stieik-iz-ghoviadiny
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/stieik-iz-ghoviadiny/goviadina-stieik
+linkList.size = 11989
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/stieik-iz-ghoviadiny/chiesnok
+linkList.size = 11990
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/stieik-iz-ghoviadiny/limony
+linkList.size = 11991
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/stieik-iz-ghoviadiny/maslo-olivkovoie
+linkList.size = 12014
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/stieik-iz-ghoviadiny/maslo-slivochnoie
+linkList.size = 12053
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/stieik-iz-ghoviadiny/spietsii
+linkList.size = 12070
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/stieik-iz-ghoviadiny/soputstvuiushchiie-tovary
+linkList.size = 12084
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/svinina-v-kislo-sladkom-sousie
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/svinina-v-kislo-sladkom-sousie/svinina
+linkList.size = 12098
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/svinina-v-kislo-sladkom-sousie/iaitsa
+linkList.size = 12102
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/svinina-v-kislo-sladkom-sousie/kartofielnyi-krakhmal
+linkList.size = 12105
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/svinina-v-kislo-sladkom-sousie/risovyi-uksus
+linkList.size = 12107
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/svinina-v-kislo-sladkom-sousie/soievyi-sous
+linkList.size = 12138
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/svinina-v-kislo-sladkom-sousie/maslo-rastitielnoie
+linkList.size = 12154
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/svinina-v-kislo-sladkom-sousie/tomatnaia-pasta
+linkList.size = 12180
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/svinina-v-kislo-sladkom-sousie/kurinyi-bulon
+linkList.size = 12189
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/svinina-v-kislo-sladkom-sousie/sakhar
+linkList.size = 12193
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vtoryie-bliuda/svinina-v-kislo-sladkom-sousie/soputstvuiushchiie-tovary
+linkList.size = 12236
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/raghu-iz-tighrovykh-krievietok-i-tomatov
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/raghu-iz-tighrovykh-krievietok-i-tomatov/krievietki
+linkList.size = 12248
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/raghu-iz-tighrovykh-krievietok-i-tomatov/olivkovoie-maslo
+linkList.size = 12252
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/raghu-iz-tighrovykh-krievietok-i-tomatov/zielienyi-ghoroshiek-konsiervirovannyi
+linkList.size = 12254
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/raghu-iz-tighrovykh-krievietok-i-tomatov/sakhar
+linkList.size = 12258
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/raghu-iz-tighrovykh-krievietok-i-tomatov/spietsii
+linkList.size = 12260
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/babaghanush-s-pastoi-takhini
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/babaghanush-s-pastoi-takhini/olivkovoie-maslo
+linkList.size = 12267
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/babaghanush-s-pastoi-takhini/riedis
+linkList.size = 12268
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/babaghanush-s-pastoi-takhini/salat-romano
+linkList.size = 12270
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/babaghanush-s-pastoi-takhini/kunzhut
+linkList.size = 12272
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/babaghanush-s-pastoi-takhini/spietsii
+linkList.size = 12273
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/iaitso-bieniedikt
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/iaitso-bieniedikt/slivochnoie-maslo
+linkList.size = 12281
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/iaitso-bieniedikt/iaitsa
+linkList.size = 12285
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/iaitso-bieniedikt/vinnyi-uksus
+linkList.size = 12286
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/iaitso-bieniedikt/biekon
+linkList.size = 12289
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/falafiel
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/falafiel/nut
+linkList.size = 12292
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/falafiel/limon
+linkList.size = 12293
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/falafiel/paprika-sladkaia
+linkList.size = 12295
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/falafiel/rastitielnoie-maslo
+linkList.size = 12311
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/falafiel/spietsii
+linkList.size = 12319
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/ratatui
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/ratatui/maslo-olivkovoie
+linkList.size = 12373
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/ratatui/spietsii
+linkList.size = 12383
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/ovoshchnoie-raghu
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/ovoshchnoie-raghu/luk-riepchatyi
+linkList.size = 12385
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/ovoshchnoie-raghu/chiesnok
+linkList.size = 12386
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/ovoshchnoie-raghu/maslo-rastitielnoie
+linkList.size = 12395
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/ovoshchnoie-raghu/spietsii
+linkList.size = 12399
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/burrata-s-tomatami-i-sousom-piesto
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/burrata-s-tomatami-i-sousom-piesto/burrata
+linkList.size = 12400
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/burrata-s-tomatami-i-sousom-piesto/pomidory-chierri
+linkList.size = 12401
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/burrata-s-tomatami-i-sousom-piesto/kiedrovyie-oriekhi
+linkList.size = 12404
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/burrata-s-tomatami-i-sousom-piesto/maslo-olivkovoie
+linkList.size = 12419
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/burrata-s-tomatami-i-sousom-piesto/zielien
+linkList.size = 12420
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/burrata-s-tomatami-i-sousom-piesto/limony
+linkList.size = 12421
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/burrata-s-tomatami-i-sousom-piesto/balzamik
+linkList.size = 12428
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/burrata-s-tomatami-i-sousom-piesto/spietsii
+linkList.size = 12433
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/shampinony-farshirovannyie-ovoshchami
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/shampinony-farshirovannyie-ovoshchami/sviezhiie-shampinony
+linkList.size = 12438
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/shampinony-farshirovannyie-ovoshchami/pomidory-chierri
+linkList.size = 12440
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/shampinony-farshirovannyie-ovoshchami/soievyi-sous
+linkList.size = 12471
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/shampinony-farshirovannyie-ovoshchami/kunzhut
+linkList.size = 12475
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/shampinony-farshirovannyie-ovoshchami/syr-polutviordyi
+linkList.size = 12569
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/kholodiets
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/kholodiets/miakot-ghoviadiny
+linkList.size = 12593
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/kholodiets/svinyie-nozhki
+linkList.size = 12595
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/kholodiets/sieldieriei
+linkList.size = 12596
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/kholodiets/lavrovyi-list
+linkList.size = 12601
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/kholodiets/chiesnok
+linkList.size = 12602
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/kholodiets/spietsii
+linkList.size = 12624
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/kholodiets/soputstvuiushchiie-tovary
+linkList.size = 12698
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/olivie
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/olivie/goviadina
+linkList.size = 12722
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/olivie/kartofiel
+linkList.size = 12723
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/olivie/oghurtsy-solienyie-marinovannyie
+linkList.size = 12754
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/olivie/iaitsa
+linkList.size = 12766
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/olivie/zielienyi-ghoroshiek
+linkList.size = 12779
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/olivie/maioniez
+linkList.size = 12843
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/olivie/spietsii
+linkList.size = 12855
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/olivie/soputstvuiushchiie-tovary
+linkList.size = 12895
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/sield-pod-shuboi
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/sield-pod-shuboi/sield-slabosolienaia
+linkList.size = 12925
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/sield-pod-shuboi/sviekla
+linkList.size = 12929
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/sield-pod-shuboi/kartofiel
+linkList.size = 12930
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/sield-pod-shuboi/iaitsa
+linkList.size = 12942
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/sield-pod-shuboi/maioniez
+linkList.size = 13006
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/sield-pod-shuboi/zhielatin
+linkList.size = 13016
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/sield-pod-shuboi/uksus
+linkList.size = 13019
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/sield-pod-shuboi/sakhar
+linkList.size = 13023
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/sield-pod-shuboi/spietsii
+linkList.size = 13030
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/sield-pod-shuboi/soputstvuiushchiie-tovary
+linkList.size = 13075
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/mimoza
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/mimoza/ryba-konsiervirovannaia-ghorbusha-saira
+linkList.size = 13088
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/mimoza/kartofiel
+linkList.size = 13089
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/mimoza/iaitsa
+linkList.size = 13101
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/mimoza/maioniez
+linkList.size = 13165
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/mimoza/zielien
+linkList.size = 13166
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/mimoza/spietsii
+linkList.size = 13173
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/mimoza/soputstvuiushchiie-tovary
+linkList.size = 13215
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/tsiezar
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/tsiezar/filie-kurinoie
+linkList.size = 13233
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/tsiezar/salat-aisbiergh-ili-romano
+linkList.size = 13239
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/tsiezar/syr
+linkList.size = 13260
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/tsiezar/pomidory-chierri
+linkList.size = 13262
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/tsiezar/iaitsa
+linkList.size = 13269
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/tsiezar/maslo-rastitielnoie
+linkList.size = 13285
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/tsiezar/chiesnok
+linkList.size = 13286
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/tsiezar/kapiersy
+linkList.size = 13292
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/tsiezar/limony
+linkList.size = 13293
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/tsiezar/gorchitsa-sous
+linkList.size = 13315
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/tsiezar/sakhar
+linkList.size = 13319
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/tsiezar/spietsii
+linkList.size = 13332
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/tsiezar/soputstvuiushchiie-tovary
+linkList.size = 13410
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/zalivnaia-ryba
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/zalivnaia-ryba/ryba-sudak-khiek-mintai-foriel
+linkList.size = 13424
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/zalivnaia-ryba/iaitsa
+linkList.size = 13436
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/zalivnaia-ryba/limony
+linkList.size = 13437
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/zalivnaia-ryba/lavrovyi-list
+linkList.size = 13442
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/zalivnaia-ryba/zhielatin
+linkList.size = 13452
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/zalivnaia-ryba/spietsii
+linkList.size = 13473
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/zalivnaia-ryba/soputstvuiushchiie-tovary
+linkList.size = 13524
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/granatovyi-brasliet
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/granatovyi-brasliet/filie-kurinoie
+linkList.size = 13542
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/granatovyi-brasliet/sviekla
+linkList.size = 13546
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/granatovyi-brasliet/kartofiel
+linkList.size = 13547
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/granatovyi-brasliet/iaitsa
+linkList.size = 13559
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/granatovyi-brasliet/oriekhi
+linkList.size = 13562
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/granatovyi-brasliet/chiernosliv
+linkList.size = 13565
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/granatovyi-brasliet/maioniez
+linkList.size = 13629
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/granatovyi-brasliet/spietsii
+linkList.size = 13642
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/granatovyi-brasliet/soputstvuiushchiie-tovary
+linkList.size = 13684
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/salat-s-kuritsiei-i-ananasami
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/salat-s-kuritsiei-i-ananasami/filie-kurinoie
+linkList.size = 13702
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/salat-s-kuritsiei-i-ananasami/iaitsa
+linkList.size = 13714
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/salat-s-kuritsiei-i-ananasami/syr
+linkList.size = 13835
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/salat-s-kuritsiei-i-ananasami/ananas-konsiervirovannyi
+linkList.size = 13842
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/salat-s-kuritsiei-i-ananasami/olivki
+linkList.size = 13932
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/salat-s-kuritsiei-i-ananasami/maioniez
+linkList.size = 13996
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/salat-s-kuritsiei-i-ananasami/uksus-vinnyi
+linkList.size = 14004
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/salat-s-kuritsiei-i-ananasami/spietsii
+linkList.size = 14017
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/salat-s-kuritsiei-i-ananasami/soputstvuiushchiie-tovary
+linkList.size = 14057
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/salat-s-brokkoli
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/salat-s-brokkoli/kapusta-brokkoli
+linkList.size = 14059
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/salat-s-brokkoli/grieipfrut
+linkList.size = 14060
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/salat-s-brokkoli/oriekhi
+linkList.size = 14062
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/salat-s-brokkoli/mied
+linkList.size = 14068
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/salat-s-brokkoli/olivkovoie-maslo
+linkList.size = 14117
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/salat-s-brokkoli/vinnyi-uksus
+linkList.size = 14121
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/salaty-zakuski/salat-s-brokkoli/spietsii
+linkList.size = 14144
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/torty-piroghi-pirozhnyie
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/torty-piroghi-pirozhnyie/postnyi-pirogh-s-iablokami
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/torty-piroghi-pirozhnyie/postnyi-pirogh-s-iablokami/muka
+linkList.size = 14163
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/torty-piroghi-pirozhnyie/postnyi-pirogh-s-iablokami/iabloki
+linkList.size = 14164
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/torty-piroghi-pirozhnyie/postnyi-pirogh-s-iablokami/rastitielnoie-maslo
+linkList.size = 14180
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/torty-piroghi-pirozhnyie/postnyi-pirogh-s-iablokami/limony
+linkList.size = 14181
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/torty-piroghi-pirozhnyie/postnyi-pirogh-s-iablokami/sakhar
+linkList.size = 14185
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/torty-piroghi-pirozhnyie/postnyi-pirogh-s-iablokami/sol
+linkList.size = 14190
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/torty-piroghi-pirozhnyie/postnyi-pirogh-s-iablokami/koritsa
+linkList.size = 14195
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/torty-piroghi-pirozhnyie/blinnyi-tort-so-smietannym-kriemom-i-iaghodami
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/torty-piroghi-pirozhnyie/blinnyi-tort-so-smietannym-kriemom-i-iaghodami/moloko
+linkList.size = 14255
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/torty-piroghi-pirozhnyie/blinnyi-tort-so-smietannym-kriemom-i-iaghodami/muka
+linkList.size = 14274
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/torty-piroghi-pirozhnyie/blinnyi-tort-so-smietannym-kriemom-i-iaghodami/iaitsa
+linkList.size = 14286
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/torty-piroghi-pirozhnyie/blinnyi-tort-so-smietannym-kriemom-i-iaghodami/sakhar
+linkList.size = 14290
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/torty-piroghi-pirozhnyie/blinnyi-tort-so-smietannym-kriemom-i-iaghodami/sol
+linkList.size = 14296
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/torty-piroghi-pirozhnyie/blinnyi-tort-so-smietannym-kriemom-i-iaghodami/rastitielnoie-maslo
+linkList.size = 14312
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/torty-piroghi-pirozhnyie/blinnyi-tort-so-smietannym-kriemom-i-iaghodami/slivochnoie-maslo
+linkList.size = 14359
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/torty-piroghi-pirozhnyie/blinnyi-tort-so-smietannym-kriemom-i-iaghodami/iaghody
+linkList.size = 14363
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/torty-piroghi-pirozhnyie/blinnyi-tort-so-smietannym-kriemom-i-iaghodami/smietana
+linkList.size = 14394
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/torty-piroghi-pirozhnyie/blinnyi-tort-so-smietannym-kriemom-i-iaghodami/sakharnaia-pudra
+linkList.size = 14402
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/torty-piroghi-pirozhnyie/blinnyi-tort-so-smietannym-kriemom-i-iaghodami/shokolad
+linkList.size = 14489
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/torty-piroghi-pirozhnyie/tort-zakusochnyi
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/torty-piroghi-pirozhnyie/tort-zakusochnyi/iaitsa
+linkList.size = 14504
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/torty-piroghi-pirozhnyie/tort-zakusochnyi/siemgha
+linkList.size = 14525
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/torty-piroghi-pirozhnyie/tort-zakusochnyi/syr
+linkList.size = 14548
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/torty-piroghi-pirozhnyie/tort-zakusochnyi/masliny
+linkList.size = 14564
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/torty-piroghi-pirozhnyie/tort-zakusochnyi/maioniez
+linkList.size = 14628
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/torty-piroghi-pirozhnyie/tort-zakusochnyi/khrien
+linkList.size = 14633
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/torty-piroghi-pirozhnyie/tort-zakusochnyi/slivochnoie-maslo
+linkList.size = 14680
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/torty-piroghi-pirozhnyie/tort-zakusochnyi/rastitielnoie-maslo
+linkList.size = 14696
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/torty-piroghi-pirozhnyie/tort-zakusochnyi/spietsii
+linkList.size = 14704
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/torty-piroghi-pirozhnyie/tort-prazdnichnyi-v-formie-noska
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/torty-piroghi-pirozhnyie/tort-prazdnichnyi-v-formie-noska/korzhi-ghotovyie
+linkList.size = 14706
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/torty-piroghi-pirozhnyie/tort-prazdnichnyi-v-formie-noska/tvorozhnyi-syr
+linkList.size = 14714
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/torty-piroghi-pirozhnyie/tort-prazdnichnyi-v-formie-noska/sakharnaia-pudra
+linkList.size = 14721
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/torty-piroghi-pirozhnyie/tort-prazdnichnyi-v-formie-noska/shokolad
+linkList.size = 14736
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/torty-piroghi-pirozhnyie/tort-prazdnichnyi-v-formie-noska/slivochnoie-maslo
+linkList.size = 14758
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/torty-piroghi-pirozhnyie/tort-prazdnichnyi-v-formie-noska/slivki
+linkList.size = 14767
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/torty-piroghi-pirozhnyie/tort-prazdnichnyi-v-formie-noska/pishchievyie-krasitieli
+linkList.size = 14772
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/torty-piroghi-pirozhnyie/sharlotka-s-iablokami
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/torty-piroghi-pirozhnyie/sharlotka-s-iablokami/iabloki
+linkList.size = 14773
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/torty-piroghi-pirozhnyie/sharlotka-s-iablokami/muka
+linkList.size = 14792
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/torty-piroghi-pirozhnyie/sharlotka-s-iablokami/sakhar
+linkList.size = 14796
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/torty-piroghi-pirozhnyie/sharlotka-s-iablokami/iaitsa
+linkList.size = 14808
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/torty-piroghi-pirozhnyie/sharlotka-s-iablokami/razrykhlitiel
+linkList.size = 14813
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/torty-piroghi-pirozhnyie/sharlotka-s-iablokami/smietana
+linkList.size = 14841
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/torty-piroghi-pirozhnyie/sharlotka-s-iablokami/vanilin
+linkList.size = 14849
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/torty-piroghi-pirozhnyie/pirogh-ziebra
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/torty-piroghi-pirozhnyie/pirogh-ziebra/iaitsa
+linkList.size = 14861
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/torty-piroghi-pirozhnyie/pirogh-ziebra/sakhar
+linkList.size = 14865
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/torty-piroghi-pirozhnyie/pirogh-ziebra/slivochnoie-maslo
+linkList.size = 14912
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/torty-piroghi-pirozhnyie/pirogh-ziebra/smietana
+linkList.size = 14940
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/torty-piroghi-pirozhnyie/pirogh-ziebra/muka
+linkList.size = 14959
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/torty-piroghi-pirozhnyie/pirogh-ziebra/soda-razrykhlitiel
+linkList.size = 14966
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/torty-piroghi-pirozhnyie/pirogh-ziebra/kakao-poroshok
+linkList.size = 14969
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/torty-piroghi-pirozhnyie/pirogh-ziebra/grietskiie-oriekhi-funduk-mindal
+linkList.size = 14982
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/torty-piroghi-pirozhnyie/iablochnyi-pirogh-s-morozhienym
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/torty-piroghi-pirozhnyie/iablochnyi-pirogh-s-morozhienym/muka
+linkList.size = 14992
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/torty-piroghi-pirozhnyie/iablochnyi-pirogh-s-morozhienym/sakhar
+linkList.size = 14996
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/torty-piroghi-pirozhnyie/iablochnyi-pirogh-s-morozhienym/spietsii
+linkList.size = 15000
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/torty-piroghi-pirozhnyie/iablochnyi-pirogh-s-morozhienym/maslo-slivochnoie
+linkList.size = 15016
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/torty-piroghi-pirozhnyie/iablochnyi-pirogh-s-morozhienym/limony
+linkList.size = 15017
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/torty-piroghi-pirozhnyie/iablochnyi-pirogh-s-morozhienym/iaitsa
+linkList.size = 15019
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/torty-piroghi-pirozhnyie/iablochnyi-pirogh-s-morozhienym/morozhienoie
+linkList.size = 15033
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/torty-piroghi-pirozhnyie/shokoladnyi-tort
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/torty-piroghi-pirozhnyie/shokoladnyi-tort/piechienie-iubilieinoie
+linkList.size = 15044
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/torty-piroghi-pirozhnyie/shokoladnyi-tort/sakhar
+linkList.size = 15047
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/torty-piroghi-pirozhnyie/shokoladnyi-tort/slivochnoie-maslo
+linkList.size = 15055
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/torty-piroghi-pirozhnyie/shokoladnyi-tort/tvorozhnyi-syr
+linkList.size = 15062
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/torty-piroghi-pirozhnyie/shokoladnyi-tort/vishnievyi-dzhiem
+linkList.size = 15063
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/torty-piroghi-pirozhnyie/shokoladnyi-tort/vanilnyi-sakhar
+linkList.size = 15067
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vypiechka
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vypiechka/karielskiie-kalitki
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vypiechka/karielskiie-kalitki/slivochnoie-maslo
+linkList.size = 15075
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vypiechka/karielskiie-kalitki/riazhienka
+linkList.size = 15078
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vypiechka/karielskiie-kalitki/smietana
+linkList.size = 15086
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vypiechka/karielskiie-kalitki/muka-pshienichnaia
+linkList.size = 15094
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vypiechka/karielskiie-kalitki/slivki-zhirnyie
+linkList.size = 15106
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vypiechka/karielskiie-kalitki/iaitsa
+linkList.size = 15110
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vypiechka/khachapuri
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vypiechka/khachapuri/muka-pshienichnaia
+linkList.size = 15118
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vypiechka/khachapuri/matsoni
+linkList.size = 15119
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vypiechka/khachapuri/drozhzhi
+linkList.size = 15123
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vypiechka/khachapuri/rastitielnoie-maslo
+linkList.size = 15129
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vypiechka/khachapuri/slivochnoie-maslo
+linkList.size = 15137
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vypiechka/khachapuri/syr-sulughuni
+linkList.size = 15144
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vypiechka/khachapuri/iaitsa
+linkList.size = 15148
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vypiechka/khachapuri/sakhar
+linkList.size = 15152
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vypiechka/paskhalnyi-kulich
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vypiechka/paskhalnyi-kulich/muka
+linkList.size = 15167
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vypiechka/paskhalnyi-kulich/moloko
+linkList.size = 15224
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vypiechka/paskhalnyi-kulich/drozhzhi
+linkList.size = 15235
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vypiechka/paskhalnyi-kulich/iaitsa
+linkList.size = 15247
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vypiechka/paskhalnyi-kulich/slivochnoie-maslo
+linkList.size = 15294
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vypiechka/paskhalnyi-kulich/rastitielnoie-maslo
+linkList.size = 15304
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vypiechka/paskhalnyi-kulich/sakhar
+linkList.size = 15309
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vypiechka/paskhalnyi-kulich/izium-tsukaty
+linkList.size = 15310
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vypiechka/paskhalnyi-kulich/spietsii
+linkList.size = 15326
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vypiechka/ananasovyie-romashki
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vypiechka/ananasovyie-romashki/ananasy-konsiervirovannyie
+linkList.size = 15330
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vypiechka/ananasovyie-romashki/tiesto-sloienoie
+linkList.size = 15335
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vypiechka/ananasovyie-romashki/iaitsa
+linkList.size = 15347
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vypiechka/ananasovyie-romashki/sakharnaia-pudra
+linkList.size = 15353
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vypiechka/imbirnyie-prianiki
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vypiechka/imbirnyie-prianiki/muka
+linkList.size = 15372
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vypiechka/imbirnyie-prianiki/iaitsa
+linkList.size = 15384
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vypiechka/imbirnyie-prianiki/sakhar
+linkList.size = 15388
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vypiechka/imbirnyie-prianiki/mied
+linkList.size = 15407
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vypiechka/imbirnyie-prianiki/maslo-slivochnoie
+linkList.size = 15454
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vypiechka/imbirnyie-prianiki/soda
+linkList.size = 15456
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vypiechka/imbirnyie-prianiki/spietsii
+linkList.size = 15464
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/vypiechka/imbirnyie-prianiki/soputstvuiushchiie-tovary
+linkList.size = 15488
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/bliny
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/bliny/pankieiki-s-solionoi-karamieliu
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/bliny/pankieiki-s-solionoi-karamieliu/moloko
+linkList.size = 15512
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/bliny/pankieiki-s-solionoi-karamieliu/iaitsa
+linkList.size = 15524
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/bliny/pankieiki-s-solionoi-karamieliu/slivochnoie-maslo
+linkList.size = 15571
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/bliny/pankieiki-s-solionoi-karamieliu/muka
+linkList.size = 15586
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/bliny/pankieiki-s-solionoi-karamieliu/sakhar
+linkList.size = 15592
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/bliny/pankieiki-s-solionoi-karamieliu/razrykhlitiel
+linkList.size = 15595
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/bliny/pankieiki-s-solionoi-karamieliu/rastitielnoie-maslo
+linkList.size = 15614
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/bliny/pankieiki-s-solionoi-karamieliu/banany
+linkList.size = 15615
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/bliny/pankieiki-s-solionoi-karamieliu/sakharnaia-pudra
+linkList.size = 15622
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/bliny/pankieiki-s-solionoi-karamieliu/sol
+linkList.size = 15630
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/bliny/pankieiki-s-solionoi-karamieliu/drozhzhi
+linkList.size = 15641
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/bliny/pankieiki-s-solionoi-karamieliu/sous
+linkList.size = 15642
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/bliny/bliny-s-siemghoi-i-slivochnym-syrom
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/bliny/bliny-s-siemghoi-i-slivochnym-syrom/moloko
+linkList.size = 15690
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/bliny/bliny-s-siemghoi-i-slivochnym-syrom/muka
+linkList.size = 15709
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/bliny/bliny-s-siemghoi-i-slivochnym-syrom/iaitsa
+linkList.size = 15721
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/bliny/bliny-s-siemghoi-i-slivochnym-syrom/sakhar
+linkList.size = 15725
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/bliny/bliny-s-siemghoi-i-slivochnym-syrom/razrykhlitiel
+linkList.size = 15730
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/bliny/bliny-s-siemghoi-i-slivochnym-syrom/sol
+linkList.size = 15736
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/bliny/bliny-s-siemghoi-i-slivochnym-syrom/rastitielnoie-maslo
+linkList.size = 15752
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/bliny/bliny-s-siemghoi-i-slivochnym-syrom/siemgha
+linkList.size = 15773
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/bliny/bliny-s-siemghoi-i-slivochnym-syrom/slivochnyi-syr
+linkList.size = 15796
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/bliny/bliny-traditsionnyie-na-molokie
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/bliny/bliny-traditsionnyie-na-molokie/moloko
+linkList.size = 15856
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/bliny/bliny-traditsionnyie-na-molokie/muka
+linkList.size = 15875
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/bliny/bliny-traditsionnyie-na-molokie/iaitsa
+linkList.size = 15887
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/bliny/bliny-traditsionnyie-na-molokie/sakhar
+linkList.size = 15891
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/bliny/bliny-traditsionnyie-na-molokie/sol
+linkList.size = 15897
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/bliny/bliny-traditsionnyie-na-molokie/rastitielnoie-maslo
+linkList.size = 15913
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/bliny/bliny-traditsionnyie-na-molokie/slivochnoie-maslo
+linkList.size = 15960
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/bliny/bliny-traditsionnyie-na-molokie/sladkiie-toppinghi-dobavki
+linkList.size = 16016
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/bliny/bliny-traditsionnyie-na-molokie/sytnyie-toppinghi-dobavki
+linkList.size = 16069
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/bliny/bliny-kruzhievnyie-na-kiefirie
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/bliny/bliny-kruzhievnyie-na-kiefirie/muka
+linkList.size = 16088
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/bliny/bliny-kruzhievnyie-na-kiefirie/iaitsa
+linkList.size = 16100
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/bliny/bliny-kruzhievnyie-na-kiefirie/sakhar
+linkList.size = 16104
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/bliny/bliny-kruzhievnyie-na-kiefirie/sol
+linkList.size = 16110
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/bliny/bliny-kruzhievnyie-na-kiefirie/kiefir
+linkList.size = 16123
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/bliny/bliny-kruzhievnyie-na-kiefirie/soda
+linkList.size = 16125
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/bliny/bliny-kruzhievnyie-na-kiefirie/rastitielnoie-maslo
+linkList.size = 16141
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/bliny/bliny-kruzhievnyie-na-kiefirie/slivochnoie-maslo
+linkList.size = 16188
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/bliny/bliny-prostokvashino
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/bliny/bliny-prostokvashino/pshieno
+linkList.size = 16193
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/bliny/bliny-prostokvashino/moloko
+linkList.size = 16198
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/bliny/bliny-prostokvashino/iaitsa
+linkList.size = 16210
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/bliny/bliny-prostokvashino/muka
+linkList.size = 16229
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/bliny/bliny-prostokvashino/drozhzhi
+linkList.size = 16241
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/bliny/bliny-prostokvashino/sakhar
+linkList.size = 16245
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/bliny/bliny-prostokvashino/sol
+linkList.size = 16251
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/bliny/bliny-prostokvashino/maslo-slivochnoie
+linkList.size = 16253
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/bliny/bliny-prostokvashino/smietana
+linkList.size = 16260
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/diesierty
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/diesierty/paskha-s-iziumom-malaia
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/diesierty/paskha-s-iziumom-malaia/tvorogh
+linkList.size = 16274
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/diesierty/paskha-s-iziumom-malaia/slivochnoie-maslo
+linkList.size = 16321
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/diesierty/paskha-s-iziumom-malaia/sakharnaia-pudra
+linkList.size = 16326
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/diesierty/paskha-s-iziumom-malaia/izium
+linkList.size = 16327
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/diesierty/paskha-s-iziumom-malaia/vanil
+linkList.size = 16329
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/diesierty/iablochnyie-lodochki-s-oriekhami-miedom-i-sukhofruktami
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/diesierty/iablochnyie-lodochki-s-oriekhami-miedom-i-sukhofruktami/izium
+linkList.size = 16331
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/diesierty/iablochnyie-lodochki-s-oriekhami-miedom-i-sukhofruktami/kuragha
+linkList.size = 16334
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/diesierty/iablochnyie-lodochki-s-oriekhami-miedom-i-sukhofruktami/oriekhi
+linkList.size = 16344
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/diesierty/iablochnyie-lodochki-s-oriekhami-miedom-i-sukhofruktami/slivochnoie-maslo
+linkList.size = 16391
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/diesierty/iablochnyie-lodochki-s-oriekhami-miedom-i-sukhofruktami/mied
+linkList.size = 16397
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/diesierty/brauni-s-m-and-ms
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/diesierty/brauni-s-m-and-ms/slivochnoie-maslo
+linkList.size = 16444
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/diesierty/brauni-s-m-and-ms/gorkii-shokolad
+linkList.size = 16476
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/diesierty/brauni-s-m-and-ms/iaitsa
+linkList.size = 16488
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/diesierty/brauni-s-m-and-ms/sakhar
+linkList.size = 16493
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/diesierty/brauni-s-m-and-ms/kakao-poroshok
+linkList.size = 16495
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/diesierty/brauni-s-m-and-ms/muka
+linkList.size = 16510
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/diesierty/brauni-s-m-and-ms/oriekhi
+linkList.size = 16522
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/diesierty/brauni-s-m-and-ms/soda-razrykhlitiel
+linkList.size = 16526
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/diesierty/brauni-s-m-and-ms/drazhie-m-and-ms-s-shokoladom
+linkList.size = 16532
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/diesierty/brauni-s-m-and-ms/sakharnaia-pudra
+linkList.size = 16537
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/diesierty/tiramisu-v-stakanie
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/diesierty/tiramisu-v-stakanie/maskarponie
+linkList.size = 16539
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/diesierty/tiramisu-v-stakanie/iaitsa
+linkList.size = 16551
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/diesierty/tiramisu-v-stakanie/piesochnoie-piechienie
+linkList.size = 16558
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/diesierty/tiramisu-v-stakanie/sakharnaia-pudra
+linkList.size = 16564
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/diesierty/tiramisu-v-stakanie/kakao
+linkList.size = 16567
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/diesierty/tiramisu-v-stakanie/kofie
+linkList.size = 16747
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/napitki
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/napitki/glintviein-biezalkogholnyi
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/napitki/glintviein-biezalkogholnyi/vinoghradnyi-sok
+linkList.size = 16752
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/napitki/glintviein-biezalkogholnyi/apielsiny
+linkList.size = 16754
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/napitki/glintviein-biezalkogholnyi/limony
+linkList.size = 16755
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/napitki/glintviein-biezalkogholnyi/iabloki
+linkList.size = 16756
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/napitki/glintviein-biezalkogholnyi/izium
+linkList.size = 16759
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/napitki/glintviein-biezalkogholnyi/spietsii
+linkList.size = 16769
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/napitki/glintviein-biezalkogholnyi/soputstvuiushchiie-tovary
+linkList.size = 16798
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/na-vsiakii-sluchai
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/na-vsiakii-sluchai/sol-sakhar
+linkList.size = 16813
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/na-vsiakii-sluchai/konsiervy
+linkList.size = 16953
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/na-vsiakii-sluchai/krupy
+linkList.size = 16978
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/na-vsiakii-sluchai/lapsha-bystrogho-prighotovlieniia
+linkList.size = 16987
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/na-vsiakii-sluchai/pitievaia-voda
+linkList.size = 17025
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/na-vsiakii-sluchai/fonari-batarieiki-multituly
+linkList.size = 17051
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/na-vsiakii-sluchai/mylo-zubnaia-pasta
+linkList.size = 17122
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/recepty-producty/na-vsiakii-sluchai/spichki-zazhighalki
+linkList.size = 17129
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/tovary-dlia-ofisa
+linkList.size = 17225
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/bytovaia-khimiia/stirka-i-ukhod-za-odiezhdoi
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/bytovaia-khimiia/stirka-i-ukhod-za-odiezhdoi/stiralnyie-poroshki
+linkList.size = 17333
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/bytovaia-khimiia/stirka-i-ukhod-za-odiezhdoi/zhidkiie-sriedstva-dlia-stirki
+linkList.size = 17413
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/bytovaia-khimiia/stirka-i-ukhod-za-odiezhdoi/kapsuly-i-tablietki-dlia-stirki
+linkList.size = 17442
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/bytovaia-khimiia/stirka-i-ukhod-za-odiezhdoi/konditsioniery-i-opolaskivatieli-dlia-bielia
+linkList.size = 17500
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/bytovaia-khimiia/stirka-i-ukhod-za-odiezhdoi/otbielivatieli-i-piatnovyvoditieli
+linkList.size = 17540
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/bytovaia-khimiia/stirka-i-ukhod-za-odiezhdoi/sriedstva-po-ukhodu-za-bieliem
+linkList.size = 17543
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/bytovaia-khimiia/stirka-i-ukhod-za-odiezhdoi/idiealnaia-para-lenor-i-kapsuly
+linkList.size = 17543
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/bytovaia-khimiia/sriedstva-dlia-mytia-posudy
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/bytovaia-khimiia/sriedstva-dlia-mytia-posudy/dlia-posudomoiechnykh-mashin
+linkList.size = 17591
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/bytovaia-khimiia/sriedstva-dlia-mytia-posudy/dlia-ruchnogho-mytia
+linkList.size = 17661
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/bytovaia-khimiia/chistiashchiie-i-moiushchiie-sriedstva
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/bytovaia-khimiia/chistiashchiie-i-moiushchiie-sriedstva/sriedstva-dlia-mytia-polov
+linkList.size = 17681
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/bytovaia-khimiia/chistiashchiie-i-moiushchiie-sriedstva/sriedstva-dlia-mytia-stiekol
+linkList.size = 17687
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/bytovaia-khimiia/chistiashchiie-i-moiushchiie-sriedstva/sriedstva-dlia-kukhni
+linkList.size = 17706
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/bytovaia-khimiia/chistiashchiie-i-moiushchiie-sriedstva/sriedstva-dlia-miebieli-i-kovrov
+linkList.size = 17717
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/bytovaia-khimiia/chistiashchiie-i-moiushchiie-sriedstva/sriedstva-dlia-santiekhniki
+linkList.size = 17808
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/bytovaia-khimiia/chistiashchiie-i-moiushchiie-sriedstva/sriedstva-dlia-bytovoi-tiekhniki
+linkList.size = 17828
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/bytovaia-khimiia/chistiashchiie-i-moiushchiie-sriedstva/sriedstva-dlia-prochistki-trub
+linkList.size = 17840
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/bytovaia-khimiia/chistiashchiie-i-moiushchiie-sriedstva/univiersalnyie-sriedstva
+linkList.size = 17888
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/bytovaia-khimiia/osviezhitieli-vozdukha
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/bytovaia-khimiia/osviezhitieli-vozdukha/aerozolnyie
+linkList.size = 17956
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/bytovaia-khimiia/osviezhitieli-vozdukha/gielievyie
+linkList.size = 17967
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/bytovaia-khimiia/osviezhitieli-vozdukha/aromatizirovannyie-sviechi
+linkList.size = 18003
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/bytovaia-khimiia/osviezhitieli-vozdukha/spriei
+linkList.size = 18012
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/bytovaia-khimiia/tovary-dlia-uborki
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/bytovaia-khimiia/tovary-dlia-uborki/gubki-triapki
+linkList.size = 18103
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/bytovaia-khimiia/tovary-dlia-uborki/pierchatki
+linkList.size = 18134
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/bytovaia-khimiia/tovary-dlia-uborki/sovki-vieniki-shchietki-iershiki
+linkList.size = 18166
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/bytovaia-khimiia/tovary-dlia-uborki/tazy-viedra
+linkList.size = 18188
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/bytovaia-khimiia/tovary-dlia-uborki/shvabry-i-nasadki
+linkList.size = 18233
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/bytovaia-khimiia/tovary-dlia-uborki/mieshki-dlia-musora
+linkList.size = 18258
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/bytovaia-khimiia/ukhod-za-obuviu-i-odiezhdoi
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/bytovaia-khimiia/ukhod-za-obuviu-i-odiezhdoi/kriema-ghubki-shchietki
+linkList.size = 18306
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/bytovaia-khimiia/sriedstva-ot-nasiekomykh-i-ghryzunov
+linkList.size = 18327
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/kosmietika-i-ghighiiena
+linkList.size = 20342
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/dietskiie-tovary
+linkList.size = 20390
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/dlia-doma-i-dachi
+linkList.size = 20438
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/kantsieliariia
+linkList.size = 20629
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/dlia-zhivotnykh
+linkList.size = 20659
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/odiezhda-obuv-aksiessuary/noski-gholfy-ghietry
+linkList.size = 20850
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/odiezhda-obuv-aksiessuary/kolghotki-chulki
+linkList.size = 21225
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/odiezhda-obuv-aksiessuary/trusy
+linkList.size = 21407
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/odiezhda-obuv-aksiessuary/baghazh
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/odiezhda-obuv-aksiessuary/baghazh/chiemodany
+linkList.size = 21409
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/odiezhda-obuv-aksiessuary/baghazh/aksiessuary-dlia-chiemodanov
+linkList.size = 21415
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/odiezhda-obuv-aksiessuary/aksiessuary
+linkList.size = 21415
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/eliektronika
+linkList.size = 21496
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/avtotovary/masla-i-avtokhimiia
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/avtotovary/masla-i-avtokhimiia/sriedstva-dlia-ochistki
+linkList.size = 21509
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/avtotovary/masla-i-avtokhimiia/masla
+linkList.size = 21639
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/avtotovary/masla-i-avtokhimiia/smazochnyie-matierialy
+linkList.size = 21653
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/avtotovary/masla-i-avtokhimiia/antifrizy-i-okhlazhdaiushchiie-zhidkosti
+linkList.size = 21661
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/avtotovary/masla-i-avtokhimiia/distillirovannaia-voda
+linkList.size = 21663
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/avtotovary/masla-i-avtokhimiia/prieobrazovatieli-rzhavchiny
+linkList.size = 21664
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/avtotovary/masla-i-avtokhimiia/prisadki
+linkList.size = 21668
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/avtotovary/masla-i-avtokhimiia/promyvki
+linkList.size = 21673
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/avtotovary/pokraska-avto
+linkList.size = 21681
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/avtotovary/ukhod-za-avto
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/avtotovary/ukhod-za-avto/avtoshampuni
+linkList.size = 21694
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/avtotovary/ukhod-za-avto/ukhod-za-salonom
+linkList.size = 21702
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/avtotovary/ukhod-za-avto/ukhod-za-stieklami
+linkList.size = 21719
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/avtotovary/ukhod-za-avto/voski-i-poliroli
+linkList.size = 21734
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/avtotovary/ukhod-za-avto/pyliesosy
+linkList.size = 21735
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/avtotovary/ukhod-za-avto/salfietki-polotientsa
+linkList.size = 21762
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/avtotovary/ukhod-za-avto/aksiessuary-dlia-mytia-i-polirovki
+linkList.size = 21767
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/avtotovary/avtomobilnyie-aksiessuary
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/avtotovary/avtomobilnyie-aksiessuary/chiekhly-nakidki-zaghlushki-dlia-sidienii
+linkList.size = 21769
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/avtotovary/avtomobilnyie-aksiessuary/zashchita-salona-ot-solntsa
+linkList.size = 21770
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/avtotovary/avtomobilnyie-aksiessuary/dierzhatieli-dlia-tieliefonov
+linkList.size = 21773
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/avtotovary/avtomobilnyie-aksiessuary/orghanaiziery-i-sumki
+linkList.size = 21778
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/avtotovary/avtomobilnyie-aksiessuary/podushki-valiki-pod-shieiu
+linkList.size = 21785
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/avtotovary/avtomobilnyie-aksiessuary/kovriki
+linkList.size = 21788
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/avtotovary/avtomobilnyie-aksiessuary/obustroistvo-salona
+linkList.size = 21789
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/avtotovary/avtomobilnyie-aksiessuary/aromatizatory-i-uvlazhnitieli
+linkList.size = 21869
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/avtotovary/avtomobilnyie-aksiessuary/pierievozka-baghazha
+linkList.size = 21876
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/avtotovary/avtomobilnyie-aksiessuary/aksiessuary-dlia-avtomobilistov
+linkList.size = 21880
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/avtotovary/avtomobilnyie-aksiessuary/soputstvuiushchiie-tovary
+linkList.size = 21889
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/avtotovary/avtomobilnyie-ghadzhiety
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/avtotovary/avtomobilnyie-ghadzhiety/zariadnyie-ustroistva-kabieli-pieriekhodniki
+linkList.size = 21897
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/avtotovary/avtozapchasti
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/avtotovary/avtozapchasti/avtoprovodka-i-priedokhranitieli
+linkList.size = 21900
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/avtotovary/avtozapchasti/avtomobilnyi-sviet
+linkList.size = 21910
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/avtotovary/avtozapchasti/stiekloochistitieli
+linkList.size = 21970
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/avtotovary/avtozapchasti/vnieshniie-dopolnitielnyie-eliemienty
+linkList.size = 21971
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/avtotovary/shiny-i-diski
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/avtotovary/shiny-i-diski/kompriessory
+linkList.size = 21976
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/avtotovary/shiny-i-diski/aksiessuary-dlia-shinomontazha
+linkList.size = 21988
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/avtotovary/sriedstva-biezopasnosti
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/avtotovary/sriedstva-biezopasnosti/avtokriesla
+linkList.size = 21989
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/avtotovary/sriedstva-biezopasnosti/avariinyie-prinadliezhnosti
+linkList.size = 22003
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/vsie-dlia-riemonta/ruchnyie-instrumienty
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/vsie-dlia-riemonta/ruchnyie-instrumienty/bokoriezy-kusachki-boltoriezy
+linkList.size = 22005
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/vsie-dlia-riemonta/ruchnyie-instrumienty/maliarnyi-instrumient
+linkList.size = 22007
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/vsie-dlia-riemonta/ruchnyie-instrumienty/otviertki
+linkList.size = 22011
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/vsie-dlia-riemonta/ruchnyie-instrumienty/ploskoghubtsy
+linkList.size = 22013
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/vsie-dlia-riemonta/ruchnyie-instrumienty/nozhi-nozhnitsy-shilia-liezviia-stiekloriezy
+linkList.size = 22018
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/vsie-dlia-riemonta/ruchnyie-instrumienty/stiepliery-zakliepochniki
+linkList.size = 22019
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/vsie-dlia-riemonta/ruchnyie-instrumienty/nozhovki-nadfili-napilniki-stamieski-stuslo
+linkList.size = 22023
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/vsie-dlia-riemonta/ruchnyie-instrumienty/kliuchi
+linkList.size = 22025
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/vsie-dlia-riemonta/ruchnyie-instrumienty/nabory-ruchnykh-instrumientov
+linkList.size = 22026
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/vsie-dlia-riemonta/eliektroinstrumienty
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/vsie-dlia-riemonta/eliektroinstrumienty/drieli-shurupovierty-ghaikovierty
+linkList.size = 22032
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/vsie-dlia-riemonta/eliektroinstrumienty/lobziki
+linkList.size = 22034
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/vsie-dlia-riemonta/eliektroinstrumienty/pierforatory-otboinyie-molotki
+linkList.size = 22035
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/vsie-dlia-riemonta/eliektroinstrumienty/shlifovalnyie-polirovalnyie-mashiny
+linkList.size = 22036
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/vsie-dlia-riemonta/klininghovoie-oborudovaniie
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/vsie-dlia-riemonta/klininghovoie-oborudovaniie/moiki-vysokogho-davlieniia
+linkList.size = 22049
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/vsie-dlia-riemonta/klininghovoie-oborudovaniie/khoziaistviennyie-pyliesosy-moishchiki-okon
+linkList.size = 22054
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/vsie-dlia-riemonta/izmieritielnyie-instrumienty
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/vsie-dlia-riemonta/izmieritielnyie-instrumienty/laziernyie-urovni-nivieliry
+linkList.size = 22055
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/vsie-dlia-riemonta/izmieritielnyie-instrumienty/rulietki
+linkList.size = 22058
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/vsie-dlia-riemonta/izmieritielnyie-instrumienty/urovni
+linkList.size = 22060
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/vsie-dlia-riemonta/klimatichieskoie-oborudovaniie
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/vsie-dlia-riemonta/klimatichieskoie-oborudovaniie/tieplovientiliatory
+linkList.size = 22061
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/vsie-dlia-riemonta/prochiie-instrumienty
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/vsie-dlia-riemonta/prochiie-instrumienty/nabory-avtoinstrumienta
+linkList.size = 22063
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/vsie-dlia-riemonta/kriepiezh
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/vsie-dlia-riemonta/kriepiezh/khomuty
+linkList.size = 22066
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/vsie-dlia-riemonta/kriepiezh/kliei
+linkList.size = 22088
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/vsie-dlia-riemonta/kriepiezh/giermietiki
+linkList.size = 22092
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/vsie-dlia-riemonta/kriepiezh/montazhnaia-piena
+linkList.size = 22093
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/vsie-dlia-riemonta/kriepiezh/montazhnyie-lienty
+linkList.size = 22112
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/vsie-dlia-riemonta/lakokrasochnyie-matierialy-diekor
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/vsie-dlia-riemonta/lakokrasochnyie-matierialy-diekor/kraska-ghrunty
+linkList.size = 22125
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/vsie-dlia-riemonta/lakokrasochnyie-matierialy-diekor/rastvoritieli-ochistitieli
+linkList.size = 22129
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/vsie-dlia-riemonta/santiekhnika
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/vsie-dlia-riemonta/santiekhnika/inzhieniernaia-santiekhnika
+linkList.size = 22130
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/vsie-dlia-riemonta/sriedstva-zashchity
+linkList.size = 22148
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/vsie-dlia-riemonta/khoziaistviennyie-tovary
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/vsie-dlia-riemonta/khoziaistviennyie-tovary/iashchiki-polki-dlia-instrumientov
+linkList.size = 22166
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/vsie-dlia-riemonta/khoziaistviennyie-tovary/liestnitsy
+linkList.size = 22168
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/vsie-dlia-riemonta/khoziaistviennyie-tovary/tieliezhki
+linkList.size = 22169
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/vsie-dlia-riemonta/khoziaistviennyie-tovary/kriuki-karabiny
+linkList.size = 22170
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/vsie-dlia-riemonta/khoziaistviennyie-tovary/klieikiie-poloski-i-zastiezhki
+linkList.size = 22180
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/vsie-dlia-riemonta/khoziaistviennyie-tovary/kriuchki-klipsy-vieshalki-dierzhatieli
+linkList.size = 22196
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/knighi-i-zhurnaly
+linkList.size = 22230
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/dacha-i-sad/irrighatsiia
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/dacha-i-sad/irrighatsiia/shlanghi
+linkList.size = 22237
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/dacha-i-sad/irrighatsiia/pistoliety-nasadki-dozhdievatieli
+linkList.size = 22253
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/dacha-i-sad/irrighatsiia/opryskivatieli-lieiki
+linkList.size = 22255
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/dacha-i-sad/sadovaia-miebiel
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/dacha-i-sad/sadovaia-miebiel/kriesla-divany
+linkList.size = 22256
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/dacha-i-sad/sadovaia-miebiel/stoly
+linkList.size = 22260
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/dacha-i-sad/sadovaia-miebiel/stulia-taburiety-skami-lavki
+linkList.size = 22261
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/dacha-i-sad/sadovaia-miebiel/podushki-pufy
+linkList.size = 22262
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/dacha-i-sad/osvieshchieniie-sada
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/dacha-i-sad/osvieshchieniie-sada/svietilniki-podsviechniki
+linkList.size = 22263
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/dacha-i-sad/otdykh-na-otkrytom-vozdukhie
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/dacha-i-sad/otdykh-na-otkrytom-vozdukhie/gamaki
+linkList.size = 22264
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/dacha-i-sad/otdykh-na-otkrytom-vozdukhie/shiezlonghi
+linkList.size = 22265
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/dacha-i-sad/siemiena-i-podkormka-dlia-sada
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/dacha-i-sad/siemiena-i-podkormka-dlia-sada/udobrieniia-ghrunty-sriedstva-po-ukhodu
+linkList.size = 22274
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/dacha-i-sad/siemiena-i-podkormka-dlia-sada/siemiena-sazhientsy
+linkList.size = 22282
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/dacha-i-sad/sadovyie-konstruktsii
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/dacha-i-sad/sadovyie-konstruktsii/biotualiety-aksiessuary
+linkList.size = 22284
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/dacha-i-sad/ukrashieniie-sada
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/dacha-i-sad/ukrashieniie-sada/gorshki-kashpo
+linkList.size = 22285
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/dacha-i-sad/ukhod-za-sadom
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/dacha-i-sad/ukhod-za-sadom/sadovyie-lopaty-ghrabli-vily
+linkList.size = 22286
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/dacha-i-sad/ukhod-za-sadom/instrumienty-dlia-uborki-sniegha
+linkList.size = 22290
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/dacha-i-sad/ukhod-za-sadom/siekatory-sadovyie-nozhnitsy-nozhi-pily
+linkList.size = 22294
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/dacha-i-sad/ukhod-za-sadom/motyghi-kornieudalitieli-ruchnyie-kultivatory
+linkList.size = 22295
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/dacha-i-sad/ukhod-za-sadom/sriedstva-zashchity-dozhdieviki
+linkList.size = 22296
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/dacha-i-sad/ukhod-za-sadom/plodosiemniki-chierienki-rukoiatki
+linkList.size = 22297
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/dacha-i-sad/dlia-piknika
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/dacha-i-sad/dlia-piknika/turistichieskaia-posuda
+linkList.size = 22306
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/dacha-i-sad/dlia-piknika/skladnyie-nozhi-i-multituly
+linkList.size = 22307
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/dacha-i-sad/biezopasnost
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/dacha-i-sad/biezopasnost/oghnietushitieli
+linkList.size = 22312
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/sportivnyie-tovary/vodnyie-vidy-sporta
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/sportivnyie-tovary/vodnyie-vidy-sporta/naduvnyie-matrasy-krughi-ighrushki
+linkList.size = 22320
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/sportivnyie-tovary/vodnyie-vidy-sporta/bassieiny
+linkList.size = 22321
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/sportivnyie-tovary/vodnyie-vidy-sporta/aksiessuary-dlia-bassieinov
+linkList.size = 22325
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/sportivnyie-tovary/sportivnyie-ighry
+linkList.size = 22326
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/podarki-i-ukrashieniia/podarki
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/podarki-i-ukrashieniia/podarki/otkrytki
+linkList.size = 22344
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/podarki-i-ukrashieniia/podarki/podarochnaia-upakovka
+linkList.size = 22370
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/podarki-i-ukrashieniia/podarki/suvieniry
+linkList.size = 22377
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/podarki-i-ukrashieniia/tovary-dlia-prazdnikov
+driver.getCurrentUrl: https://delivery.metro-cc.ru/metro/podarki-i-ukrashieniia/tovary-dlia-prazdnikov/aksiessuary-dlia-viechierinok
+linkList.size = 22422
 https://delivery.metro-cc.ru/metro/gubki-dlia-posudy-fine-life-abrazivnyie-vysokoprochnyie
 https://delivery.metro-cc.ru/metro/muka-pshienichnaia-fine-life
 https://delivery.metro-cc.ru/metro/moloko-rioba-3-5-percent

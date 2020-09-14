@@ -37,7 +37,6 @@ public class Metro {
 
     public static void main(String[] args) {
 
-        //System.setProperty("webdriver.chrome.driver", "C:\\Users\\mironov.matvey\\Documents\\GitHub\\metroParser\\libs\\chromedriver_win32\\chromedriver.exe");
         System.setProperty("webdriver.chrome.driver", path+"metroParser\\libs\\chromedriver_win32\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         new WebDriverWait(driver, 5L);
@@ -49,10 +48,12 @@ public class Metro {
 
         readLinksFromFile(path+"metroParser\\src\\Links.txt", driver);
         iterateProducts(0,linklist.size(),driver);
-        //multyChromeStart();
-        //multyThreadStart();
 
-        System.out.println("______________finalProducts.size() : "+finalProducts.size());
+        //for (String str : linklist){
+        //    System.out.println(str);
+        //}
+
+        //System.out.println("______________finalProducts.size() : "+finalProducts.size());
         driver.close();
         driver.quit();
     }
@@ -316,7 +317,7 @@ public class Metro {
             //System.out.println("elemList.size: "+elemList.size());
             //System.out.println("getPageSource: "+driver.getPageSource());
 
-            for (int i =14;i<elemList.size();i++){
+            for (int i =0;i<elemList.size();i++){
                 elemList.get(i).click();
                 //Thread.sleep(1L);
 
@@ -333,8 +334,29 @@ public class Metro {
                                 elemList3.get(k).click();
                                 //Thread.sleep(1L);
                                 System.out.println("driver.getCurrentUrl: " + driver.getCurrentUrl());
-                                //итерация по продуктам
-                                collectProductLinks(driver.getCurrentUrl(), driver);
+                                List<WebElement> elemList4 = driver.findElements(By.className("show-all"));
+
+                                if (elemList4.size() != 0){
+                                    for (int z = 0; z<elemList4.size();z++){
+                                        elemList4.get(z).click();
+
+                                        System.out.println("driver.getCurrentUrl: " + driver.getCurrentUrl());
+                                        //итерация по продуктам
+                                        collectProductLinks(driver.getCurrentUrl(), driver);
+
+                                        int slashIndex = driver.getCurrentUrl().lastIndexOf('/');
+                                        String backURL = driver.getCurrentUrl().substring(0,slashIndex);
+                                        driver.get(backURL);
+                                        //driver.findElement(By.className("breadcrumbs_ilDgv")).click();
+                                        //Thread.sleep(1L);
+                                        elemList4 = driver.findElements(By.className("show-all"));
+                                    }
+                                }
+                                if (elemList4.size() == 0){
+                                    //итерация по продуктам
+                                    collectProductLinks(driver.getCurrentUrl(), driver);
+                                }
+
 
                                 int slashIndex = driver.getCurrentUrl().lastIndexOf('/');
                                 String backURL = driver.getCurrentUrl().substring(0,slashIndex);
