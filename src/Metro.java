@@ -14,7 +14,11 @@ import org.openqa.selenium.devtools.page.Page;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.w3c.dom.html.HTMLElement;
 
+import javax.imageio.ImageIO;
+import java.awt.image.BufferedImage;
 import java.io.*;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -26,13 +30,15 @@ public class Metro {
     //https://delivery.metro-cc.ru/metro/tovary-dlia-ofisa
     //Нужно иметь google chrome версии 85 на компе!!!!!
 
+    public static String path = "E:\\Program Files\\";
     public static List<ProductMetro> finalProducts = new ArrayList<ProductMetro>();
     public static List<String> linklist = new ArrayList<>();
     //public static WebDriver driver = new ChromeDriver();
 
     public static void main(String[] args) {
+
         //System.setProperty("webdriver.chrome.driver", "C:\\Users\\mironov.matvey\\Documents\\GitHub\\metroParser\\libs\\chromedriver_win32\\chromedriver.exe");
-        System.setProperty("webdriver.chrome.driver", "E:\\Program Files\\metroParser\\libs\\chromedriver_win32\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", path+"metroParser\\libs\\chromedriver_win32\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         new WebDriverWait(driver, 5L);
         driver.manage().window().maximize();
@@ -239,15 +245,47 @@ public class Metro {
                     "/div[1]/div/div/div/div/div/img")).size() != 0) {
                 product.mainPicture = driver.findElement(By.xpath("//*[@id=\"react-modal\"]/div/div/div/div[2]/div/div/" +
                         "div/div/div[2]/div[1]/div[1]/div/div/div/div/div/img")).getAttribute("src").replace("\n", "").replace("\r", "");
+
+                int slashIndex1 = product.mainPicture.lastIndexOf('/');
+                int jpgIndex = product.mainPicture.lastIndexOf(".jpg");
+                String littleURL = product.mainPicture.substring(slashIndex1+1,jpgIndex);
+                try {
+                    URL imageURL = new URL(product.mainPicture);
+                    BufferedImage image = ImageIO.read(imageURL);
+                    ImageIO.write(image, "jpg",new File(path+"metroParser\\src\\images\\"+littleURL+".jpg"));
+                }
+                catch (MalformedURLException ex1){
+                    ex1.printStackTrace();
+                }
+                catch (IOException ex2){
+                    ex2.printStackTrace();
+                }
             }
 
             //Все картинки
             if (driver.findElements(By.className("preview_cell_2HmTo")).size() !=0){
                 List<WebElement> previewList = driver.findElements(By.className("preview_cell_2HmTo"));
                 for (WebElement e : previewList){
-                    product.previews.add(e.getAttribute("src"));
+                    String srcAsString = e.getAttribute("src");
+
+                    product.previews.add(srcAsString);
+                    int slashIndex1 = srcAsString.lastIndexOf('/');
+                    int jpgIndex = srcAsString.lastIndexOf(".jpg");
+                    String littleURL = srcAsString.substring(slashIndex1+1,jpgIndex);
+                    try {
+                        URL imageURL = new URL(srcAsString.replace("/mini/","/preview/"));
+                        BufferedImage image = ImageIO.read(imageURL);
+                        ImageIO.write(image, "jpg",new File(path+"metroParser\\src\\images\\"+littleURL+".jpg"));
+                    }
+                    catch (MalformedURLException ex1){
+                        ex1.printStackTrace();
+                    }
+                    catch (IOException ex2){
+                        ex2.printStackTrace();
+                    }
                 }
             }
+
 
             //text = text.replace("\n", "").replace("\r", "");
             System.out.println(product.name+"~"+product.description + "~"+product.link+"~"+product.consist+
