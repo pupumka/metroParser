@@ -9,7 +9,7 @@ public class ProductMetro {
     String name; //
     String price; //
     String discountPrice; //
-    String nondiscountPrice; //
+    int count; //
     String description; //
     String consist; //
     ArrayList<String> hierarchy = new ArrayList<String>();
