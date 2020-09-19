@@ -44,15 +44,15 @@ public class Metro {
         driver.manage().window().maximize();
         String url = "https://delivery.metro-cc.ru/metro";
 
-        ParseBySelenium(url, driver);//собирает список linkList , где хранятся ссылки на все товары
+        //ParseBySelenium(url, driver);//собирает список linkList , где хранятся ссылки на все товары
         //iterateProducts(0,linklist.size(),driver); //собирает инфу о каждом товаре
 
-        //readLinksFromFile(path+"metroParser\\src\\Links.txt", driver);
-        //iterateProducts(0,linklist.size(),driver);
+        readLinksFromFile(path+"metroParser\\src\\Links_Delta.txt", driver);
+        iterateProducts(0,linklist.size(),driver);
 
-        for (String str : linklist){
-            System.out.println(str);
-        }
+        //for (String str : linklist){
+        //    System.out.println(str);
+        //}
 
         //System.out.println("______________finalProducts.size() : "+finalProducts.size());
         driver.close();
