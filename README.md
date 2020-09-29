@@ -7,10 +7,10 @@
 
 Клонировать репозиторий на локальную машину, открыть проект в IDEA
 
-Заменить в коде путь к WebDriver(в классе Metro.java) в соответствии с папкой в которой лежит: 
-
-Например: System.setProperty("webdriver.chrome.driver", "E:\\Program Files\\metroParser\\libs\\chromedriver_win32\\chromedriver.exe");
+Заменить в коде значение переменной public static String path на актуальное.
 
 Убедиться что на компе установлен Google Chrome Версии 85.
+Дать много памяти консоли в IDE: File -> Settings ->Editor -> General -> Console. В строке Override console cycle buffer size - 90000kb
 
-Запустить скрипт. 
+Запустить (ctrl shift f10) класс Metro. 
+Копировать продукты из консоли в эксель мастером импорта, указать разделитель "~".
