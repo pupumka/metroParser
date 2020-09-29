@@ -24,12 +24,9 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Metro {
-    //пройти еще раз по ссылкам: (Добавить проходы по 4 уровню)
-    //https://delivery.metro-cc.ru/metro/zozh
-    //https://delivery.metro-cc.ru/metro/recepty-producty
-    //https://delivery.metro-cc.ru/metro/tovary-dlia-ofisa
+
     //Нужно иметь google chrome версии 85 на компе!!!!!
-    //отваилась картинка тут: https://delivery.metro-cc.ru/metro/kraska-l-oreal-paris-preference-recital-dlya-volos-rozovaya-platina-9-23
+
 
     public static String path = "C:\\Users\\mironov.matvey\\Documents\\GitHub\\";
     public static List<ProductMetro> finalProducts = new ArrayList<ProductMetro>();
@@ -44,15 +41,15 @@ public class Metro {
         driver.manage().window().maximize();
         String url = "https://delivery.metro-cc.ru/metro";
 
-        //ParseBySelenium(url, driver);//собирает список linkList , где хранятся ссылки на все товары
-        //iterateProducts(0,linklist.size(),driver); //собирает инфу о каждом товаре
+        ParseBySelenium(url, driver);//собирает список linkList , где хранятся ссылки на все товары
+        iterateProducts(0,linklist.size(),driver); //собирает инфу о каждом товаре
 
-        readLinksFromFile(path+"metroParser\\src\\Links_Delta.txt", driver);
-        iterateProducts(0,linklist.size(),driver);
+        //readLinksFromFile(path+"metroParser\\src\\Links_Delta.txt", driver);
+        //iterateProducts(0,linklist.size(),driver);
 
-        //for (String str : linklist){
-        //    System.out.println(str);
-        //}
+        for (String str : linklist){
+            System.out.println(str);
+        }
 
         //System.out.println("______________finalProducts.size() : "+finalProducts.size());
         driver.close();
