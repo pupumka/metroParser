@@ -28,7 +28,7 @@ public class Metro {
     //Нужно иметь google chrome версии 85 на компе!!!!!
 
 
-    public static String path = "C:\\Users\\mironov.matvey\\Documents\\GitHub\\";
+    public static String path = "E:\\Program Files\\";
     public static List<ProductMetro> finalProducts = new ArrayList<ProductMetro>();
     public static List<String> linklist = new ArrayList<>();
     //public static WebDriver driver = new ChromeDriver();
