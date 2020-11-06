@@ -10,19 +10,30 @@ public class DataFormating {
         String filePath = "C:\\Users\\mironov.matvey\\Documents\\GitHub\\metroParser\\src\\import\\1\\Общая информация.txt";
         ArrayList<String> list = readCommonInfo(filePath);
         list = deleteBrackets(list);
-        for (String s : list){
-            System.out.println(s);
-        }
+        printStructure(list);
+        //for (String s : list){
+        //    System.out.println(s);
+        //}
     }
 
-    public void printStructure(ArrayList<String> list){
+    public static void printStructure(ArrayList<String> list){
         for (int i=0;i<list.size();i++){
             String s = list.get(i);
-            List<String> splitList = Arrays.asList(s.split(","));
+            System.out.println(s);
+            List<String> splitList = Arrays.asList(s.split(", "));
             for (int j = 0; j<splitList.size();j++){
-                String key = splitList.get(j).split("=")[0];
-                String value =
-                System.out.println(i+"@"+"Общая информация"+"@");
+                String keyValueMassiv[] = splitList.get(j).split("=");
+                String key = "";
+                String value = "";
+                if (keyValueMassiv.length>1) {
+                    key = keyValueMassiv[0];
+
+                    if (key.charAt(0)==' '){
+                        key = key.substring(1);
+                    }
+                    value = keyValueMassiv[1];
+                }
+                System.out.println(i+"@"+"Общая информация"+"@"+key+"@"+value);
             }
         }
     }
