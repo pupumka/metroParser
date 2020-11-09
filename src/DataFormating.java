@@ -3,11 +3,13 @@ import java.io.File;
 import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.LinkedList;
 import java.util.List;
 
 public class DataFormating {
     public static void main(String[] args) {
-        String filePath = "C:\\Users\\mironov.matvey\\Documents\\GitHub\\metroParser\\src\\import\\1\\Общая информация.txt";
+        String filePath = "E:\\Program Files\\metroParser\\src\\import\\1\\Общая информация.txt";
+        //String filePath = "C:\\Users\\mironov.matvey\\Documents\\GitHub\\metroParser\\src\\import\\1\\Общая информация.txt";
         ArrayList<String> list = readCommonInfo(filePath);
         list = deleteBrackets(list);
         printStructure(list);
@@ -20,20 +22,69 @@ public class DataFormating {
         for (int i=0;i<list.size();i++){
             String s = list.get(i);
             System.out.println(s);
+            LinkedList<String> splitList = new LinkedList<>(Arrays.asList(s.split(", ")));
+            //for (int z = 0; z<30;z++){
+                splitList = strangeShit(splitList,i);
+            //}
+
+            //for (String str : splitList){
+                //System.out.println(str);
+            //}
+
+        }
+    }
+
+    public static LinkedList<String> strangeShit(LinkedList<String> splitList, int i){
+        for (int j = 0; j<splitList.size();j++){
+            int removeCount = 0;
+            if (!splitList.get(j).contains("=") && (j-1)!=-1 && !splitList.get(j).equals("NULL") ){
+                String next = splitList.get(j);
+                String previous = splitList.get(j-1);
+                splitList.set(j-1,previous+", "+next);
+                removeCount=1+removeCount;
+                splitList.remove(j);
+            }
+            if (splitList.get(j-removeCount).equals("Вес") && (j-1)!=-1 && j!=splitList.size()){
+                String next = splitList.get(j);
+                String previous = splitList.get(j-1);
+                splitList.set(j-1,previous+", "+next);
+                splitList.remove(j-removeCount);
+            }
+
+            String keyValueMassiv[] = splitList.get(j-removeCount).split("=");
+            String key = "";
+            String value = "";
+            if (keyValueMassiv.length > 1) {
+                key = keyValueMassiv[0];
+
+                if (key.charAt(0) == ' ') {
+                    key = key.substring(1);
+                }
+                value = keyValueMassiv[1];
+            }
+            System.out.println(i+"@"+"Общая информация"+"@"+key+"@"+value);
+        }
+        return splitList;
+    }
+
+    public static void printStructure2(ArrayList<String> list) {
+        for (int i = 0; i < list.size(); i++) {
+            String s = list.get(i);
+            System.out.println(s);
             List<String> splitList = Arrays.asList(s.split(", "));
-            for (int j = 0; j<splitList.size();j++){
+            for (int j = 0; j < splitList.size(); j++) {
                 String keyValueMassiv[] = splitList.get(j).split("=");
                 String key = "";
                 String value = "";
-                if (keyValueMassiv.length>1) {
+                if (keyValueMassiv.length > 1) {
                     key = keyValueMassiv[0];
 
-                    if (key.charAt(0)==' '){
+                    if (key.charAt(0) == ' ') {
                         key = key.substring(1);
                     }
                     value = keyValueMassiv[1];
                 }
-                System.out.println(i+"@"+"Общая информация"+"@"+key+"@"+value);
+                //System.out.println(i+"@"+"Общая информация"+"@"+key+"@"+value);
             }
         }
     }
