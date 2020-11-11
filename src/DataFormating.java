@@ -11,17 +11,19 @@ public class DataFormating {
 
         //String filePath = "C:\\Users\\mironov.matvey\\Documents\\GitHub\\metroParser\\src\\import\\1\\Категории.txt";
 
-        String filePath = "E:\\Program Files\\metroParser\\src\\import\\1\\Категории.txt";
+        String filePath = "E:\\Program Files\\metroParser\\src\\import\\1\\Картинки.txt";
         //String filePath = "C:\\Users\\mironov.matvey\\Documents\\GitHub\\metroParser\\src\\import\\1\\Общая информация.txt";
 
         ArrayList<String> list = readCommonInfo(filePath);
         list = deleteBrackets(list);
-        categories1level(list);
+        editImages(list);
 
-        filePath = "E:\\Program Files\\metroParser\\src\\import\\1\\Значения категорий.txt";
-        list = readCommonInfo(filePath);
-        list = deleteBrackets(list);
-        categories2(list);
+        //categories1level(list);
+
+        //filePath = "E:\\Program Files\\metroParser\\src\\import\\1\\Значения категорий.txt";
+        //list = readCommonInfo(filePath);
+        //list = deleteBrackets(list);
+        //categories2(list);
 
         //printStructureFinal(list);
         //printSostav(list);
@@ -31,6 +33,23 @@ public class DataFormating {
         //for (String s : list){
         //    System.out.println(s);
         //}
+    }
+
+    public static void editImages(ArrayList<String> list) {
+        for (int i =0;i<list.size();i++){
+            int imageNum = list.get(i).split(", ").length;
+            for (int j = 0;j<imageNum;j++){
+                String oldString = list.get(i).split(", ")[j];
+                int lastSlashIndex = oldString.lastIndexOf("/");
+                int questionSignIndex = oldString.lastIndexOf("?");
+                //if (lastSlashIndex < oldString.length() && questionSignIndex < oldString.length()) {
+                if (oldString.length()>0) {
+                    String rightLink = "catalog/images/categories/parsedimages" + oldString.substring(lastSlashIndex, questionSignIndex);
+                    System.out.println(105+i+"@"+rightLink);
+                }
+
+            }
+        }
     }
 
     public static void categories2(ArrayList<String> list){
@@ -217,9 +236,9 @@ public class DataFormating {
 
             String s = oldList.get(i).replace("[","");
             s = s.replace("]","");
-            if (i==0){
-                s = s.substring(1);
-            }
+            //if (i==0){
+            //    s = s.substring(1);
+           // }
             list.add(s);
             //String s1 = oldList.get(i);
             //String s2 = s1.substring(1,s1.length()-1);
