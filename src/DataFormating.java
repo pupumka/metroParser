@@ -7,13 +7,62 @@ import java.util.List;
 
 public class DataFormating {
     public static void main(String[] args) {
-        String filePath = "C:\\Users\\mironov.matvey\\Documents\\GitHub\\metroParser\\src\\import\\1\\Общая информация.txt";
+        String filePath = "C:\\Users\\mironov.matvey\\Documents\\GitHub\\metroParser\\src\\import\\1\\Состав.txt";
         ArrayList<String> list = readCommonInfo(filePath);
-        list = deleteBrackets(list);
-        printStructure(list);
+        //list = deleteBrackets(list);
+        //printStructureFinal(list);
+        printSostav(list);
+
+        //printStructure(list);
+
         //for (String s : list){
         //    System.out.println(s);
         //}
+    }
+
+    public static void printSostav(ArrayList<String> list){
+        for (int i=0;i<list.size();i++){
+            if (!list.get(i).equals("null") && !list.get(i).equals("")) {
+                System.out.println(105 + i + "@" + "Состав" + "@" + list.get(i));
+            }
+        }
+    }
+
+    public static void printStructureFinal(ArrayList<String> list){
+        for (int i = 0; i<list.size();i++){
+            ArrayList<String> keyValuePairs = new ArrayList<>(Arrays.asList(list.get(i).split("@")));
+            if (keyValuePairs.size()>1){
+                for (int j=0;j<keyValuePairs.size();j++){
+                    String key = keyValuePairs.get(j).split("=")[0];
+                    String value = keyValuePairs.get(j).split("=")[1];
+                    if (key.startsWith(" ")){
+                        key = key.substring(1);
+                    }
+                    System.out.println(105+i+"@"+key+"@"+value);
+                }
+            }
+            //if (keyValuePairs.size()==1){
+            //    System.out.println(list.get(i));
+            //}
+        }
+    }
+
+    public static void printAggregatedKeys(ArrayList<String> list){
+        for (int i = 0; i<list.size();i++){
+            ArrayList<String> keyValuePairs = new ArrayList<>(Arrays.asList(list.get(i).split("@")));
+            if (keyValuePairs.size()>0){
+                for (int j=0;j<keyValuePairs.size();j++){
+                    String key = keyValuePairs.get(j).split("=")[0];
+                    if (key.startsWith(" ")){
+                        key = key.substring(1);
+                    }
+                    System.out.println(key);
+                }
+            }
+            if (keyValuePairs.size()==0){
+                System.out.println(list.get(i));
+            }
+        }
     }
 
     public static void printStructure(ArrayList<String> list){
