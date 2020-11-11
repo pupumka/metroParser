@@ -8,12 +8,12 @@ import java.util.List;
 
 public class DataFormating {
     public static void main(String[] args) {
-<<<<<<< HEAD
+
         String filePath = "C:\\Users\\mironov.matvey\\Documents\\GitHub\\metroParser\\src\\import\\1\\Состав.txt";
-=======
-        String filePath = "E:\\Program Files\\metroParser\\src\\import\\1\\Общая информация.txt";
+
+        //String filePath = "E:\\Program Files\\metroParser\\src\\import\\1\\Общая информация.txt";
         //String filePath = "C:\\Users\\mironov.matvey\\Documents\\GitHub\\metroParser\\src\\import\\1\\Общая информация.txt";
->>>>>>> 6d27bfe1b5bef3868584edf4642a6b790b33c665
+
         ArrayList<String> list = readCommonInfo(filePath);
         //list = deleteBrackets(list);
         //printStructureFinal(list);
