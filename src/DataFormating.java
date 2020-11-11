@@ -11,12 +11,13 @@ public class DataFormating {
 
         //String filePath = "C:\\Users\\mironov.matvey\\Documents\\GitHub\\metroParser\\src\\import\\1\\Категории.txt";
 
-        String filePath = "E:\\Program Files\\metroParser\\src\\import\\1\\Картинки.txt";
+        String filePath = "E:\\Program Files\\metroParser\\src\\import\\1\\Главная картинка.txt";
         //String filePath = "C:\\Users\\mironov.matvey\\Documents\\GitHub\\metroParser\\src\\import\\1\\Общая информация.txt";
 
         ArrayList<String> list = readCommonInfo(filePath);
         list = deleteBrackets(list);
-        editImages(list);
+        mainImage(list);
+        //editImages(list);
 
         //categories1level(list);
 
@@ -33,6 +34,18 @@ public class DataFormating {
         //for (String s : list){
         //    System.out.println(s);
         //}
+    }
+
+    public static void mainImage(ArrayList<String> list) {
+        for (int i =0;i<list.size();i++){
+            String oldString = list.get(i);
+            int lastSlashIndex = oldString.lastIndexOf("/");
+            int questionSignIndex = oldString.lastIndexOf("?");
+            if (!oldString.contains("noimage/preview.png")){
+                oldString = "catalog/images/categories/parsedimages"+oldString.substring(lastSlashIndex,questionSignIndex);
+            }
+            System.out.println(oldString);
+        }
     }
 
     public static void editImages(ArrayList<String> list) {
