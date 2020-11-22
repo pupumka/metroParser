@@ -13,6 +13,6 @@ public class Multy extends Thread {
 
     @Override
     public void run() {
-        Metro.iterateProducts(i,j,driver);
+        //Metro.iterateProducts(i,j,driver);
     }
 }

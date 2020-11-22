@@ -41,15 +41,16 @@ public class Metro {
         driver.manage().window().maximize();
         String url = "https://delivery.metro-cc.ru/metro";
 
-        ParseBySelenium(url, driver);//собирает список linkList , где хранятся ссылки на все товары
-        iterateProducts(0,linklist.size(),driver); //собирает инфу о каждом товаре
+        //ParseBySelenium(url, driver);//собирает список linkList , где хранятся ссылки на все товары
+        //iterateProducts(0,linklist.size(),driver); //собирает инфу о каждом товаре
 
-        //readLinksFromFile(path+"metroParser\\src\\Links_Delta.txt", driver);
-        //iterateProducts(0,linklist.size(),driver);
+        readLinksFromFile("E:\\Program Files\\metroParser\\src\\import\\1\\all_import\\deltaLinks(result).txt", driver);
+        iterateProducts(driver);
 
-        for (String str : linklist){
-            System.out.println(str);
-        }
+        //for (String str : linklist){
+         //   System.out.println(str);
+        //}
+        System.out.println("END");
 
         //System.out.println("______________finalProducts.size() : "+finalProducts.size());
         driver.close();
@@ -91,7 +92,7 @@ public class Metro {
             WebDriver driver = new ChromeDriver();
             new WebDriverWait(driver, 5L);
             driver.manage().window().maximize();
-            iterateProducts(start,end,driver);
+            //iterateProducts(start,end,driver);
             try {
                 Thread.sleep(4L);
             }
@@ -167,11 +168,12 @@ public class Metro {
 
     }
 
-    public static void iterateProducts(int i, int j, WebDriver driver) { //i - от - j - до
-        for (i =0; i<j;i++){
+    public static void iterateProducts( WebDriver driver) { //i - от - j - до
+        for (int i =0; i<linklist.size();i++){
             driver.get(linklist.get(i));
 
             ProductMetro product = new ProductMetro();
+            /*
             //Название
             if (driver.findElements(By.xpath("//*[@id=\"react-modal\"]/div/div/div/div[2]/div/div/div/div/" +
                     "div[2]/div[2]/div[1]/h1")).size() != 0) {
@@ -244,7 +246,7 @@ public class Metro {
                 for (int k = 0;k<categoryList.size()/2;k++){
                     product.hierarchy.add(categoryList.get(k).getText());
                 }
-            }
+            }*/
 
 
             //картинка главная
@@ -252,7 +254,7 @@ public class Metro {
                     "/div[1]/div/div/div/div/div/img")).size() != 0) {
                 product.mainPicture = driver.findElement(By.xpath("//*[@id=\"react-modal\"]/div/div/div/div[2]/div/div/" +
                         "div/div/div[2]/div[1]/div[1]/div/div/div/div/div/img")).getAttribute("src").replace("\n", "").replace("\r", "");
-                if (!product.mainPicture.contains("/noimage/")) {
+                if (!linklist.get(i).contains("/noimage/")) {
                     int slashIndex1 = product.mainPicture.lastIndexOf('/');
                     int dotIndex = product.mainPicture.lastIndexOf(".");
 
@@ -295,11 +297,11 @@ public class Metro {
 
 
             //text = text.replace("\n", "").replace("\r", "");
-            System.out.println(product.name+"~"+product.description + "~"+product.link+"~"+product.consist+
+            /*System.out.println(product.name+"~"+product.description + "~"+product.link+"~"+product.consist+
                     "~"+product.mainPicture+"~"+product.price+"~"+product.discountPrice+
                     "~"+product.generalInformation.toString()+"~"+product.nutritionalValue.toString()+
                     "~"+printArray(product.hierarchy)+"~"+product.previews.toString());
-            finalProducts.add(product);
+            finalProducts.add(product);*/
         }
     }
 
